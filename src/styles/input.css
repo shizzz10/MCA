@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+
+
+@theme {
+    --color-darkmain: #1f2755;
+    --color-lightmain: #273673;
+    --color-light: #bec4da;
+  }
+
+
+/* npx @tailwindcss/cli -i ./src/styles/input.css -o ./src/styles/output.css --watch */
