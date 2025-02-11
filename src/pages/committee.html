@@ -3,25 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Link Swiper's CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <link rel="icon" type="image/png" href="./src/assets/MCAlogo.png" />
+    <link rel="icon" type="image/png" href="../assets/MCAlogo.png" />
 
-    <link href="./src/styles/output.css" rel="stylesheet" />
+    <link href="../styles/output.css" rel="stylesheet" />
     <style></style>
-    <title>MCA</title>
+    <title>Committee</title>
   </head>
   <body class="xl:flex xl:flex-col xl:justify-center xl:items-center">
     <header
       class="flex justify-between items-center gap-2 px-3 py-0.5 xl:max-w-[1280px] w-full"
     >
       <!-- logo  -->
-      <div class="flex">
-        <img src="./src/assets/MCAlogo.png" class="w-16 sm:w-20" alt="" />
-      </div>
+      <a href="../../index.html" class="flex">
+        <img src="../assets/MCAlogo.png" class="w-16 sm:w-20" alt="" />
+      </a>
 
       <!-- search bar -->
       <div class="flex items-center justify-center relative w-[90%] hidden">
@@ -30,7 +25,7 @@
           class="w-full border border-light rounded-4xl py-1.5 pl-8 bg-gradient-to-r from-light to-lightmain p-2 text-white"
         />
         <img
-          src="./src/assets/search.svg"
+          src="../assets/search.svg"
           class="w-5 absolute top-1/2 transform -translate-y-1/2 left-2"
           alt=""
         />
@@ -40,34 +35,34 @@
         class="hidden sm:flex justify-around items-center m-3 bg-darkmain rounded-2xl px-1 py-1 w-full"
       >
         <a
-          href=""
+          href="../../index.html"
           class="flex flex-col gap-0.5 items-center p-1 hover:bg-light/10 rounded-md"
         >
-          <img src="./src/assets/house.svg" class="w-5" alt="" />
+          <img src="../assets/house.svg" class="w-5" alt="" />
           <p class="text-xs font-medium text-white lg:text-sm">Home</p>
         </a>
 
         <a
-          href="./src/pages/committee.html"
+          href="../pages/committee.html"
           class="flex flex-col gap-0.5 items-center p-1 hover:bg-light/10 rounded-md"
         >
-          <img src="./src/assets/list.svg" class="w-5" alt="" />
+          <img src="../assets/list.svg" class="w-5" alt="" />
           <p class="text-xs font-medium text-white lg:text-sm">Committee</p>
         </a>
 
         <a
-          href="./src/pages/events.html"
+          href="../pages/events.html"
           class="flex flex-col gap-0.5 items-center p-1 hover:bg-light/10 rounded-md"
         >
-          <img src="./src/assets/compass.svg" class="w-5" alt="" />
+          <img src="../assets/compass.svg" class="w-5" alt="" />
           <p class="text-xs font-medium text-white lg:text-sm">Events</p>
         </a>
 
         <a
-          href="./src/pages/news.html"
+          href="../pages/news.html"
           class="flex flex-col gap-0.5 items-center p-1 hover:bg-light/10 rounded-md"
         >
-          <img src="./src/assets/inbox.svg" class="w-5" alt="" />
+          <img src="../assets/inbox.svg" class="w-5" alt="" />
           <p class="text-xs font-medium text-white lg:text-sm">News</p>
         </a>
 
@@ -75,7 +70,7 @@
           href=""
           class="flex flex-col gap-0.5 items-center p-1 hover:bg-light/10 rounded-md"
         >
-          <img src="./src/assets/user.svg" class="w-5" alt="" />
+          <img src="../assets/user.svg" class="w-5" alt="" />
           <p class="text-xs font-medium text-white lg:text-sm">Profile</p>
         </a>
       </div>
@@ -103,31 +98,31 @@
         class="fixed top-14 sm:top-20 -right-4 h-[80vh] w-[50vw] sm:w-[320px] lg:w-[400px] bg-darkmain bg-opacity-90 transform translate-x-full transition-transform duration-500 ease-in-out z-50 rounded-3xl flex justify-center overflow-hidden overflow-y-auto scroll-smooth"
       >
         <ul class="p-4 text-white flex flex-col gap-4">
-          <li><img src="./src/assets/MCAlogo.png" class="w-20" alt="" /></li>
+          <li> <a href="../../index.html"><img src="../assets/MCAlogo.png" class="w-20" alt="" /></a></li>
           <li>
             <a
-              href="#"
+              href="../../index.html"
               class="px-3 py-1 bg-light/40 hover:bg-light/60 rounded-lg"
               >Home</a
             >
           </li>
           <li>
             <a
-              href="./src/pages/news.html"
+              href="../pages/news.html"
               class="px-3 py-1 bg-light/40 hover:bg-light/60 rounded-lg"
               >News</a
             >
           </li>
           <li>
             <a
-              href="./src/pages/events.html"
+              href="../pages/events.html"
               class="px-3 py-1 bg-light/40 hover:bg-light/60 rounded-lg"
               >Events</a
             >
           </li>
           <li>
             <a
-              href="./src/pages/artists.html"
+              href="../pages/artists.html"
               class="px-3 py-1 bg-light/40 hover:bg-light/60 rounded-lg"
               >Kalapuraskar</a
             >
@@ -141,7 +136,7 @@
             >
               <span class="accordion-header">About MCA</span>
               <img
-                src="./src/assets/arrow.svg"
+                src="../assets/arrow.svg"
                 class="ml-3 w-4 arrow transition-transform duration-300"
                 alt="arrow"
               />
@@ -154,7 +149,7 @@
               <ul class="text-sm font-medium flex flex-col gap-3">
                 <li>
                   <a
-                    href="./src/pages/committee.html"
+                    href="../pages/committee.html"
                     class="px-2 py-1 bg-light/30 hover:bg-light/50 rounded-lg"
                     >Committee</a
                   >
@@ -178,7 +173,7 @@
             >
               <span class="accordion-header">More</span>
               <img
-                src="./src/assets/arrow.svg"
+                src="../assets/arrow.svg"
                 class="ml-3 w-4 arrow transition-transform duration-300"
                 alt="arrow"
               />
@@ -218,90 +213,28 @@
       </div>
     </header>
 
-    <main class="px-3 flex flex-col gap-6 mb-20 xl:max-w-[1280px] w-full">
-      <!-- hero  -->
-      <div class="div flex flex-col gap-4">
-        <!-- heading  -->
-        <div class="flex justify-center items-center hidden">
-          <h2 class="text-3xl text-darkmain font-extrabold">
-            Mangalore <br />
-            Cultural <br />
-            Association
-          </h2>
-
-          <img src="./src/assets/MCAlogo.png" alt="" class="w-32" />
-        </div>
-
-        <!-- carousal  -->
-        <!-- Swiper -->
-        <div class="swiper mySwiper w-full h-full">
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div
-              class="swiper-slide flex justify-center items-center text-center bg-white"
-            >
-              <img
-                src="./src/assets/DSC_0001.jpeg"
-                alt="Slide 1"
-                class="w-full h-[30vh] sm:h-[50vh] lg:h-h-[500px] xl:h-[550px] object-cover border border-light shadow-sm shadow-black/20 rounded-2xl"
-              />
-            </div>
-            <div
-              class="swiper-slide flex justify-center items-center text-center bg-white"
-            >
-              <img
-                src="./src/assets/IMG-20220703-WA0011.jpg"
-                alt="Slide 2"
-                class="w-full h-[30vh] sm:h-[50vh] lg:h-h-[500px] xl:h-[550px] object-cover border border-light shadow-sm shadow-black/20 rounded-2xl"
-              />
-            </div>
-            <div
-              class="swiper-slide flex justify-center items-center text-center bg-white"
-            >
-              <img
-                src="./src/assets/DSC_0282.jpg"
-                alt="Slide 3"
-                class="w-full h-[30vh] sm:h-[50vh] lg:h-h-[500px] xl:h-[550px] object-cover border border-light shadow-sm shadow-black/20 rounded-2xl"
-              />
-            </div>
-            <div
-              class="swiper-slide flex justify-center items-center text-center bg-white"
-            >
-              <img
-                src="./src/assets/DSC_0358.jpg"
-                alt="Slide 4"
-                class="w-full h-[30vh] sm:h-[50vh] lg:h-h-[500px] xl:h-[550px] object-cover border border-light shadow-sm shadow-black/20 rounded-2xl"
-              />
-            </div>
-          </div>
-
-          <!-- Navigation Buttons -->
-          <div class="swiper-button-next !text-darkmain"></div>
-          <div class="swiper-button-prev !text-darkmain"></div>
-        </div>
-      </div>
-
-      <!-- recently  -->
+    <main class="px-3 flex flex-col gap-6 lg:gap-9 mb-20 xl:max-w-[1280px] w-full mt-4">
+      <!-- Committee  -->
       <div class="flex flex-col gap-3">
         <!-- head  -->
-        <div class="flex">
+        <!-- <div class="flex">
           <h4
             class="text-xl font-semibold lg:text-2xl xl:text-3xl text-darkmain"
           >
-            Recently
+            Committee
           </h4>
-        </div>
+        </div> -->
 
-        <!-- recent cards  -->
-        <div class="flex gap-2 flex-wrap justify-between">
-
-           <!-- card  -->
+        <!--  cards  -->
+        <div class="flex gap-4 flex-wrap justify-between">
+            
+          <!-- card  -->
           <div
             class="flex flex-col w-80 aspect-[7/5] sm:w-[48%] sm:aspect-[5/4] lg:w-[48%] lg:aspect-[6/4] border border-transparent hover:border-light rounded-2xl overflow-hidden hover:shadow-sm hover:shadow-black/20 group"
           >
             <!-- Image Section -->
             <img
-              src="./src/assets/DSC_0001.jpeg"
+              src="../assets/DSC_0001.jpeg"
               class="h-[60%] w-full object-cover rounded-br-4xl group-hover:rounded-br-sm transition-all duration-300 rounded-bl-sm group-hover:rounded-bl-none"
               alt=""
             />
@@ -312,7 +245,11 @@
             >
               <!-- Headline -->
               <div class="flex flex-col gap-0 sm:gap-0.5 lg:gap-1">
-                <p class="text-white font-medium sm:text-lg leading-5 lg:leading-7">Gladson Almedia</p>
+                <p class="text-white font-medium sm:text-lg leading-5 lg:leading-7">2024 - Present</p>
+                <span class="text-gray-300 text-xs sm:text-sm leading-4"
+                  >Lorem ipsum dolor sit amet consectetur, adipisicing
+                  elit.</span
+                >
               </div>
               <!-- Read More -->
               <a href="#" class="text-sm text-gray-200 sm:text-base leading-4 mt-auto"
@@ -322,6 +259,35 @@
 
           </div>
 
+          <!-- card -->
+          <div
+            class="flex flex-col w-80 aspect-[7/5] sm:w-[48%] sm:aspect-[5/4] lg:w-[48%] lg:aspect-[6/4] border border-transparent hover:border-light rounded-2xl overflow-hidden hover:shadow-sm hover:shadow-black/20 group"
+          >
+            <!-- Image Section -->
+            <img
+              src="../assets/IMG-20220703-WA0011.jpg"
+              class="h-[60%] w-full object-cover rounded-br-4xl group-hover:rounded-br-sm transition-all duration-300 rounded-bl-sm group-hover:rounded-bl-none"
+              alt=""
+            />
+
+            <!-- Content Section -->
+            <div
+              class="h-[40%] flex flex-col gap-0.5 px-3 py-2 sm:py-3 lg:py-4 xl:py-5 bg-lightmain rounded-tl-sm group-hover:rounded-tl-none rounded-tr-4xl group-hover:rounded-tr-sm transition-all duration-300"
+            >
+              <!-- Headline -->
+              <div class="flex flex-col gap-0 sm:gap-0.5 lg:gap-1">
+                <p class="text-white font-medium sm:text-lg leading-5 lg:leading-7">2021 - 2024</p>
+                <span class="text-gray-300 text-xs sm:text-sm leading-4"
+                  >Lorem ipsum dolor sit amet consectetur, adipisicing
+                  elit.</span
+                >
+              </div>
+              <!-- Read More -->
+              <a href="#" class="text-sm text-gray-200 sm:text-base leading-4 mt-auto"
+                >Read More</a
+              >
+            </div>
+          </div>
 
           <!-- card  -->
           <div
@@ -329,7 +295,7 @@
           >
             <!-- Image Section -->
             <img
-              src="./src/assets/DSC_0282.jpg"
+              src="../assets/DSC_0282.jpg"
               class="h-[60%] w-full object-cover rounded-br-4xl group-hover:rounded-br-sm transition-all duration-300 rounded-bl-sm group-hover:rounded-bl-none"
               alt=""
             />
@@ -340,105 +306,115 @@
             >
               <!-- Headline -->
               <div class="flex flex-col gap-0 sm:gap-0.5 lg:gap-1">
-                <p class="text-white font-medium sm:text-lg leading-5 lg:leading-7">Gladson Almedia</p>
+                <p class="text-white font-medium sm:text-lg leading-5 lg:leading-7">2016 - 2021</p>
+                <span class="text-gray-300 text-xs sm:text-sm leading-4"
+                  >Lorem ipsum dolor sit amet consectetur, adipisicing
+                  elit.</span
+                >
               </div>
               <!-- Read More -->
               <a href="#" class="text-sm text-gray-200 sm:text-base leading-4 mt-auto"
                 >Read More</a
               >
             </div>
-
           </div>
 
-
-        </div>
-      </div>
-
-      <!-- Kalapraskar  -->
-      <div class="flex flex-col gap-3">
-        <!-- head  -->
-        <div class="flex">
-          <h4
-            class="text-xl font-semibold lg:text-2xl xl:text-3xl text-darkmain"
+          <!-- card -->
+          <div
+            class="flex flex-col w-80 aspect-[7/5] sm:w-[48%] sm:aspect-[5/4] lg:w-[48%] lg:aspect-[6/4] border border-transparent hover:border-light rounded-2xl overflow-hidden hover:shadow-sm hover:shadow-black/20 group"
           >
-            Kalapraskar
-          </h4>
-        </div>
-
-        <!-- Profiles  -->
-        <div class="flex gap-2 sm:gap-4 xl:gap-6 flex-wrap">
-          <!-- Profile card -->
-          <a
-            href=""
-            class="flex flex-col text-sm p-2 hover:bg-light/20 hover:rounded-2xl w-28 sm:w-44 xl:w-48"
-          >
+            <!-- Image Section -->
             <img
-              src="./src/assets/artist1.jpg"
-              class="rounded-full h-24 w-24 sm:h-40 sm:w-40 xl:w-44 xl:h-44 object-cover object-center"
-              alt=""
-            />
-            <h6
-              class="text-sm lg:text-base xl:text-lg xl:font-semibold pl-0.5 font-medium"
-            >
-              Eddie Netto
-            </h6>
-          </a>
-
-          <!-- Profile card -->
-          <a
-            href=""
-            class="flex flex-col text-sm p-2 hover:bg-light/20 hover:rounded-2xl w-28 sm:w-44 xl:w-48"
-          >
-            <img
-              src="./src/assets/artist2.jpg"
-              class="rounded-full h-24 w-24 sm:h-40 sm:w-40 xl:w-44 xl:h-44 object-cover object-center"
-              alt=""
-            />
-            <h6
-              class="text-sm lg:text-base xl:text-lg xl:font-semibold pl-0.5 font-medium"
-            >
-              Alwyn Noronha
-            </h6>
-          </a>
-
-          <!-- Profile card -->
-          <a
-            href=""
-            class="flex flex-col text-sm p-2 hover:bg-light/20 hover:rounded-2xl w-28 sm:w-44 xl:w-48"
-          >
-            <img
-              src="./src/assets/artist3.jpg"
-              class="rounded-full h-24 w-24 sm:h-40 sm:w-40 xl:w-44 xl:h-44 object-cover object-center"
-              alt=""
-            />
-            <h6
-              class="text-sm lg:text-base xl:text-lg xl:font-semibold pl-0.5 font-medium"
-            >
-              Meena Rebimbus
-            </h6>
-          </a>
-
-          <!-- Profile card -->
-          <a
-            href="./src/pages/artists.html"
-            class="relative flex flex-col text-sm m-2 w-24 h-24 sm:h-40 sm:w-40 xl:w-44 xl: xl:h-44"
-          >
-            <!-- Image -->
-            <img
-              src="./src/assets/artist3.jpg"
-              class="rounded-full h-full w-full object-cover object-center"
+              src="../assets/gathering1.jpg"
+              class="h-[60%] w-full object-cover rounded-br-4xl group-hover:rounded-br-sm transition-all duration-300 rounded-bl-sm group-hover:rounded-bl-none"
               alt=""
             />
 
-            <!-- Overlay with Centered Text -->
+            <!-- Content Section -->
             <div
-              class="absolute inset-0 bg-black/60 rounded-full flex items-center justify-center text-white text-lg lg:text-lg xl:text-2xl font-semibold transition-all duration-300"
+              class="h-[40%] flex flex-col gap-0.5 px-3 py-2 sm:py-3 lg:py-4 xl:py-5 bg-lightmain rounded-tl-sm group-hover:rounded-tl-none rounded-tr-4xl group-hover:rounded-tr-sm transition-all duration-300"
             >
-              + 150
+              <!-- Headline -->
+              <div class="flex flex-col gap-0 sm:gap-0.5 lg:gap-1">
+                <p class="text-white font-medium sm:text-lg leading-5 lg:leading-7">2012 - 2016</p>
+                <span class="text-gray-300 text-xs sm:text-sm leading-4"
+                  >Lorem ipsum dolor sit amet consectetur, adipisicing
+                  elit.</span
+                >
+              </div>
+              <!-- Read More -->
+              <a href="#" class="text-sm text-gray-200 sm:text-base leading-4 mt-auto"
+                >Read More</a
+              >
             </div>
-          </a>
+          </div>
+          
+
+          <!-- card  -->
+          <div
+            class="flex flex-col w-80 aspect-[7/5] sm:w-[48%] sm:aspect-[5/4] lg:w-[48%] lg:aspect-[6/4] border border-transparent hover:border-light rounded-2xl overflow-hidden hover:shadow-sm hover:shadow-black/20 group"
+          >
+            <!-- Image Section -->
+            <img
+              src="../assets/gathering1.jpg"
+              class="h-[60%] w-full object-cover rounded-br-4xl group-hover:rounded-br-sm transition-all duration-300 rounded-bl-sm group-hover:rounded-bl-none"
+              alt=""
+            />
+
+            <!-- Content Section -->
+            <div
+              class="h-[40%] flex flex-col gap-0.5 px-3 py-2 sm:py-3 lg:py-4 xl:py-5 bg-lightmain rounded-tl-sm group-hover:rounded-tl-none rounded-tr-4xl group-hover:rounded-tr-sm transition-all duration-300"
+            >
+              <!-- Headline -->
+              <div class="flex flex-col gap-0 sm:gap-0.5 lg:gap-1">
+                <p class="text-white font-medium sm:text-lg leading-5 lg:leading-7">2008 - 2012</p>
+                <span class="text-gray-300 text-xs sm:text-sm leading-4"
+                  >Lorem ipsum dolor sit amet consectetur, adipisicing
+                  elit.</span
+                >
+              </div>
+              <!-- Read More -->
+              <a href="#" class="text-sm text-gray-200 sm:text-base leading-4 mt-auto"
+                >Read More</a
+              >
+            </div>
+          </div>
+
+          <!-- card -->
+          <div
+            class="flex flex-col w-80 aspect-[7/5] sm:w-[48%] sm:aspect-[5/4] lg:w-[48%] lg:aspect-[6/4] border border-transparent hover:border-light rounded-2xl overflow-hidden hover:shadow-sm hover:shadow-black/20 group"
+          >
+            <!-- Image Section -->
+            <img
+              src="../assets/DSC_0001.jpeg"
+              class="h-[60%] w-full object-cover rounded-br-4xl group-hover:rounded-br-sm transition-all duration-300 rounded-bl-sm group-hover:rounded-bl-none"
+              alt=""
+            />
+
+            <!-- Content Section -->
+            <div
+              class="h-[40%] flex flex-col gap-0.5 px-3 py-2 sm:py-3 lg:py-4 xl:py-5 bg-lightmain rounded-tl-sm group-hover:rounded-tl-none rounded-tr-4xl group-hover:rounded-tr-sm transition-all duration-300"
+            >
+              <!-- Headline -->
+              <div class="flex flex-col gap-0 sm:gap-0.5 lg:gap-1">
+                <p class="text-white font-medium sm:text-lg leading-5 lg:leading-7">Founding Members</p>
+                <span class="text-gray-300 text-xs sm:text-sm leading-4"
+                  >Lorem ipsum dolor sit amet consectetur, adipisicing
+                  elit.</span
+                >
+              </div>
+              <!-- Read More -->
+              <a href="#" class="text-sm text-gray-200 sm:text-base leading-4 mt-auto"
+                >Read More</a
+              >
+            </div>
+          </div>
+          
         </div>
+
       </div>
+
+
 
     </main>
 
@@ -446,34 +422,34 @@
       class="sm:hidden flex justify-around items-center m-3 bg-darkmain rounded-2xl px-1 py-2"
     >
       <a
-        href=""
+        href="../../index.html"
         class="flex flex-col gap-0.5 items-center p-1 hover:bg-light/10 rounded-md"
       >
-        <img src="./src/assets/house.svg" class="w-5" alt="" />
+        <img src="../assets/house.svg" class="w-5" alt="" />
         <p class="text-xs font-medium text-white">Home</p>
       </a>
 
       <a
-        href="./src/pages/committee.html"
+        href="../pages/committee.html"
         class="flex flex-col gap-0.5 items-center p-1 hover:bg-light/10 rounded-md"
       >
-        <img src="./src/assets/list.svg" class="w-5" alt="" />
+        <img src="../assets/list.svg" class="w-5" alt="" />
         <p class="text-xs font-medium text-white">Committee</p>
       </a>
 
       <a
-        href="./src/pages/events.html"
+        href="../pages/events.html"
         class="flex flex-col gap-0.5 items-center p-1 hover:bg-light/10 rounded-md"
       >
-        <img src="./src/assets/compass.svg" class="w-5" alt="" />
+        <img src="../assets/compass.svg" class="w-5" alt="" />
         <p class="text-xs font-medium text-white">Events</p>
       </a>
 
       <a
-        href="./src/pages/news.html"
+        href="../pages/news.html"
         class="flex flex-col gap-0.5 items-center p-1 hover:bg-light/10 rounded-md"
       >
-        <img src="./src/assets/inbox.svg" class="w-5" alt="" />
+        <img src="../assets/inbox.svg" class="w-5" alt="" />
         <p class="text-xs font-medium text-white">News</p>
       </a>
 
@@ -481,24 +457,11 @@
         href=""
         class="flex flex-col gap-0.5 items-center p-1 hover:bg-light/10 rounded-md"
       >
-        <img src="./src/assets/user.svg" class="w-5" alt="" />
+        <img src="../assets/user.svg" class="w-5" alt="" />
         <p class="text-xs font-medium text-white">Profile</p>
       </a>
     </footer>
 
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        // loop: true,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-    </script>
 
     <script>
       // Select elements
