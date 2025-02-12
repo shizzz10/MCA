@@ -16,6 +16,9 @@
 
 body{
   font-family: "Poppins", serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
       /* Active State (Cross Icon) */
       #menu-btn.active span:nth-child(1) {
@@ -51,3 +54,13 @@ body{
 }
 
 
+.button-slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.button-slider::-webkit-scrollbar {
+  display: none; 
+} 
