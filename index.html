@@ -19,25 +19,94 @@
       class="flex justify-between items-center gap-2 px-3 py-0.5 xl:max-w-[1280px] w-full"
     >
       <!-- logo  -->
-      <div class="flex">
+      <div class="flex items-center w-96 ">
         <img src="./src/assets/MCAlogo.png" class="w-16 sm:w-20" alt="" />
+        
+        <h2 class="text-base sm:text-lg lg:text-xl text-darkmain font-extrabold w-fit"> Mangalore Cultural <br> Association</h2>
       </div>
 
-      <!-- search bar -->
-      <div class="flex items-center justify-center relative w-[90%] hidden">
-        <input
-          type="text"
-          class="w-full border border-light rounded-4xl py-1.5 pl-8 bg-gradient-to-r from-light to-lightmain p-2 text-white"
-        />
-        <img
-          src="./src/assets/search.svg"
-          class="w-5 absolute top-1/2 transform -translate-y-1/2 left-2"
-          alt=""
-        />
-      </div>
 
+      
+      <!-- menu bar active -->
       <div
-        class="hidden sm:flex justify-around items-center m-3 bg-darkmain rounded-2xl px-1 py-1 w-full"
+      class="hidden md:flex  items-center m-3 bg-transparent rounded-2xl px-1 py-1 gap-5 lg:gap-8"
+    >
+      <a
+        href=""
+        class="flex flex-col gap-0.5 items-center"
+      >
+        <p class="text-xs font-semibold text-darkmain lg:text-lg uppercase underline-offset-6  underline c-underline decoration-3">Home</p>
+      </a>
+
+
+      <div href="#" class="group flex flex-col gap-2 items-center relative z-50 cursor-pointer menu-container">
+        <div class="flex gap-2 items-center  menu-btn">
+          <p class="text-xs font-medium text-lightmain group-hover:text-lightmain/90 lg:text-lg uppercase whitespace-nowrap">About MCA</p>
+          <img src="./src/assets/blue-arrow.svg" class="w-3 rotate-90 group-hover:rotate-270 transform transition-transform duration-300 menu-arrow" alt="">
+        </div>
+      
+        <!-- Dropdown Menu -->
+        <div class="menu-dropdown absolute top-full hidden group-hover:block bg-white shadow-lg rounded-md w-40 z-50">
+          <ul class="flex flex-col text-gray-700">
+            <li>
+              <a href="./src/pages/committee.html" class="block px-4 py-2 hover:bg-light text-xs font-medium text-lightmain group-hover:text-lightmain/90 lg:text-base">Committee</a>
+            </li>
+            <li>
+              <a href="./src/pages/membership.html" class="block px-4 py-2 hover:bg-light text-xs font-medium text-lightmain group-hover:text-lightmain/90 lg:text-base">Membership</a>
+            </li>
+            <li>
+              <a href="./src/pages/contact-us.html" class="block px-4 py-2 hover:bg-light text-xs font-medium text-lightmain group-hover:text-lightmain/90 lg:text-base">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <a
+        href="./src/pages/events.html"
+        class="flex flex-col gap-0.5 items-center"
+      >
+        <p class="text-xs font-medium text-lightmain lg:text-lg uppercase">Events</p>
+      </a>
+
+      <a
+        href="./src/pages/news.html"
+        class="flex flex-col gap-0.5 items-center"
+      >
+        <p class="text-xs font-medium text-lightmain hover:text-lightmain/90 lg:text-lg uppercase">News</p>
+      </a>
+      
+
+      <div href="#" class="group flex flex-col gap-2 items-center relative z-50 cursor-pointer menu-container">
+        <div class="menu-btn flex gap-2 items-center">
+          <p class="text-xs font-medium text-lightmain group-hover:text-lightmain/90 lg:text-lg uppercase">More</p>
+          <img src="./src/assets/blue-arrow.svg" class="w-3 rotate-90 group-hover:rotate-270 transform transition-transform duration-300 menu-arrow" alt="">
+        </div>
+      
+        <!-- Dropdown Menu -->
+        <div class="menu-dropdown absolute top-full hidden group-hover:block bg-white shadow-lg rounded-md w-40 z-50">
+          <ul class="flex flex-col text-gray-700">
+            <li>
+              <a href="./src/pages/about.html" class="block px-4 py-2 hover:bg-light text-xs font-medium text-lightmain group-hover:text-lightmain/90 lg:text-base">Community</a>
+            </li>
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-light text-xs font-medium text-lightmain group-hover:text-lightmain/90 lg:text-base">Gallery</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+
+      <a
+        href=""
+        class="flex flex-col gap-0.5 items-center"
+      >
+        <p class="text-xs font-medium text-lightmain hover:text-lightmain/90 lg:text-lg uppercase">Profile</p>
+      </a>
+    </div>
+
+      <!-- menu bar hidden(previous one) -->
+      <!-- <div
+        class="hidden sm:flex justify-around items-center m-3 bg-darkmain rounded-2xl px-1 py-1 sm:w-[75%] md:w-[90%] "
       >
         <a
           href=""
@@ -78,11 +147,11 @@
           <img src="./src/assets/user.svg" class="w-5" alt="" />
           <p class="text-xs font-medium text-white lg:text-sm">Profile</p>
         </a>
-      </div>
+      </div> -->
 
       <!-- Hamburger Button -->
       <div
-        class="flex bg-gradient-to-b from-light to-lightmain p-2 lg:p-3 rounded-full"
+        class="flex bg-gradient-to-b from-light to-lightmain p-2 lg:p-3 rounded-full md:hidden"
       >
         <button id="menu-btn" class="flex flex-col justify-between w-4 h-4">
           <span
@@ -97,7 +166,7 @@
         </button>
       </div>
 
-      <!-- Menu -->
+      <!-- hamburger Menu -->
       <div
         id="menu"
         class="fixed top-14 sm:top-20 -right-4 h-[80vh] w-[50vw] sm:w-[320px] lg:w-[400px] bg-darkmain bg-opacity-90 transform translate-x-full transition-transform duration-500 ease-in-out z-50 rounded-3xl flex justify-center overflow-hidden overflow-y-auto scroll-smooth"
@@ -222,16 +291,6 @@
     <main class="px-3 flex flex-col gap-6  mb-6 sm:mb-2 xl:max-w-[1280px] w-full">
       <!-- hero  -->
       <div class="div flex flex-col gap-4">
-        <!-- heading  -->
-        <div class="flex justify-center items-center ">
-          <h2 class="text-3xl sm:text-4xl  text-darkmain font-extrabold">
-            Mangalore <br />
-            Cultural <br />
-            Association
-          </h2>
-
-          <img src="./src/assets/MCAlogo.png" alt="" class="w-32" />
-        </div>
 
         <!-- carousal  -->
         <!-- Swiper -->
@@ -282,6 +341,16 @@
         </div>
       </div>
 
+      <div class="flex flex-col gap-2 items-center justify-center">
+
+        
+        <h2 class="text-xl font-semibold lg:text-2xl xl:text-3xl text-darkmain">Our Story</h2>
+        
+        <div class="flex items-center w-full text-center text-sm sm:text-base sm:font-medium lg:text-lg">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, magnam consequatur quisquam ipsam praesentium vero eum quis veritatis deserunt a debitis, reprehenderit veniam modi ex iure enim totam tempore dolor alias provident in! Error ipsa natus nihil asperiores totam? Laboriosam molestiae illo, accusantium necessitatibus.
+      </div>
+      </div>
+
       <!-- recently  -->
       <div class="flex flex-col gap-3">
         <!-- head  -->
@@ -290,6 +359,304 @@
             class="text-xl font-semibold lg:text-2xl xl:text-3xl text-darkmain"
           >
             Recently
+          </h4>
+
+          
+          <a href="./src/pages/events.html" class="text-darkmain hover:text-darkmain/90 pr-2 text-sm sm:text-base font-medium flex items-center">Show all <span class="pl-1 sm:pl-2"><img src="./src/assets/blue-arrow.svg" alt="" class="w-2 sm:w-2.5"></span></a>
+
+        </div>
+
+        <!-- cards  -->
+        <div class="flex gap-4 lg::gap-6 sm:flex-wrap sm:grid sm:grid-cols-3 lg:grid-cols-4 justify-content-between button-slider overflow-hidden">
+            
+          <!-- card  -->
+          <div
+          class="flex flex-col w-60 aspect-[7/5] sm:w-[31%] sm:aspect-[5/4] lg:w-[23.8%] lg:aspect-[5/4] border border-transparent hover:border-light rounded-2xl overflow-hidden hover:shadow-sm hover:shadow-black/20 group shrink-0"
+        >
+          <!-- Image Section -->
+          <img
+            src="./src/assets/IMG-20220703-WA0011.jpg"
+            class="h-[57%] w-full object-cover rounded-br-4xl group-hover:rounded-br-sm transition-all duration-300 rounded-bl-sm group-hover:rounded-bl-none"
+            alt=""
+          />
+
+          <!-- Content Section -->
+          <div
+            class="h-[43%] flex flex-col gap-0.5 px-3 py-1.5 md:py-2 lg:py-2 xl:py-2 bg-lightmain rounded-tl-sm group-hover:rounded-tl-none rounded-tr-4xl group-hover:rounded-tr-sm transition-all duration-300"
+          >
+            <!-- Headline -->
+            <div class="flex flex-col gap-0 sm:gap-0.5 lg:gap-1">
+              <p class="text-white font-medium sm:text-lg leading-4 lg:leading-5">Gladson Almedia</p>
+              <span class="text-gray-300 text-xs lg:text-sm leading-3 lg:leading-4"
+                >Lorem ipsum dolor sit amet consectetur, adipisicing
+                elit.</span
+              >
+            </div>
+            <!-- Read More -->
+            <a href="#" class="text-sm text-gray-200 md:text-base leading-3 mt-auto flex gap-1 group/arrow items-center"
+              >Read More <img src="./src/assets/arrow.svg" alt="" class="w-3 sm:w-4  transition-transform duration-500 ease-in-out transform  group-hover/arrow:ml-0.5 rotate-270"></a
+            >
+          </div>
+
+        </div>
+
+          <!-- card -->
+          <div
+            class="flex flex-col w-60 aspect-[7/5] sm:w-[31%] sm:aspect-[5/4] lg:w-[23.8%] lg:aspect-[5/4] border border-transparent hover:border-light rounded-2xl overflow-hidden hover:shadow-sm hover:shadow-black/20 group shrink-0"
+          >
+            <!-- Image Section -->
+            <img
+              src="./src/assets/DSC_0001.jpeg"
+              class="h-[57%] w-full object-cover rounded-br-4xl group-hover:rounded-br-sm transition-all duration-300 rounded-bl-sm group-hover:rounded-bl-none"
+              alt=""
+            />
+
+            <!-- Content Section -->
+            <div
+              class="h-[43%] flex flex-col gap-0.5 px-3 py-1.5 md:py-2 lg:py-2 xl:py-2 bg-lightmain rounded-tl-sm group-hover:rounded-tl-none rounded-tr-4xl group-hover:rounded-tr-sm transition-all duration-300"
+            >
+              <!-- Headline -->
+              <div class="flex flex-col gap-0 sm:gap-0.5 lg:gap-1">
+                <p class="text-white font-medium sm:text-lg leading-4 lg:leading-5">Gladson Almedia</p>
+                <span class="text-gray-300 text-xs lg:text-sm leading-3 lg:leading-4"
+                  >Lorem ipsum dolor sit amet consectetur, adipisicing
+                  elit.</span
+                >
+              </div>
+              <!-- Read More -->
+              <a href="#" class="text-sm text-gray-200 md:text-base leading-3 mt-auto flex gap-1 group/arrow items-center"
+                >Read More <img src="./src/assets/arrow.svg" alt="" class="w-3 sm:w-4  transition-transform duration-500 ease-in-out transform  group-hover/arrow:ml-0.5 rotate-270"></a
+              >
+            </div>
+
+          </div>
+
+          <!-- card  -->
+          <div
+          class="flex flex-col w-60 aspect-[7/5] sm:w-[31%] sm:aspect-[5/4] lg:w-[23.8%] lg:aspect-[5/4] border border-transparent hover:border-light rounded-2xl overflow-hidden hover:shadow-sm hover:shadow-black/20 group shrink-0"
+        >
+          <!-- Image Section -->
+          <img
+            src="./src/assets/IMG-20220703-WA0011.jpg"
+            class="h-[57%] w-full object-cover rounded-br-4xl group-hover:rounded-br-sm transition-all duration-300 rounded-bl-sm group-hover:rounded-bl-none"
+            alt=""
+          />
+
+          <!-- Content Section -->
+          <div
+            class="h-[43%] flex flex-col gap-0.5 px-3 py-1.5 md:py-2 lg:py-2 xl:py-2 bg-lightmain rounded-tl-sm group-hover:rounded-tl-none rounded-tr-4xl group-hover:rounded-tr-sm transition-all duration-300"
+          >
+            <!-- Headline -->
+            <div class="flex flex-col gap-0 sm:gap-0.5 lg:gap-1">
+              <p class="text-white font-medium sm:text-lg leading-4 lg:leading-5">Gladson Almedia</p>
+              <span class="text-gray-300 text-xs lg:text-sm leading-3 lg:leading-4"
+                >Lorem ipsum dolor sit amet consectetur, adipisicing
+                elit.</span
+              >
+            </div>
+            <!-- Read More -->
+            <a href="#" class="text-sm text-gray-200 md:text-base leading-3 mt-auto flex gap-1 group/arrow items-center"
+              >Read More <img src="./src/assets/arrow.svg" alt="" class="w-3 sm:w-4  transition-transform duration-500 ease-in-out transform  group-hover/arrow:ml-0.5 rotate-270"></a
+            >
+          </div>
+
+        </div>
+
+          <!-- card -->
+          <div
+          class="flex flex-col w-60 aspect-[7/5] sm:w-[31%] sm:aspect-[5/4] lg:w-[23.8%] lg:aspect-[5/4] border border-transparent hover:border-light rounded-2xl overflow-hidden hover:shadow-sm hover:shadow-black/20 group shrink-0"
+        >
+          <!-- Image Section -->
+          <img
+            src="./src/assets/gathering1.jpg"
+            class="h-[57%] w-full object-cover rounded-br-4xl group-hover:rounded-br-sm transition-all duration-300 rounded-bl-sm group-hover:rounded-bl-none"
+            alt=""
+          />
+
+          <!-- Content Section -->
+          <div
+            class="h-[43%] flex flex-col gap-0.5 px-3 py-1.5 md:py-2 lg:py-2 xl:py-2 bg-lightmain rounded-tl-sm group-hover:rounded-tl-none rounded-tr-4xl group-hover:rounded-tr-sm transition-all duration-300"
+          >
+            <!-- Headline -->
+            <div class="flex flex-col gap-0 sm:gap-0.5 lg:gap-1">
+              <p class="text-white font-medium sm:text-lg leading-4 lg:leading-5">Gladson Almedia</p>
+              <span class="text-gray-300 text-xs lg:text-sm leading-3 lg:leading-4"
+                >Lorem ipsum dolor sit amet consectetur, adipisicing
+                elit.</span
+              >
+            </div>
+            <!-- Read More -->
+            <a href="#" class="text-sm text-gray-200 md:text-base leading-3 mt-auto flex gap-1 group/arrow items-center"
+              >Read More <img src="./src/assets/arrow.svg" alt="" class="w-3 sm:w-4  transition-transform duration-500 ease-in-out transform  group-hover/arrow:ml-0.5 rotate-270"></a
+            >
+          </div>
+
+        </div>
+          
+
+          
+        </div>
+
+      </div>
+
+      
+      <!-- News  -->
+      <div class="flex flex-col gap-3">
+        <!-- head  -->
+        <div class="flex justify-between items-center">
+          <h4
+            class="text-xl font-semibold lg:text-2xl xl:text-3xl text-darkmain"
+          >
+          News
+          </h4>
+
+          
+          <a href="./src/pages/events.html" class="text-darkmain hover:text-darkmain/90 pr-2 text-sm sm:text-base font-medium flex items-center">Show all <span class="pl-1 sm:pl-2"><img src="./src/assets/blue-arrow.svg" alt="" class="w-2 sm:w-2.5"></span></a>
+
+        </div>
+
+        <!-- cards  -->
+        <div class="flex gap-4 lg::gap-6 sm:flex-wrap sm:grid sm:grid-cols-3 lg:grid-cols-4 justify-content-between button-slider overflow-hidden">
+            
+          <!-- card  -->
+          <div
+          class="flex flex-col w-60 aspect-[7/5] sm:w-[31%] sm:aspect-[5/4] lg:w-[23.8%] lg:aspect-[5/4] border border-transparent hover:border-light rounded-2xl overflow-hidden hover:shadow-sm hover:shadow-black/20 group shrink-0"
+        >
+          <!-- Image Section -->
+          <img
+            src="./src/assets/IMG-20220703-WA0011.jpg"
+            class="h-[57%] w-full object-cover rounded-br-4xl group-hover:rounded-br-sm transition-all duration-300 rounded-bl-sm group-hover:rounded-bl-none"
+            alt=""
+          />
+
+          <!-- Content Section -->
+          <div
+            class="h-[43%] flex flex-col gap-0.5 px-3 py-1.5 md:py-2 lg:py-2 xl:py-2 bg-lightmain rounded-tl-sm group-hover:rounded-tl-none rounded-tr-4xl group-hover:rounded-tr-sm transition-all duration-300"
+          >
+            <!-- Headline -->
+            <div class="flex flex-col gap-0 sm:gap-0.5 lg:gap-1">
+              <p class="text-white font-medium sm:text-lg leading-4 lg:leading-5">Gladson Almedia</p>
+              <span class="text-gray-300 text-xs lg:text-sm leading-3 lg:leading-4"
+                >Lorem ipsum dolor sit amet consectetur, adipisicing
+                elit.</span
+              >
+            </div>
+            <!-- Read More -->
+            <a href="#" class="text-sm text-gray-200 md:text-base leading-3 mt-auto flex gap-1 group/arrow items-center"
+              >Read More <img src="./src/assets/arrow.svg" alt="" class="w-3 sm:w-4  transition-transform duration-500 ease-in-out transform  group-hover/arrow:ml-0.5 rotate-270"></a
+            >
+          </div>
+
+        </div>
+
+          <!-- card -->
+          <div
+            class="flex flex-col w-60 aspect-[7/5] sm:w-[31%] sm:aspect-[5/4] lg:w-[23.8%] lg:aspect-[5/4] border border-transparent hover:border-light rounded-2xl overflow-hidden hover:shadow-sm hover:shadow-black/20 group shrink-0"
+          >
+            <!-- Image Section -->
+            <img
+              src="./src/assets/DSC_0001.jpeg"
+              class="h-[57%] w-full object-cover rounded-br-4xl group-hover:rounded-br-sm transition-all duration-300 rounded-bl-sm group-hover:rounded-bl-none"
+              alt=""
+            />
+
+            <!-- Content Section -->
+            <div
+              class="h-[43%] flex flex-col gap-0.5 px-3 py-1.5 md:py-2 lg:py-2 xl:py-2 bg-lightmain rounded-tl-sm group-hover:rounded-tl-none rounded-tr-4xl group-hover:rounded-tr-sm transition-all duration-300"
+            >
+              <!-- Headline -->
+              <div class="flex flex-col gap-0 sm:gap-0.5 lg:gap-1">
+                <p class="text-white font-medium sm:text-lg leading-4 lg:leading-5">Gladson Almedia</p>
+                <span class="text-gray-300 text-xs lg:text-sm leading-3 lg:leading-4"
+                  >Lorem ipsum dolor sit amet consectetur, adipisicing
+                  elit.</span
+                >
+              </div>
+              <!-- Read More -->
+              <a href="#" class="text-sm text-gray-200 md:text-base leading-3 mt-auto flex gap-1 group/arrow items-center"
+                >Read More <img src="./src/assets/arrow.svg" alt="" class="w-3 sm:w-4  transition-transform duration-500 ease-in-out transform  group-hover/arrow:ml-0.5 rotate-270"></a
+              >
+            </div>
+
+          </div>
+
+          <!-- card  -->
+          <div
+          class="flex flex-col w-60 aspect-[7/5] sm:w-[31%] sm:aspect-[5/4] lg:w-[23.8%] lg:aspect-[5/4] border border-transparent hover:border-light rounded-2xl overflow-hidden hover:shadow-sm hover:shadow-black/20 group shrink-0"
+        >
+          <!-- Image Section -->
+          <img
+            src="./src/assets/IMG-20220703-WA0011.jpg"
+            class="h-[57%] w-full object-cover rounded-br-4xl group-hover:rounded-br-sm transition-all duration-300 rounded-bl-sm group-hover:rounded-bl-none"
+            alt=""
+          />
+
+          <!-- Content Section -->
+          <div
+            class="h-[43%] flex flex-col gap-0.5 px-3 py-1.5 md:py-2 lg:py-2 xl:py-2 bg-lightmain rounded-tl-sm group-hover:rounded-tl-none rounded-tr-4xl group-hover:rounded-tr-sm transition-all duration-300"
+          >
+            <!-- Headline -->
+            <div class="flex flex-col gap-0 sm:gap-0.5 lg:gap-1">
+              <p class="text-white font-medium sm:text-lg leading-4 lg:leading-5">Gladson Almedia</p>
+              <span class="text-gray-300 text-xs lg:text-sm leading-3 lg:leading-4"
+                >Lorem ipsum dolor sit amet consectetur, adipisicing
+                elit.</span
+              >
+            </div>
+            <!-- Read More -->
+            <a href="#" class="text-sm text-gray-200 md:text-base leading-3 mt-auto flex gap-1 group/arrow items-center"
+              >Read More <img src="./src/assets/arrow.svg" alt="" class="w-3 sm:w-4  transition-transform duration-500 ease-in-out transform  group-hover/arrow:ml-0.5 rotate-270"></a
+            >
+          </div>
+
+        </div>
+
+          <!-- card -->
+          <div
+          class="flex flex-col w-60 aspect-[7/5] sm:w-[31%] sm:aspect-[5/4] lg:w-[23.8%] lg:aspect-[5/4] border border-transparent hover:border-light rounded-2xl overflow-hidden hover:shadow-sm hover:shadow-black/20 group shrink-0"
+        >
+          <!-- Image Section -->
+          <img
+            src="./src/assets/gathering1.jpg"
+            class="h-[57%] w-full object-cover rounded-br-4xl group-hover:rounded-br-sm transition-all duration-300 rounded-bl-sm group-hover:rounded-bl-none"
+            alt=""
+          />
+
+          <!-- Content Section -->
+          <div
+            class="h-[43%] flex flex-col gap-0.5 px-3 py-1.5 md:py-2 lg:py-2 xl:py-2 bg-lightmain rounded-tl-sm group-hover:rounded-tl-none rounded-tr-4xl group-hover:rounded-tr-sm transition-all duration-300"
+          >
+            <!-- Headline -->
+            <div class="flex flex-col gap-0 sm:gap-0.5 lg:gap-1">
+              <p class="text-white font-medium sm:text-lg leading-4 lg:leading-5">Gladson Almedia</p>
+              <span class="text-gray-300 text-xs lg:text-sm leading-3 lg:leading-4"
+                >Lorem ipsum dolor sit amet consectetur, adipisicing
+                elit.</span
+              >
+            </div>
+            <!-- Read More -->
+            <a href="#" class="text-sm text-gray-200 md:text-base leading-3 mt-auto flex gap-1 group/arrow items-center"
+              >Read More <img src="./src/assets/arrow.svg" alt="" class="w-3 sm:w-4  transition-transform duration-500 ease-in-out transform  group-hover/arrow:ml-0.5 rotate-270"></a
+            >
+          </div>
+
+        </div>
+          
+
+          
+        </div>
+
+      </div>
+
+      
+      <!-- Events  -->
+      <div class="flex flex-col gap-3">
+        <!-- head  -->
+        <div class="flex justify-between items-center">
+          <h4
+            class="text-xl font-semibold lg:text-2xl xl:text-3xl text-darkmain"
+          >
+          Events
           </h4>
 
           
@@ -617,6 +984,14 @@
       </a>
     </footer>
 
+    <!-- desktop footer  -->
+    <footer
+      class="hidden sm:flex justify-around items-center bg-darkmain rounded-t-2xl px-1 py-4 mt-auto w-full  xl:max-w-[1280px] "
+    >
+      
+    <div id="copyright" class="text-gray-300 text-base font-normal">© 2025 All Rights Reserved.  <span class="">Developed by </span> <a target="_blank" href="https://bizzds.com/" class="text-white hover:text-gray-100">BizzDs</a> </div>
+    </footer>
+
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
@@ -632,6 +1007,38 @@
     </script>
 
     <script>
+const dropdowns = document.querySelectorAll(".menu-container");
+
+dropdowns.forEach((dropdown) => {
+  const btn = dropdown.querySelector(".menu-btn"),
+        menu = dropdown.querySelector(".menu-dropdown"),
+        arrow = dropdown.querySelector(".menu-arrow");
+
+  // **Hover for Desktop (≥1024px)**
+  if (window.innerWidth >= 1024) {
+    dropdown.onmouseenter = () => (menu.classList.remove("hidden"), arrow.classList.add("rotate-270"));
+    dropdown.onmouseleave = () => (menu.classList.add("hidden"), arrow.classList.remove("rotate-270"));
+  }
+
+  // **Click for Mobile/Tablet (<1024px)**
+  btn.onclick = (event) => {
+    if (window.innerWidth < 1024) {
+      event.stopPropagation();
+      dropdowns.forEach((d) => d !== dropdown && d.querySelector(".menu-dropdown").classList.add("hidden") && d.querySelector(".menu-arrow").classList.remove("rotate-270"));
+      menu.classList.toggle("hidden");
+      arrow.classList.toggle("rotate-270");
+    }
+  };
+});
+
+// **Close dropdowns when clicking outside**
+document.onclick = (event) => {
+  dropdowns.forEach((d) => !d.contains(event.target) && d.querySelector(".menu-dropdown").classList.add("hidden") && d.querySelector(".menu-arrow").classList.remove("rotate-270"));
+};
+
+
+
+
       // Select elements
       const menuBtn = document.getElementById("menu-btn");
       const menu = document.getElementById("menu");
