@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="../../assets/MCAlogo.png" />
+
+    <link href="../../styles/output.css" rel="stylesheet" />
+    <title>MCA Login</title>
+  </head>
+  <body class="flex flex-col items-center justify-center bg-darkmain">
+    <main class="main flex flex-col gap-3 w-[96%] sm:w-[85%] lg:w-[700px]">
+      <a
+        href="../../../index.html"
+        class="h-12 b-bg-color text-white flex justify-center items-center px-2 py-2"
+      >
+        <img src="../../assets/MCAlogo.png" alt="qjs logo" class="w-32" />
+      </a>
+
+      <form class="flex flex-col gap-3 px-3 py-4 rounded-xl w-full">
+        <!-- input text fields  -->
+
+        <div class="flex flex-col gap-7 w-full">
+          <!-- Sign In -->
+
+          <h3
+            class="text-lg sm:text-xl lg:text-2xl text-white font-semibold pl-1"
+          >
+            Sign In
+          </h3>
+          <div class="flex flex-col gap-4 sm:gap-5">
+            <!-- User Name  -->
+            <div class="flex flex-col gap-0.5 w-full">
+              <input
+                required=""
+                name=""
+                id="username"
+                type="email"
+                class="border w-full rounded-full text-sm px-2 sm:px-3 lg:px-4 py-3 sm:py-3.5 lg:py-4 bg-white focus:border-white shadow-sm sm:text-base lg:text-lg shadow-black/50 font-medium"
+                placeholder="Username"
+              />
+              <span class="c-text-xs text-red-600 sm:text-xs pl-3 hidden"
+                >Error here</span
+              >
+            </div>
+
+            <!-- Password  -->
+            <div class="flex flex-col gap-0.5">
+              <input
+                required=""
+                name=""
+                id="pass"
+                type="password"
+                class="border w-full rounded-full text-sm px-2 sm:px-3 lg:px-4 py-3 sm:py-3.5 lg:py-4 bg-white focus:border-white shadow-sm sm:text-base lg:text-lg shadow-black/50 font-medium"
+                placeholder="Password"
+              />
+              <span class="c-text-xs text-red-600 sm:text-xs pl-3 hidden"
+                >Error here</span
+              >
+            </div>
+          </div>
+
+          <!-- Sign In  -->
+          <div class="flex flex-col gap-2">
+            <span
+              class="text-xs text-slate-200 sm:text-sm pl-3 flex justify-center"
+              >In case of Forget Password,
+              <a href="" class="text-white">Click here</a></span
+            >
+            <!-- <button
+              type="submit"
+              class="px-4 py-2 lg:py-3 m-btn-white text-base sm:text-lg lg:text-xl lg:font-bold rounded-full shadow-sm bg-white hover:bg-transparent border text-darkmain border-light hover:text-white shadow-black/15 font-semibold"
+            >
+              Sign In
+            </button>
+            > -->
+            <a href="./admin-home.html"
+              class="px-4 text-center py-2 lg:py-3 m-btn-white text-base sm:text-lg lg:text-xl lg:font-bold rounded-full shadow-sm bg-white hover:bg-transparent border text-darkmain border-light hover:text-white shadow-black/15 font-semibold"
+            >
+              Sign In
+            </a>
+
+            <!-- page error  -->
+            <div class="flex bg-white px-2 py-4 mt-4 rounded-xl hidden">
+              <div class="flex flex-col gap-1 justify-center w-full">
+                <span
+                  class="text-sm text-red-600 sm:text-xs pl-3 flex justify-center items-center font-medium"
+                  >ERROR</span
+                >
+                <span
+                  class="c-text-xs text-red-600 sm:text-xs pl-3 flex justify-center items-center"
+                  >Lorem ipsum dolor sit amet.</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </main>
+
+    <script>
+      // Select elements
+      const menuBtn = document.getElementById("menu-btn");
+      const menu = document.getElementById("menu");
+
+      // Toggle menu visibility
+      menuBtn.addEventListener("click", () => {
+        menu.classList.toggle("translate-x-full"); // Slide menu in/out
+        menuBtn.classList.toggle("active"); // Toggle active state for hamburger button
+        menu.classList.toggle("right-2");
+      });
+
+      // Close the menu when clicking outside of it
+      document.addEventListener("click", (e) => {
+        if (!menu.contains(e.target) && !menuBtn.contains(e.target)) {
+          // If the click is outside the menu and hamburger button
+          menu.classList.add("translate-x-full"); // Hide the menu
+          menuBtn.classList.remove("active"); // Reset the hamburger button state
+          menu.classList.remove("right-2");
+        }
+      });
+
+      // Prevent clicks inside the menu from closing it
+      menu.addEventListener("click", (e) => {
+        e.stopPropagation(); // Stop the click event from propagating to the document
+      });
+
+      // Select all accordion header containers
+      const accordionHeaders = document.querySelectorAll(
+        ".accordion-item > div"
+      );
+
+      accordionHeaders.forEach((headerContainer) => {
+        headerContainer.addEventListener("click", () => {
+          // Find the accordion content (immediately after the header container)
+          const content = headerContainer.nextElementSibling;
+
+          // Find the arrow icon within the same header container
+          const arrow = headerContainer.querySelector(".arrow");
+
+          if (content.classList.contains("hidden")) {
+            // Expand the accordion content
+            content.classList.remove("hidden");
+            requestAnimationFrame(() => {
+              content.classList.add("opacity-100", "scale-y-100");
+              content.classList.remove("opacity-0", "scale-y-0");
+            });
+          } else {
+            // Collapse the accordion content
+            content.classList.add("opacity-0", "scale-y-0");
+            content.classList.remove("opacity-100", "scale-y-100");
+
+            // Wait for the animation to complete before hiding the content
+            content.addEventListener(
+              "transitionend",
+              () => {
+                content.classList.add("hidden");
+              },
+              { once: true }
+            );
+          }
+
+          // Rotate the arrow icon
+          arrow.classList.toggle("rotate-180");
+        });
+      });
+    </script>
+  </body>
+</html>

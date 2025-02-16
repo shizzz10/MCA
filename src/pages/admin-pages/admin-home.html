@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="../../assets/MCAlogo.png" />
+
+    <link href="../../styles/output.css" rel="stylesheet" />
+
+    <title>News</title>
+  </head>
+  <body class="xl:flex xl:flex-col xl:items-center">
+    <header
+      class="flex justify-between items-center gap-2 px-3 py-0.5 xl:max-w-[1280px] w-full"
+    >
+      <!-- logo  -->
+      <a href="../../../index.html" class="flex items-center">
+        <img src="../../assets/MCAlogo.png" class="w-16 sm:w-20" alt="" />
+
+        <h2
+          class="text-base sm:text-lg lg:text-xl text-darkmain font-extrabold w-fit"
+        >
+          Mangalore Cultural <br />
+          Association
+        </h2>
+      </a>
+
+      <button
+        class="text-sm sm:text-base lg:text-lg text-white font-extrabold py-2 px-4 lg:px-6 rounded-lg sm:rounded-xl bg-darkmain hover:bg-darkmain/90"
+      >
+        Log Out
+      </button>
+    </header>
+
+    <main
+      class="px-3 flex flex-col gap-8 mb-6 sm:mb-2 xl:max-w-[1280px] w-full"
+    >
+      <!-- heading  -->
+      <div class="flex justify-center items-center">
+        <h2
+          class="text-2xl sm:text-3xl lg:text-4xl text-darkmain font-extrabold"
+        >
+          Admin Dashboard<br />
+        </h2>
+      </div>
+
+      <!-- sidebar and content -->
+      <div class="flex gap-4">
+        <!-- sidebar -->
+        <div
+          class="flex flex-col gap-2 w-40 border-r border-gray-300 bg-gray-100"
+        >
+          <a href="" class="bg-light p-2"> Dashboard </a>
+
+          <a href="" class="p-2"> committee members </a>
+
+          <a href="" class="p-2"> categories </a>
+
+          <a href="" class="p-2"> new user </a>
+
+          <a href="" class="p-2"> users list </a>
+
+          <a href="" class="p-2"> Edit Pages </a>
+
+          <a href="" class="p-2"> contact developers </a>
+        </div>
+
+        <!-- Content  -->
+        <div class="flex flex-col gap-3">
+          <!-- tab-button -->
+          <div
+            class="flex items-center gap-3 sm:gap-5 lg:gap-6 button-slider overflow-hidden sm:flex-wrap"
+          >
+            <button
+              class="tab-btn bg-darkmain/60 hover:bg-darkmain/70 rounded-2xl w-44 sm:w-52 lg:w-60 aspect-[6/4] flex flex-col items-center justify-center gap-3 text-white"
+              data-tab="blog"
+            >
+              <img src="../../assets/file (2).svg" class="w-12" alt="" />
+              <h5 class="font-semibold text-xl">Add Blog</h5>
+            </button>
+
+            <button
+              class="tab-btn bg-darkmain/60 hover:bg-darkmain/70 rounded-2xl w-44 sm:w-52 lg:w-60 aspect-[6/4] flex flex-col items-center justify-center gap-3 text-white"
+              data-tab="event"
+            >
+              <img src="../../assets/calendar.svg" class="w-12" alt="" />
+              <h5 class="font-semibold text-xl">Add Event</h5>
+            </button>
+
+            <button
+              class="tab-btn bg-darkmain/60 hover:bg-darkmain/70 rounded-2xl w-44 sm:w-52 lg:w-60 aspect-[6/4] flex flex-col items-center justify-center gap-3 text-white"
+              data-tab="news"
+            >
+              <img src="../../assets/bullhorn.svg" class="w-12" alt="" />
+              <h5 class="font-semibold text-xl">Add News</h5>
+            </button>
+
+            <button
+              class="tab-btn bg-darkmain/60 hover:bg-darkmain/70 rounded-2xl w-44 sm:w-52 lg:w-60 aspect-[6/4] flex flex-col items-center justify-center gap-3 text-white"
+              data-tab="artists"
+            >
+              <img src="../../assets/dove.svg" class="w-12" alt="" />
+              <h5 class="font-semibold text-xl">Add Artists</h5>
+            </button>
+          </div>
+
+          <!-- tab-content for blog  -->
+          <table
+            id="content-blog"
+            class="tab-content hidden bg-white shadow-sm shadow-black/20 rounded-lg overflow-hidden"
+          >
+            <thead>
+              <tr
+                class="bg-gray-200 text-gray-600 uppercase text-sm leading-normal"
+              >
+                <th class="py-3 px-6 text-left">Name</th>
+                <th class="py-3 px-6 text-left">Description</th>
+                <th class="py-3 px-6 text-center">Status</th>
+                <th class="py-3 px-6 text-center">Role</th>
+                <th class="py-3 px-6 text-center">Action</th>
+              </tr>
+            </thead>
+            <tbody class="text-gray-600 text-sm font-light">
+              <tr class="border-b border-gray-200 hover:bg-gray-100">
+                <td class="py-3 px-6 text-left flex items-center">
+                  <span
+                    >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Blogs</span
+                  >
+                </td>
+                <td class="py-3 px-6 text-left">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+                  facere cumque eius ratione eaque earum, accusamus dolor
+                  quaerat! Voluptas, eaque.
+                </td>
+                <td class="py-3 px-6 text-center">
+                  <span
+                    class="bg-green-200 text-green-600 py-1 px-3 rounded-full text-xs"
+                    >Active</span
+                  >
+                </td>
+                <td class="py-3 px-6 text-center">Owner</td>
+                <td class="py-3 px-6 text-left">
+                  <a href="#" class="text-red-500 hover:underline">Delete</a>
+                  <a href="#" class="text-blue-500 hover:underline">Edit</a>
+                </td>
+              </tr>
+
+              <tr class="border-b border-gray-200 hover:bg-gray-100">
+                <td class="py-3 px-6 text-left flex items-center">
+                  <span
+                    >Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit.</span
+                  >
+                </td>
+                <td class="py-3 px-6 text-left">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+                  facere cumque eius ratione eaque earum, accusamus dolor
+                  quaerat! Voluptas, eaque.
+                </td>
+                <td class="py-3 px-6 text-center">
+                  <span
+                    class="bg-green-200 text-green-600 py-1 px-3 rounded-full text-xs"
+                    >Active</span
+                  >
+                </td>
+                <td class="py-3 px-6 text-center">Owner</td>
+                <td class="py-3 px-6 text-left">
+                  <a href="#" class="text-red-500 hover:underline">Delete</a>
+                  <a href="#" class="text-blue-500 hover:underline">Edit</a>
+                </td>
+              </tr>
+
+              <tr class="border-b border-gray-200 hover:bg-gray-100">
+                <td class="py-3 px-6 text-left flex items-center">
+                  <span
+                    >Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit.</span
+                  >
+                </td>
+                <td class="py-3 px-6 text-left">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+                  facere cumque eius ratione eaque earum, accusamus dolor
+                  quaerat! Voluptas, eaque.
+                </td>
+                <td class="py-3 px-6 text-center">
+                  <span
+                    class="bg-green-200 text-green-600 py-1 px-3 rounded-full text-xs"
+                    >Active</span
+                  >
+                </td>
+                <td class="py-3 px-6 text-center">Owner</td>
+                <td class="py-3 px-6 text-left">
+                  <a href="#" class="text-red-500 hover:underline">Delete</a>
+                  <a href="#" class="text-blue-500 hover:underline">Edit</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <!-- tab-content for event  -->
+          <table
+            id="content-event"
+            class="tab-content hidden bg-white shadow-sm shadow-black/20 rounded-lg overflow-hidden"
+          >
+            <thead>
+              <tr
+                class="bg-gray-200 text-gray-600 uppercase text-sm leading-normal"
+              >
+                <th class="py-3 px-6 text-left">Name</th>
+                <th class="py-3 px-6 text-left">Description</th>
+                <th class="py-3 px-6 text-center">Status</th>
+                <th class="py-3 px-6 text-center">Role</th>
+                <th class="py-3 px-6 text-center">Action</th>
+              </tr>
+            </thead>
+            <tbody class="text-gray-600 text-sm font-light">
+              <tr class="border-b border-gray-200 hover:bg-gray-100">
+                <td class="py-3 px-6 text-left flex items-center">
+                  <span
+                    >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    event</span
+                  >
+                </td>
+                <td class="py-3 px-6 text-left">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+                  facere cumque eius ratione eaque earum, accusamus dolor
+                  quaerat! Voluptas, eaque.
+                </td>
+                <td class="py-3 px-6 text-center">
+                  <span
+                    class="bg-green-200 text-green-600 py-1 px-3 rounded-full text-xs"
+                    >Active</span
+                  >
+                </td>
+                <td class="py-3 px-6 text-center">Owner</td>
+                <td class="py-3 px-6 text-left">
+                  <a href="#" class="text-red-500 hover:underline">Delete</a>
+                  <a href="#" class="text-blue-500 hover:underline">Edit</a>
+                </td>
+              </tr>
+
+              <tr class="border-b border-gray-200 hover:bg-gray-100">
+                <td class="py-3 px-6 text-left flex items-center">
+                  <span
+                    >Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit.</span
+                  >
+                </td>
+                <td class="py-3 px-6 text-left">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+                  facere cumque eius ratione eaque earum, accusamus dolor
+                  quaerat! Voluptas, eaque.
+                </td>
+                <td class="py-3 px-6 text-center">
+                  <span
+                    class="bg-green-200 text-green-600 py-1 px-3 rounded-full text-xs"
+                    >Active</span
+                  >
+                </td>
+                <td class="py-3 px-6 text-center">Owner</td>
+                <td class="py-3 px-6 text-left">
+                  <a href="#" class="text-red-500 hover:underline">Delete</a>
+                  <a href="#" class="text-blue-500 hover:underline">Edit</a>
+                </td>
+              </tr>
+
+              <tr class="border-b border-gray-200 hover:bg-gray-100">
+                <td class="py-3 px-6 text-left flex items-center">
+                  <span
+                    >Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit.</span
+                  >
+                </td>
+                <td class="py-3 px-6 text-left">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+                  facere cumque eius ratione eaque earum, accusamus dolor
+                  quaerat! Voluptas, eaque.
+                </td>
+                <td class="py-3 px-6 text-center">
+                  <span
+                    class="bg-green-200 text-green-600 py-1 px-3 rounded-full text-xs"
+                    >Active</span
+                  >
+                </td>
+                <td class="py-3 px-6 text-center">Owner</td>
+                <td class="py-3 px-6 text-left">
+                  <a href="#" class="text-red-500 hover:underline">Delete</a>
+                  <a href="#" class="text-blue-500 hover:underline">Edit</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <!-- tab-content for news  -->
+          <table
+            id="content-news"
+            class="tab-content hidden bg-white shadow-sm shadow-black/20 rounded-lg overflow-hidden"
+          >
+            <thead>
+              <tr
+                class="bg-gray-200 text-gray-600 uppercase text-sm leading-normal"
+              >
+                <th class="py-3 px-6 text-left">Name</th>
+                <th class="py-3 px-6 text-left">Description</th>
+                <th class="py-3 px-6 text-center">Status</th>
+                <th class="py-3 px-6 text-center">Role</th>
+                <th class="py-3 px-6 text-center">Action</th>
+              </tr>
+            </thead>
+            <tbody class="text-gray-600 text-sm font-light">
+              <tr class="border-b border-gray-200 hover:bg-gray-100">
+                <td class="py-3 px-6 text-left flex items-center">
+                  <span
+                    >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    News</span
+                  >
+                </td>
+                <td class="py-3 px-6 text-left">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+                  facere cumque eius ratione eaque earum, accusamus dolor
+                  quaerat! Voluptas, eaque.
+                </td>
+                <td class="py-3 px-6 text-center">
+                  <span
+                    class="bg-green-200 text-green-600 py-1 px-3 rounded-full text-xs"
+                    >Active</span
+                  >
+                </td>
+                <td class="py-3 px-6 text-center">Owner</td>
+                <td class="py-3 px-6 text-left">
+                  <a href="#" class="text-red-500 hover:underline">Delete</a>
+                  <a href="#" class="text-blue-500 hover:underline">Edit</a>
+                </td>
+              </tr>
+
+              <tr class="border-b border-gray-200 hover:bg-gray-100">
+                <td class="py-3 px-6 text-left flex items-center">
+                  <span
+                    >Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit.</span
+                  >
+                </td>
+                <td class="py-3 px-6 text-left">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+                  facere cumque eius ratione eaque earum, accusamus dolor
+                  quaerat! Voluptas, eaque.
+                </td>
+                <td class="py-3 px-6 text-center">
+                  <span
+                    class="bg-green-200 text-green-600 py-1 px-3 rounded-full text-xs"
+                    >Active</span
+                  >
+                </td>
+                <td class="py-3 px-6 text-center">Owner</td>
+                <td class="py-3 px-6 text-left">
+                  <a href="#" class="text-red-500 hover:underline">Delete</a>
+                  <a href="#" class="text-blue-500 hover:underline">Edit</a>
+                </td>
+              </tr>
+
+              <tr class="border-b border-gray-200 hover:bg-gray-100">
+                <td class="py-3 px-6 text-left flex items-center">
+                  <span
+                    >Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit.</span
+                  >
+                </td>
+                <td class="py-3 px-6 text-left">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+                  facere cumque eius ratione eaque earum, accusamus dolor
+                  quaerat! Voluptas, eaque.
+                </td>
+                <td class="py-3 px-6 text-center">
+                  <span
+                    class="bg-green-200 text-green-600 py-1 px-3 rounded-full text-xs"
+                    >Active</span
+                  >
+                </td>
+                <td class="py-3 px-6 text-center">Owner</td>
+                <td class="py-3 px-6 text-left">
+                  <a href="#" class="text-red-500 hover:underline">Delete</a>
+                  <a href="#" class="text-blue-500 hover:underline">Edit</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <!-- tab-content for artists  -->
+          <table
+            id="content-artists"
+            class="tab-content hidden bg-white shadow-sm shadow-black/20 rounded-lg overflow-hidden"
+          >
+            <thead>
+              <tr
+                class="bg-gray-200 text-gray-600 uppercase text-sm leading-normal"
+              >
+                <th class="py-3 px-6 text-left">Name</th>
+                <th class="py-3 px-6 text-left">Description</th>
+                <th class="py-3 px-6 text-center">Status</th>
+                <th class="py-3 px-6 text-center">Role</th>
+                <th class="py-3 px-6 text-center">Action</th>
+              </tr>
+            </thead>
+            <tbody class="text-gray-600 text-sm font-light">
+              <tr class="border-b border-gray-200 hover:bg-gray-100">
+                <td class="py-3 px-6 text-left flex items-center">
+                  <span
+                    >Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit.</span
+                  >
+                </td>
+                <td class="py-3 px-6 text-left">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+                  facere cumque eius ratione eaque earum, accusamus dolor
+                  quaerat! Voluptas, eaque. Artists
+                </td>
+                <td class="py-3 px-6 text-center">
+                  <span
+                    class="bg-green-200 text-green-600 py-1 px-3 rounded-full text-xs"
+                    >Active</span
+                  >
+                </td>
+                <td class="py-3 px-6 text-center">Owner</td>
+                <td class="py-3 px-6 text-left">
+                  <a href="#" class="text-red-500 hover:underline">Delete</a>
+                  <a href="#" class="text-blue-500 hover:underline">Edit</a>
+                </td>
+              </tr>
+
+              <tr class="border-b border-gray-200 hover:bg-gray-100">
+                <td class="py-3 px-6 text-left flex items-center">
+                  <span
+                    >Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit.</span
+                  >
+                </td>
+                <td class="py-3 px-6 text-left">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+                  facere cumque eius ratione eaque earum, accusamus dolor
+                  quaerat! Voluptas, eaque.
+                </td>
+                <td class="py-3 px-6 text-center">
+                  <span
+                    class="bg-green-200 text-green-600 py-1 px-3 rounded-full text-xs"
+                    >Active</span
+                  >
+                </td>
+                <td class="py-3 px-6 text-center">Owner</td>
+                <td class="py-3 px-6 text-left">
+                  <a href="#" class="text-red-500 hover:underline">Delete</a>
+                  <a href="#" class="text-blue-500 hover:underline">Edit</a>
+                </td>
+              </tr>
+
+              <tr class="border-b border-gray-200 hover:bg-gray-100">
+                <td class="py-3 px-6 text-left flex items-center">
+                  <span
+                    >Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit.</span
+                  >
+                </td>
+                <td class="py-3 px-6 text-left">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+                  facere cumque eius ratione eaque earum, accusamus dolor
+                  quaerat! Voluptas, eaque.
+                </td>
+                <td class="py-3 px-6 text-center">
+                  <span
+                    class="bg-green-200 text-green-600 py-1 px-3 rounded-full text-xs"
+                    >Active</span
+                  >
+                </td>
+                <td class="py-3 px-6 text-center">Owner</td>
+                <td class="py-3 px-6 text-left">
+                  <a href="#" class="text-red-500 hover:underline">Delete</a>
+                  <a href="#" class="text-blue-500 hover:underline">Edit</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="flex flex-col">
+            <!-- Cards  -->
+            <div class="flex"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      const buttons = document.querySelectorAll(".tab-btn");
+      const contents = document.querySelectorAll(".tab-content");
+
+      // Function to activate a tab
+      function activateTab(button) {
+        const target = button.getAttribute("data-tab");
+
+        // Remove active state from all buttons
+        buttons.forEach((btn) => {
+          btn.classList.remove("bg-darkmain/100", "hover:bg-darkmain/100");
+          btn.classList.add("bg-darkmain/60");
+        });
+
+        // Hide all content
+        contents.forEach((content) => content.classList.add("hidden"));
+
+        // Activate the clicked tab
+        button.classList.remove("bg-darkmain/60");
+        button.classList.add("bg-darkmain/100", "hover:bg-darkmain/100");
+
+        // Show corresponding content
+        document.getElementById("content-" + target).classList.remove("hidden");
+      }
+
+      // Add click event listeners
+      buttons.forEach((button) => {
+        button.addEventListener("click", function () {
+          activateTab(this);
+        });
+      });
+
+      // Activate the first tab on page load
+      if (buttons.length > 0) {
+        activateTab(buttons[0]);
+      }
+
+      // Select elements
+      const menuBtn = document.getElementById("menu-btn");
+      const menu = document.getElementById("menu");
+
+      // Toggle menu visibility
+      menuBtn.addEventListener("click", () => {
+        menu.classList.toggle("translate-x-full"); // Slide menu in/out
+        menuBtn.classList.toggle("active"); // Toggle active state for hamburger button
+        menu.classList.toggle("right-2");
+      });
+
+      // Close the menu when clicking outside of it
+      document.addEventListener("click", (e) => {
+        if (!menu.contains(e.target) && !menuBtn.contains(e.target)) {
+          // If the click is outside the menu and hamburger button
+          menu.classList.add("translate-x-full"); // Hide the menu
+          menuBtn.classList.remove("active"); // Reset the hamburger button state
+          menu.classList.remove("right-2");
+        }
+      });
+
+      // Prevent clicks inside the menu from closing it
+      menu.addEventListener("click", (e) => {
+        e.stopPropagation(); // Stop the click event from propagating to the document
+      });
+
+      // Select all accordion header containers
+      const accordionHeaders = document.querySelectorAll(
+        ".accordion-item > div"
+      );
+
+      accordionHeaders.forEach((headerContainer) => {
+        headerContainer.addEventListener("click", () => {
+          // Find the accordion content (immediately after the header container)
+          const content = headerContainer.nextElementSibling;
+
+          // Find the arrow icon within the same header container
+          const arrow = headerContainer.querySelector(".arrow");
+
+          if (content.classList.contains("hidden")) {
+            // Expand the accordion content
+            content.classList.remove("hidden");
+            requestAnimationFrame(() => {
+              content.classList.add("opacity-100", "scale-y-100");
+              content.classList.remove("opacity-0", "scale-y-0");
+            });
+          } else {
+            // Collapse the accordion content
+            content.classList.add("opacity-0", "scale-y-0");
+            content.classList.remove("opacity-100", "scale-y-100");
+
+            // Wait for the animation to complete before hiding the content
+            content.addEventListener(
+              "transitionend",
+              () => {
+                content.classList.add("hidden");
+              },
+              { once: true }
+            );
+          }
+
+          // Rotate the arrow icon
+          arrow.classList.toggle("rotate-180");
+        });
+      });
+    </script>
+  </body>
+</html>
