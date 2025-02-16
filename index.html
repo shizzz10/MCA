@@ -3,11 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Link Swiper's CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
     <link rel="icon" type="image/png" href="./src/assets/MCAlogo.png" />
 
     <link href="./src/styles/output.css" rel="stylesheet" />
@@ -19,94 +14,157 @@
       class="flex justify-between items-center gap-2 px-3 py-0.5 xl:max-w-[1280px] w-full"
     >
       <!-- logo  -->
-      <div class="flex items-center w-96 ">
+      <div class="flex items-center w-96 lg:w-auto">
         <img src="./src/assets/MCAlogo.png" class="w-16 sm:w-20" alt="" />
-        
-        <h2 class="text-base sm:text-lg lg:text-xl text-darkmain font-extrabold w-fit"> Mangalore Cultural <br> Association</h2>
+        <div class="flex flex-col">
+          <h2
+            class="text-base sm:text-lg lg:text-xl text-darkmain font-extrabold w-fit leading-4 sm:leading-6"
+          >
+          
+          <span class="hidden lg:flex">
+            Mangalore Cultural Association
+          </span>
+          <span class="flex lg:hidden">
+            Mangalore Cultural <br />
+            Association
+          </span>
+          </h2>
+          <span class="text-xs text-gray-700">Doha-Qatar Since 2008</span>
+        </div>
       </div>
 
-
-      
       <!-- menu bar active -->
       <div
-      class="hidden md:flex  items-center m-3 bg-transparent rounded-2xl px-1 py-1 gap-5 lg:gap-8"
-    >
-      <a
-        href=""
-        class="flex flex-col gap-0.5 items-center"
+        class="hidden md:flex items-center m-3 bg-transparent rounded-2xl px-1 py-1 gap-5 lg:gap-8"
       >
-        <p class="text-xs font-semibold text-darkmain lg:text-lg uppercase underline-offset-6  underline c-underline decoration-3">Home</p>
-      </a>
+        <a href="" class="flex flex-col gap-0.5 items-center">
+          <p
+            class="text-xs font-semibold text-darkmain lg:text-lg uppercase underline-offset-6 underline c-underline decoration-3"
+          >
+            Home
+          </p>
+        </a>
 
+        <div
+          class="group flex flex-col gap-2 items-center relative z-50 cursor-pointer menu-container"
+        >
+          <div class="flex gap-2 items-center menu-btn">
+            <p
+              class="text-xs font-medium text-lightmain group-hover:text-lightmain/90 lg:text-lg uppercase whitespace-nowrap"
+            >
+              About MCA
+            </p>
+            <img
+              src="./src/assets/blue-arrow.svg"
+              class="w-3 rotate-90 group-hover:rotate-270 transform transition-transform duration-300 menu-arrow"
+              alt=""
+            />
+          </div>
 
-      <div href="#" class="group flex flex-col gap-2 items-center relative z-50 cursor-pointer menu-container">
-        <div class="flex gap-2 items-center  menu-btn">
-          <p class="text-xs font-medium text-lightmain group-hover:text-lightmain/90 lg:text-lg uppercase whitespace-nowrap">About MCA</p>
-          <img src="./src/assets/blue-arrow.svg" class="w-3 rotate-90 group-hover:rotate-270 transform transition-transform duration-300 menu-arrow" alt="">
+          <!-- Dropdown Menu -->
+          <div
+            class="menu-dropdown absolute top-full hidden group-hover:block bg-white shadow-lg rounded-md w-40 z-50"
+          >
+            <ul class="flex flex-col text-gray-700">
+              <li>
+                <a
+                  href="./src/pages/committee.html"
+                  class="block px-4 py-2 hover:bg-light text-xs font-medium text-lightmain group-hover:text-lightmain/90 lg:text-base"
+                  >Committee</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./src/pages/membership.html"
+                  class="block px-4 py-2 hover:bg-light text-xs font-medium text-lightmain group-hover:text-lightmain/90 lg:text-base"
+                  >Membership</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./src/pages/contact-us.html"
+                  class="block px-4 py-2 hover:bg-light text-xs font-medium text-lightmain group-hover:text-lightmain/90 lg:text-base"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-      
-        <!-- Dropdown Menu -->
-        <div class="menu-dropdown absolute top-full hidden group-hover:block bg-white shadow-lg rounded-md w-40 z-50">
-          <ul class="flex flex-col text-gray-700">
-            <li>
-              <a href="./src/pages/committee.html" class="block px-4 py-2 hover:bg-light text-xs font-medium text-lightmain group-hover:text-lightmain/90 lg:text-base">Committee</a>
-            </li>
-            <li>
-              <a href="./src/pages/membership.html" class="block px-4 py-2 hover:bg-light text-xs font-medium text-lightmain group-hover:text-lightmain/90 lg:text-base">Membership</a>
-            </li>
-            <li>
-              <a href="./src/pages/contact-us.html" class="block px-4 py-2 hover:bg-light text-xs font-medium text-lightmain group-hover:text-lightmain/90 lg:text-base">Contact Us</a>
-            </li>
-          </ul>
+
+        <a
+          href="./src/pages/events.html"
+          class="flex flex-col gap-0.5 items-center"
+        >
+          <p class="text-xs font-medium text-lightmain lg:text-lg uppercase">
+            Events
+          </p>
+        </a>
+
+        <a
+          href="./src/pages/news.html"
+          class="flex flex-col gap-0.5 items-center"
+        >
+          <p
+            class="text-xs font-medium text-lightmain hover:text-lightmain/90 lg:text-lg uppercase"
+          >
+            News
+          </p>
+        </a>
+
+        <div
+          class="group flex flex-col gap-2 items-center relative z-50 cursor-pointer menu-container"
+        >
+          <div class="menu-btn flex gap-2 items-center">
+            <p
+              class="text-xs font-medium text-lightmain group-hover:text-lightmain/90 lg:text-lg uppercase"
+            >
+              More
+            </p>
+            <img
+              src="./src/assets/blue-arrow.svg"
+              class="w-3 rotate-90 group-hover:rotate-270 transform transition-transform duration-300 menu-arrow"
+              alt=""
+            />
+          </div>
+
+          <!-- Dropdown Menu -->
+          <div
+            class="menu-dropdown absolute top-full hidden group-hover:block bg-white shadow-lg rounded-md w-40 z-50"
+          >
+            <ul class="flex flex-col text-gray-700">
+              <li>
+                <a
+                  href="./src/pages/about.html"
+                  class="block px-4 py-2 hover:bg-light text-xs font-medium text-lightmain group-hover:text-lightmain/90 lg:text-base"
+                  >Community</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block px-4 py-2 hover:bg-light text-xs font-medium text-lightmain group-hover:text-lightmain/90 lg:text-base"
+                  >Gallery</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./src/pages/admin-pages/admin-login.html"
+                  class="block px-4 py-2 hover:bg-light text-xs font-medium text-lightmain group-hover:text-lightmain/90 lg:text-base"
+                  >Login</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
+
+        <a href="" class="flex flex-col gap-0.5 items-center">
+          <p
+            class="text-xs font-medium text-lightmain hover:text-lightmain/90 lg:text-lg uppercase"
+          >
+            Profile
+          </p>
+        </a>
       </div>
-
-      <a
-        href="./src/pages/events.html"
-        class="flex flex-col gap-0.5 items-center"
-      >
-        <p class="text-xs font-medium text-lightmain lg:text-lg uppercase">Events</p>
-      </a>
-
-      <a
-        href="./src/pages/news.html"
-        class="flex flex-col gap-0.5 items-center"
-      >
-        <p class="text-xs font-medium text-lightmain hover:text-lightmain/90 lg:text-lg uppercase">News</p>
-      </a>
-      
-
-      <div href="#" class="group flex flex-col gap-2 items-center relative z-50 cursor-pointer menu-container">
-        <div class="menu-btn flex gap-2 items-center">
-          <p class="text-xs font-medium text-lightmain group-hover:text-lightmain/90 lg:text-lg uppercase">More</p>
-          <img src="./src/assets/blue-arrow.svg" class="w-3 rotate-90 group-hover:rotate-270 transform transition-transform duration-300 menu-arrow" alt="">
-        </div>
-      
-        <!-- Dropdown Menu -->
-        <div class="menu-dropdown absolute top-full hidden group-hover:block bg-white shadow-lg rounded-md w-40 z-50">
-          <ul class="flex flex-col text-gray-700">
-            <li>
-              <a href="./src/pages/about.html" class="block px-4 py-2 hover:bg-light text-xs font-medium text-lightmain group-hover:text-lightmain/90 lg:text-base">Community</a>
-            </li>
-            <li>
-              <a href="#" class="block px-4 py-2 hover:bg-light text-xs font-medium text-lightmain group-hover:text-lightmain/90 lg:text-base">Gallery</a>
-            </li>
-            </li>
-            <li>
-              <a href="./src/pages/admin-pages/admin-login.html" class="block px-4 py-2 hover:bg-light text-xs font-medium text-lightmain group-hover:text-lightmain/90 lg:text-base">Login</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      
-
-      <a
-        href=""
-        class="flex flex-col gap-0.5 items-center"
-      >
-        <p class="text-xs font-medium text-lightmain hover:text-lightmain/90 lg:text-lg uppercase">Profile</p>
-      </a>
-    </div>
 
       <!-- menu bar hidden(previous one) -->
       <!-- <div
@@ -198,13 +256,6 @@
               >Events</a
             >
           </li>
-          <li>
-            <a
-              href="./src/pages/artists.html"
-              class="px-3 py-1 bg-light/40 hover:bg-light/60 rounded-lg"
-              >Kalapuraskar</a
-            >
-          </li>
 
           <!-- about  -->
           <li class="accordion-item flex w-full flex-col">
@@ -243,13 +294,21 @@
             </div>
           </li>
 
-          <!-- more  -->
+          <li>
+            <a
+              href="./src/pages/artists.html"
+              class="px-3 py-1 bg-light/40 hover:bg-light/60 rounded-lg"
+              >Kalapuraskar</a
+            >
+          </li>
+
+          <!-- Community  -->
           <li class="accordion-item flex w-full flex-col">
             <!-- Accordion Header -->
             <div
               class="flex items-center justify-between px-3 py-1.5 cursor-pointer"
             >
-              <span class="accordion-header">More</span>
+              <span class="accordion-header">Community</span>
               <img
                 src="./src/assets/arrow.svg"
                 class="ml-3 w-4 arrow transition-transform duration-300"
@@ -269,6 +328,23 @@
                     >Community</a
                   >
                 </li>
+
+                <li>
+                  <a
+                    href="#"
+                    class="px-2 py-1 bg-light/30 hover:bg-light/50 rounded-lg"
+                    >Sports</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    class="px-2 py-1 bg-light/30 hover:bg-light/50 rounded-lg"
+                    >Wishes</a
+                  >
+                </li>
+
                 <li>
                   <a
                     href="#"
@@ -276,12 +352,19 @@
                     >Gallery</a
                   >
                 </li>
+
+                <li>
+                  <a
+                    href="#"
+                    class="px-2 py-1 bg-light/30 hover:bg-light/50 rounded-lg"
+                    >Obituary</a
+                  >
                 </li>
                 <li>
                   <a
                     href="./src/pages/admin-pages/admin-login.html"
                     class="px-2 py-1 bg-light/30 hover:bg-light/50 rounded-lg"
-                    >Lgoin</a
+                    >Login</a
                   >
                 </li>
               </ul>
@@ -299,69 +382,22 @@
       </div>
     </header>
 
-
-    <main class="px-3 flex flex-col gap-6  mb-6 sm:mb-2 xl:max-w-[1280px] w-full">
+    <main
+      class="px-3 flex flex-col gap-6 mb-6 sm:mb-2 xl:max-w-[1280px] w-full"
+    >
       <!-- hero  -->
       <div class="div flex flex-col gap-4">
-
-        <!-- carousal  -->
-        <!-- Swiper -->
-        <div class="swiper mySwiper w-full h-full">
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div
-              class="swiper-slide flex justify-center items-center text-center bg-white"
-            >
-              <img
-                src="./src/assets/DSC_0001.jpeg"
-                alt="Slide 1"
-                class="w-full h-[30vh] sm:h-[50vh] lg:h-h-[500px] xl:h-[550px] object-cover border border-light shadow-sm shadow-black/20 rounded-2xl"
-              />
-            </div>
-            <div
-              class="swiper-slide flex justify-center items-center text-center bg-white"
-            >
-              <img
-                src="./src/assets/IMG-20220703-WA0011.jpg"
-                alt="Slide 2"
-                class="w-full h-[30vh] sm:h-[50vh] lg:h-h-[500px] xl:h-[550px] object-cover border border-light shadow-sm shadow-black/20 rounded-2xl"
-              />
-            </div>
-            <div
-              class="swiper-slide flex justify-center items-center text-center bg-white"
-            >
-              <img
-                src="./src/assets/DSC_0282.jpg"
-                alt="Slide 3"
-                class="w-full h-[30vh] sm:h-[50vh] lg:h-h-[500px] xl:h-[550px] object-cover border border-light shadow-sm shadow-black/20 rounded-2xl"
-              />
-            </div>
-            <div
-              class="swiper-slide flex justify-center items-center text-center bg-white"
-            >
-              <img
-                src="./src/assets/DSC_0358.jpg"
-                alt="Slide 4"
-                class="w-full h-[30vh] sm:h-[50vh] lg:h-h-[500px] xl:h-[550px] object-cover border border-light shadow-sm shadow-black/20 rounded-2xl"
-              />
-            </div>
-          </div>
-
-          <!-- Navigation Buttons -->
-          <div class="swiper-button-next !text-darkmain"></div>
-          <div class="swiper-button-prev !text-darkmain"></div>
+        <div
+          class="swiper-slide flex justify-center items-center text-center bg-white"
+        >
+          <img
+            src="./src/assets/DSC_0001.jpg"
+            alt="Slide 1"
+            class="w-full h-[30vh] sm:h-[50vh] lg:h-h-[500px] xl:h-[550px] object-cover border border-light shadow-sm shadow-black/20 rounded-2xl"
+          />
         </div>
       </div>
 
-      <div class="flex flex-col gap-2 items-center justify-center">
-
-        
-        <h2 class="text-xl font-semibold lg:text-2xl xl:text-3xl text-darkmain">Our Story</h2>
-        
-        <div class="flex items-center w-full text-center text-sm sm:text-base sm:font-medium lg:text-lg">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, magnam consequatur quisquam ipsam praesentium vero eum quis veritatis deserunt a debitis, reprehenderit veniam modi ex iure enim totam tempore dolor alias provident in! Error ipsa natus nihil asperiores totam? Laboriosam molestiae illo, accusantium necessitatibus.
-      </div>
-      </div>
 
       <!-- recently  -->
       <div class="flex flex-col gap-3">
@@ -370,148 +406,207 @@
           <h4
             class="text-xl font-semibold lg:text-2xl xl:text-3xl text-darkmain"
           >
-            Recently
+            Updates
           </h4>
 
-          
-          <a href="./src/pages/events.html" class="text-darkmain hover:text-darkmain/90 pr-2 text-sm sm:text-base font-medium flex items-center">Show all <span class="pl-1 sm:pl-2"><img src="./src/assets/blue-arrow.svg" alt="" class="w-2 sm:w-2.5"></span></a>
-
+          <a
+            href="./src/pages/events.html"
+            class="text-darkmain hover:text-darkmain/90 pr-2 text-sm sm:text-base font-medium flex items-center"
+            >Show all
+            <span class="pl-1 sm:pl-2"
+              ><img
+                src="./src/assets/blue-arrow.svg"
+                alt=""
+                class="w-2 sm:w-2.5" /></span
+          ></a>
         </div>
 
         <!-- cards  -->
-        <div class="flex gap-4 lg::gap-6 sm:flex-wrap sm:grid sm:grid-cols-3 lg:grid-cols-4 justify-content-between button-slider overflow-hidden">
-            
+        <div
+          class="flex gap-4 lg::gap-6 sm:flex-wrap md:grid md:grid-cols-3 lg:grid-cols-4 justify-content-between button-slider overflow-hidden"
+        >
           <!-- card  -->
           <div
-          class="flex flex-col w-60 aspect-[7/5] sm:w-[31%] sm:aspect-[5/4] lg:w-[23.8%] lg:aspect-[5/4] border border-transparent hover:border-light rounded-2xl overflow-hidden hover:shadow-sm hover:shadow-black/20 group shrink-0"
-        >
-          <!-- Image Section -->
-          <img
-            src="./src/assets/IMG-20220703-WA0011.jpg"
-            class="h-[57%] w-full object-cover rounded-br-4xl group-hover:rounded-br-sm transition-all duration-300 rounded-bl-sm group-hover:rounded-bl-none"
-            alt=""
-          />
-
-          <!-- Content Section -->
-          <div
-            class="h-[43%] flex flex-col gap-0.5 px-3 py-1.5 md:py-2 lg:py-2 xl:py-2 bg-lightmain rounded-tl-sm group-hover:rounded-tl-none rounded-tr-4xl group-hover:rounded-tr-sm transition-all duration-300"
-          >
-            <!-- Headline -->
-            <div class="flex flex-col gap-0 sm:gap-0.5 lg:gap-1">
-              <p class="text-white font-medium sm:text-lg leading-4 lg:leading-5">Gladson Almedia</p>
-              <span class="text-gray-300 text-xs lg:text-sm leading-3 lg:leading-4"
-                >Lorem ipsum dolor sit amet consectetur, adipisicing
-                elit.</span
-              >
-            </div>
-            <!-- Read More -->
-            <a href="#" class="text-sm text-gray-200 md:text-base leading-3 mt-auto flex gap-1 group/arrow items-center"
-              >Read More <img src="./src/assets/arrow.svg" alt="" class="w-3 sm:w-4  transition-transform duration-500 ease-in-out transform  group-hover/arrow:ml-0.5 rotate-270"></a
-            >
-          </div>
-
-        </div>
-
-          <!-- card -->
-          <div
-            class="flex flex-col w-60 aspect-[7/5] sm:w-[31%] sm:aspect-[5/4] lg:w-[23.8%] lg:aspect-[5/4] border border-transparent hover:border-light rounded-2xl overflow-hidden hover:shadow-sm hover:shadow-black/20 group shrink-0"
+            class="flex flex-col w-60 aspect-[7/6] sm:aspect-[7/7] md:w-[31%] lg:w-[23.8%] lg:aspect-[5/4] rounded-2xl overflow-hidden group shrink-0 relative min-h-[100%]"
           >
             <!-- Image Section -->
             <img
-              src="./src/assets/DSC_0001.jpeg"
-              class="h-[57%] w-full object-cover rounded-br-4xl group-hover:rounded-br-sm transition-all duration-300 rounded-bl-sm group-hover:rounded-bl-none"
+              src="./src/assets/IMG-20220703-WA0011.jpg"
+              class="h-[58%] w-full object-cover rounded-br-4xl group-hover:rounded-br-sm transition-all duration-300"
               alt=""
             />
 
             <!-- Content Section -->
             <div
-              class="h-[43%] flex flex-col gap-0.5 px-3 py-1.5 md:py-2 lg:py-2 xl:py-2 bg-lightmain rounded-tl-sm group-hover:rounded-tl-none rounded-tr-4xl group-hover:rounded-tr-sm transition-all duration-300"
+              class="absolute bottom-0 h-[47%] flex flex-col gap-0.5 px-3 py-1.5 md:py-2 lg:py-2 xl:py-2 bg-lightmain rounded-tl-xl group-hover:rounded-tl-sm rounded-tr-4xl group-hover:rounded-tr-lg rounded-bl-xl group-hover:rounded-bl-none rounded-br-4xl group-hover:rounded-br-none transition-all duration-300 w-full"
             >
               <!-- Headline -->
               <div class="flex flex-col gap-0 sm:gap-0.5 lg:gap-1">
-                <p class="text-white font-medium sm:text-lg leading-4 lg:leading-5">Gladson Almedia</p>
-                <span class="text-gray-300 text-xs lg:text-sm leading-3 lg:leading-4"
-                  >Lorem ipsum dolor sit amet consectetur, adipisicing
-                  elit.</span
+                <p
+                  class="text-white font-medium sm:text-lg leading-4 lg:leading-5"
+                >
+                  Gladson Almedia
+                </p>
+                <span
+                  class="text-gray-200 text-sm lg:text-base leading-3 lg:leading-4"
+                  >Elected New President</span
                 >
               </div>
               <!-- Read More -->
-              <a href="#" class="text-sm text-gray-200 md:text-base leading-3 mt-auto flex gap-1 group/arrow items-center"
-                >Read More <img src="./src/assets/arrow.svg" alt="" class="w-3 sm:w-4  transition-transform duration-500 ease-in-out transform  group-hover/arrow:ml-0.5 rotate-270"></a
-              >
+              <a
+                href="#"
+                class="text-sm text-gray-200 md:text-base leading-3 mt-auto flex gap-1 group/arrow items-center"
+                >Read More
+                <img
+                  src="./src/assets/arrow.svg"
+                  alt=""
+                  class="w-3 sm:w-4 transition-transform duration-500 ease-in-out transform group-hover/arrow:ml-0.5 rotate-270"
+              /></a>
             </div>
+          </div>
 
+          
+          <!-- card  -->
+          <div
+            class="flex flex-col w-60 aspect-[7/6] sm:aspect-[7/7] md:w-[31%] lg:w-[23.8%] lg:aspect-[5/4] rounded-2xl overflow-hidden group shrink-0 relative min-h-[100%]"
+          >
+            <!-- Image Section -->
+            <img
+              src="./src/assets/IMG-20220703-WA0011.jpg"
+              class="h-[58%] w-full object-cover rounded-br-4xl group-hover:rounded-br-sm transition-all duration-300"
+              alt=""
+            />
+
+            <!-- Content Section -->
+            <div
+              class="absolute bottom-0 h-[47%] flex flex-col gap-0.5 px-3 py-1.5 md:py-2 lg:py-2 xl:py-2 bg-lightmain rounded-tl-xl group-hover:rounded-tl-sm rounded-tr-4xl group-hover:rounded-tr-lg rounded-bl-xl group-hover:rounded-bl-none rounded-br-4xl group-hover:rounded-br-none transition-all duration-300 w-full"
+            >
+              <!-- Headline -->
+              <div class="flex flex-col gap-0 sm:gap-0.5 lg:gap-1">
+                <p
+                  class="text-white font-medium sm:text-lg leading-4 lg:leading-5"
+                >
+                  Gladson Almedia
+                </p>
+                <span
+                  class="text-gray-200 text-sm lg:text-base leading-3 lg:leading-4"
+                  >Elected New President</span
+                >
+              </div>
+              <!-- Read More -->
+              <a
+                href="#"
+                class="text-sm text-gray-200 md:text-base leading-3 mt-auto flex gap-1 group/arrow items-center"
+                >Read More
+                <img
+                  src="./src/assets/arrow.svg"
+                  alt=""
+                  class="w-3 sm:w-4 transition-transform duration-500 ease-in-out transform group-hover/arrow:ml-0.5 rotate-270"
+              /></a>
+            </div>
           </div>
 
           <!-- card  -->
           <div
-          class="flex flex-col w-60 aspect-[7/5] sm:w-[31%] sm:aspect-[5/4] lg:w-[23.8%] lg:aspect-[5/4] border border-transparent hover:border-light rounded-2xl overflow-hidden hover:shadow-sm hover:shadow-black/20 group shrink-0"
-        >
-          <!-- Image Section -->
-          <img
-            src="./src/assets/IMG-20220703-WA0011.jpg"
-            class="h-[57%] w-full object-cover rounded-br-4xl group-hover:rounded-br-sm transition-all duration-300 rounded-bl-sm group-hover:rounded-bl-none"
-            alt=""
-          />
-
-          <!-- Content Section -->
-          <div
-            class="h-[43%] flex flex-col gap-0.5 px-3 py-1.5 md:py-2 lg:py-2 xl:py-2 bg-lightmain rounded-tl-sm group-hover:rounded-tl-none rounded-tr-4xl group-hover:rounded-tr-sm transition-all duration-300"
+            class="flex flex-col w-60 aspect-[7/6] sm:aspect-[7/7] md:w-[31%] lg:w-[23.8%] lg:aspect-[5/4] rounded-2xl overflow-hidden group shrink-0 relative min-h-[100%]"
           >
-            <!-- Headline -->
-            <div class="flex flex-col gap-0 sm:gap-0.5 lg:gap-1">
-              <p class="text-white font-medium sm:text-lg leading-4 lg:leading-5">Gladson Almedia</p>
-              <span class="text-gray-300 text-xs lg:text-sm leading-3 lg:leading-4"
-                >Lorem ipsum dolor sit amet consectetur, adipisicing
-                elit.</span
-              >
-            </div>
-            <!-- Read More -->
-            <a href="#" class="text-sm text-gray-200 md:text-base leading-3 mt-auto flex gap-1 group/arrow items-center"
-              >Read More <img src="./src/assets/arrow.svg" alt="" class="w-3 sm:w-4  transition-transform duration-500 ease-in-out transform  group-hover/arrow:ml-0.5 rotate-270"></a
+            <!-- Image Section -->
+            <img
+              src="./src/assets/IMG-20220703-WA0011.jpg"
+              class="h-[58%] w-full object-cover rounded-br-4xl group-hover:rounded-br-sm transition-all duration-300"
+              alt=""
+            />
+
+            <!-- Content Section -->
+            <div
+              class="absolute bottom-0 h-[47%] flex flex-col gap-0.5 px-3 py-1.5 md:py-2 lg:py-2 xl:py-2 bg-lightmain rounded-tl-xl group-hover:rounded-tl-sm rounded-tr-4xl group-hover:rounded-tr-lg rounded-bl-xl group-hover:rounded-bl-none rounded-br-4xl group-hover:rounded-br-none transition-all duration-300 w-full"
             >
+              <!-- Headline -->
+              <div class="flex flex-col gap-0 sm:gap-0.5 lg:gap-1">
+                <p
+                  class="text-white font-medium sm:text-lg leading-4 lg:leading-5"
+                >
+                  Gladson Almedia
+                </p>
+                <span
+                  class="text-gray-200 text-sm lg:text-base leading-3 lg:leading-4"
+                  >Elected New President</span
+                >
+              </div>
+              <!-- Read More -->
+              <a
+                href="#"
+                class="text-sm text-gray-200 md:text-base leading-3 mt-auto flex gap-1 group/arrow items-center"
+                >Read More
+                <img
+                  src="./src/assets/arrow.svg"
+                  alt=""
+                  class="w-3 sm:w-4 transition-transform duration-500 ease-in-out transform group-hover/arrow:ml-0.5 rotate-270"
+              /></a>
+            </div>
+          </div>
+
+          <!-- card  -->
+          <div
+            class="flex flex-col w-60 aspect-[7/6] sm:aspect-[7/7] md:w-[31%] lg:w-[23.8%] lg:aspect-[5/4] rounded-2xl overflow-hidden group shrink-0 relative min-h-[100%]"
+          >
+            <!-- Image Section -->
+            <img
+              src="./src/assets/IMG-20220703-WA0011.jpg"
+              class="h-[58%] w-full object-cover rounded-br-4xl group-hover:rounded-br-sm transition-all duration-300"
+              alt=""
+            />
+
+            <!-- Content Section -->
+            <div
+              class="absolute bottom-0 h-[47%] flex flex-col gap-0.5 px-3 py-1.5 md:py-2 lg:py-2 xl:py-2 bg-lightmain rounded-tl-xl group-hover:rounded-tl-sm rounded-tr-4xl group-hover:rounded-tr-lg rounded-bl-xl group-hover:rounded-bl-none rounded-br-4xl group-hover:rounded-br-none transition-all duration-300 w-full"
+            >
+              <!-- Headline -->
+              <div class="flex flex-col gap-0 sm:gap-0.5 lg:gap-1">
+                <p
+                  class="text-white font-medium sm:text-lg leading-4 lg:leading-5"
+                >
+                  Gladson Almedia
+                </p>
+                <span
+                  class="text-gray-200 text-sm lg:text-base leading-3 lg:leading-4"
+                  >Elected New President</span
+                >
+              </div>
+              <!-- Read More -->
+              <a
+                href="#"
+                class="text-sm text-gray-200 md:text-base leading-3 mt-auto flex gap-1 group/arrow items-center"
+                >Read More
+                <img
+                  src="./src/assets/arrow.svg"
+                  alt=""
+                  class="w-3 sm:w-4 transition-transform duration-500 ease-in-out transform group-hover/arrow:ml-0.5 rotate-270"
+              /></a>
+            </div>
           </div>
 
         </div>
 
-          <!-- card -->
-          <div
-          class="flex flex-col w-60 aspect-[7/5] sm:w-[31%] sm:aspect-[5/4] lg:w-[23.8%] lg:aspect-[5/4] border border-transparent hover:border-light rounded-2xl overflow-hidden hover:shadow-sm hover:shadow-black/20 group shrink-0"
-        >
-          <!-- Image Section -->
-          <img
-            src="./src/assets/gathering1.jpg"
-            class="h-[57%] w-full object-cover rounded-br-4xl group-hover:rounded-br-sm transition-all duration-300 rounded-bl-sm group-hover:rounded-bl-none"
-            alt=""
-          />
-
-          <!-- Content Section -->
-          <div
-            class="h-[43%] flex flex-col gap-0.5 px-3 py-1.5 md:py-2 lg:py-2 xl:py-2 bg-lightmain rounded-tl-sm group-hover:rounded-tl-none rounded-tr-4xl group-hover:rounded-tr-sm transition-all duration-300"
-          >
-            <!-- Headline -->
-            <div class="flex flex-col gap-0 sm:gap-0.5 lg:gap-1">
-              <p class="text-white font-medium sm:text-lg leading-4 lg:leading-5">Gladson Almedia</p>
-              <span class="text-gray-300 text-xs lg:text-sm leading-3 lg:leading-4"
-                >Lorem ipsum dolor sit amet consectetur, adipisicing
-                elit.</span
-              >
-            </div>
-            <!-- Read More -->
-            <a href="#" class="text-sm text-gray-200 md:text-base leading-3 mt-auto flex gap-1 group/arrow items-center"
-              >Read More <img src="./src/assets/arrow.svg" alt="" class="w-3 sm:w-4  transition-transform duration-500 ease-in-out transform  group-hover/arrow:ml-0.5 rotate-270"></a
-            >
-          </div>
-
-        </div>
-          
-
-          
-        </div>
 
       </div>
 
       
+      <!-- MCA, Doha-Qatar  -->
+      <div class="flex flex-col gap-2 items-start">
+        <h2 class="text-xl font-semibold lg:text-2xl xl:text-3xl text-darkmain">
+          MCA, Doha-Qatar
+        </h2>
+
+        <div
+          class="flex w-full text-start text-sm sm:text-base sm:font-medium lg:text-lg text-gray-500"
+        >
+        Mangalorean Konkans of Qatar came together in March 2008, to form the socio-cultural organization known as MANGALORE CULTURAL ASSOCIATION (MCA) with the following objectives:
+
+        Bringing Mangalorean Konkani-speaking people together under the umbrella of Mangalore Cultural Association (MCA) to help each other. Maintain in touch with our culture by organizing cultural events such as by bringing Artists from India.
+        </div>
+      </div>
+
       <!-- News  -->
       <div class="flex flex-col gap-3">
         <!-- head  -->
@@ -519,148 +614,191 @@
           <h4
             class="text-xl font-semibold lg:text-2xl xl:text-3xl text-darkmain"
           >
-          News
+            News
           </h4>
 
-          
-          <a href="./src/pages/events.html" class="text-darkmain hover:text-darkmain/90 pr-2 text-sm sm:text-base font-medium flex items-center">Show all <span class="pl-1 sm:pl-2"><img src="./src/assets/blue-arrow.svg" alt="" class="w-2 sm:w-2.5"></span></a>
-
+          <a
+            href="./src/pages/events.html"
+            class="text-darkmain hover:text-darkmain/90 pr-2 text-sm sm:text-base font-medium flex items-center"
+            >Show all
+            <span class="pl-1 sm:pl-2"
+              ><img
+                src="./src/assets/blue-arrow.svg"
+                alt=""
+                class="w-2 sm:w-2.5" /></span
+          ></a>
         </div>
 
+        
         <!-- cards  -->
-        <div class="flex gap-4 lg::gap-6 sm:flex-wrap sm:grid sm:grid-cols-3 lg:grid-cols-4 justify-content-between button-slider overflow-hidden">
-            
+        <div
+          class="flex gap-4 lg::gap-6 sm:flex-wrap md:grid md:grid-cols-3 lg:grid-cols-4 justify-content-between button-slider overflow-hidden"
+        >
           <!-- card  -->
           <div
-          class="flex flex-col w-60 aspect-[7/5] sm:w-[31%] sm:aspect-[5/4] lg:w-[23.8%] lg:aspect-[5/4] border border-transparent hover:border-light rounded-2xl overflow-hidden hover:shadow-sm hover:shadow-black/20 group shrink-0"
-        >
-          <!-- Image Section -->
-          <img
-            src="./src/assets/IMG-20220703-WA0011.jpg"
-            class="h-[57%] w-full object-cover rounded-br-4xl group-hover:rounded-br-sm transition-all duration-300 rounded-bl-sm group-hover:rounded-bl-none"
-            alt=""
-          />
-
-          <!-- Content Section -->
-          <div
-            class="h-[43%] flex flex-col gap-0.5 px-3 py-1.5 md:py-2 lg:py-2 xl:py-2 bg-lightmain rounded-tl-sm group-hover:rounded-tl-none rounded-tr-4xl group-hover:rounded-tr-sm transition-all duration-300"
-          >
-            <!-- Headline -->
-            <div class="flex flex-col gap-0 sm:gap-0.5 lg:gap-1">
-              <p class="text-white font-medium sm:text-lg leading-4 lg:leading-5">Gladson Almedia</p>
-              <span class="text-gray-300 text-xs lg:text-sm leading-3 lg:leading-4"
-                >Lorem ipsum dolor sit amet consectetur, adipisicing
-                elit.</span
-              >
-            </div>
-            <!-- Read More -->
-            <a href="#" class="text-sm text-gray-200 md:text-base leading-3 mt-auto flex gap-1 group/arrow items-center"
-              >Read More <img src="./src/assets/arrow.svg" alt="" class="w-3 sm:w-4  transition-transform duration-500 ease-in-out transform  group-hover/arrow:ml-0.5 rotate-270"></a
-            >
-          </div>
-
-        </div>
-
-          <!-- card -->
-          <div
-            class="flex flex-col w-60 aspect-[7/5] sm:w-[31%] sm:aspect-[5/4] lg:w-[23.8%] lg:aspect-[5/4] border border-transparent hover:border-light rounded-2xl overflow-hidden hover:shadow-sm hover:shadow-black/20 group shrink-0"
+            class="flex flex-col w-60 aspect-[7/6] sm:aspect-[7/7] md:w-[31%] lg:w-[23.8%] lg:aspect-[5/4] rounded-2xl overflow-hidden group shrink-0 relative min-h-[100%]"
           >
             <!-- Image Section -->
             <img
-              src="./src/assets/DSC_0001.jpeg"
-              class="h-[57%] w-full object-cover rounded-br-4xl group-hover:rounded-br-sm transition-all duration-300 rounded-bl-sm group-hover:rounded-bl-none"
+              src="./src/assets/IMG-20220703-WA0011.jpg"
+              class="h-[58%] w-full object-cover rounded-br-4xl group-hover:rounded-br-sm transition-all duration-300"
               alt=""
             />
 
             <!-- Content Section -->
             <div
-              class="h-[43%] flex flex-col gap-0.5 px-3 py-1.5 md:py-2 lg:py-2 xl:py-2 bg-lightmain rounded-tl-sm group-hover:rounded-tl-none rounded-tr-4xl group-hover:rounded-tr-sm transition-all duration-300"
+              class="absolute bottom-0 h-[47%] flex flex-col gap-0.5 px-3 py-1.5 md:py-2 lg:py-2 xl:py-2 bg-lightmain rounded-tl-xl group-hover:rounded-tl-sm rounded-tr-4xl group-hover:rounded-tr-lg rounded-bl-xl group-hover:rounded-bl-none rounded-br-4xl group-hover:rounded-br-none transition-all duration-300 w-full"
             >
               <!-- Headline -->
               <div class="flex flex-col gap-0 sm:gap-0.5 lg:gap-1">
-                <p class="text-white font-medium sm:text-lg leading-4 lg:leading-5">Gladson Almedia</p>
-                <span class="text-gray-300 text-xs lg:text-sm leading-3 lg:leading-4"
-                  >Lorem ipsum dolor sit amet consectetur, adipisicing
-                  elit.</span
+                <p
+                  class="text-white font-medium sm:text-lg leading-4 lg:leading-5"
+                >
+                  Gladson Almedia
+                </p>
+                <span
+                  class="text-gray-200 text-sm lg:text-base leading-3 lg:leading-4"
+                  >Elected New President</span
                 >
               </div>
               <!-- Read More -->
-              <a href="#" class="text-sm text-gray-200 md:text-base leading-3 mt-auto flex gap-1 group/arrow items-center"
-                >Read More <img src="./src/assets/arrow.svg" alt="" class="w-3 sm:w-4  transition-transform duration-500 ease-in-out transform  group-hover/arrow:ml-0.5 rotate-270"></a
-              >
+              <a
+                href="#"
+                class="text-sm text-gray-200 md:text-base leading-3 mt-auto flex gap-1 group/arrow items-center"
+                >Read More
+                <img
+                  src="./src/assets/arrow.svg"
+                  alt=""
+                  class="w-3 sm:w-4 transition-transform duration-500 ease-in-out transform group-hover/arrow:ml-0.5 rotate-270"
+              /></a>
             </div>
+          </div>
 
+          
+          <!-- card  -->
+          <div
+            class="flex flex-col w-60 aspect-[7/6] sm:aspect-[7/7] md:w-[31%] lg:w-[23.8%] lg:aspect-[5/4] rounded-2xl overflow-hidden group shrink-0 relative min-h-[100%]"
+          >
+            <!-- Image Section -->
+            <img
+              src="./src/assets/IMG-20220703-WA0011.jpg"
+              class="h-[58%] w-full object-cover rounded-br-4xl group-hover:rounded-br-sm transition-all duration-300"
+              alt=""
+            />
+
+            <!-- Content Section -->
+            <div
+              class="absolute bottom-0 h-[47%] flex flex-col gap-0.5 px-3 py-1.5 md:py-2 lg:py-2 xl:py-2 bg-lightmain rounded-tl-xl group-hover:rounded-tl-sm rounded-tr-4xl group-hover:rounded-tr-lg rounded-bl-xl group-hover:rounded-bl-none rounded-br-4xl group-hover:rounded-br-none transition-all duration-300 w-full"
+            >
+              <!-- Headline -->
+              <div class="flex flex-col gap-0 sm:gap-0.5 lg:gap-1">
+                <p
+                  class="text-white font-medium sm:text-lg leading-4 lg:leading-5"
+                >
+                  Gladson Almedia
+                </p>
+                <span
+                  class="text-gray-200 text-sm lg:text-base leading-3 lg:leading-4"
+                  >Elected New President</span
+                >
+              </div>
+              <!-- Read More -->
+              <a
+                href="#"
+                class="text-sm text-gray-200 md:text-base leading-3 mt-auto flex gap-1 group/arrow items-center"
+                >Read More
+                <img
+                  src="./src/assets/arrow.svg"
+                  alt=""
+                  class="w-3 sm:w-4 transition-transform duration-500 ease-in-out transform group-hover/arrow:ml-0.5 rotate-270"
+              /></a>
+            </div>
           </div>
 
           <!-- card  -->
           <div
-          class="flex flex-col w-60 aspect-[7/5] sm:w-[31%] sm:aspect-[5/4] lg:w-[23.8%] lg:aspect-[5/4] border border-transparent hover:border-light rounded-2xl overflow-hidden hover:shadow-sm hover:shadow-black/20 group shrink-0"
-        >
-          <!-- Image Section -->
-          <img
-            src="./src/assets/IMG-20220703-WA0011.jpg"
-            class="h-[57%] w-full object-cover rounded-br-4xl group-hover:rounded-br-sm transition-all duration-300 rounded-bl-sm group-hover:rounded-bl-none"
-            alt=""
-          />
-
-          <!-- Content Section -->
-          <div
-            class="h-[43%] flex flex-col gap-0.5 px-3 py-1.5 md:py-2 lg:py-2 xl:py-2 bg-lightmain rounded-tl-sm group-hover:rounded-tl-none rounded-tr-4xl group-hover:rounded-tr-sm transition-all duration-300"
+            class="flex flex-col w-60 aspect-[7/6] sm:aspect-[7/7] md:w-[31%] lg:w-[23.8%] lg:aspect-[5/4] rounded-2xl overflow-hidden group shrink-0 relative min-h-[100%]"
           >
-            <!-- Headline -->
-            <div class="flex flex-col gap-0 sm:gap-0.5 lg:gap-1">
-              <p class="text-white font-medium sm:text-lg leading-4 lg:leading-5">Gladson Almedia</p>
-              <span class="text-gray-300 text-xs lg:text-sm leading-3 lg:leading-4"
-                >Lorem ipsum dolor sit amet consectetur, adipisicing
-                elit.</span
-              >
-            </div>
-            <!-- Read More -->
-            <a href="#" class="text-sm text-gray-200 md:text-base leading-3 mt-auto flex gap-1 group/arrow items-center"
-              >Read More <img src="./src/assets/arrow.svg" alt="" class="w-3 sm:w-4  transition-transform duration-500 ease-in-out transform  group-hover/arrow:ml-0.5 rotate-270"></a
+            <!-- Image Section -->
+            <img
+              src="./src/assets/IMG-20220703-WA0011.jpg"
+              class="h-[58%] w-full object-cover rounded-br-4xl group-hover:rounded-br-sm transition-all duration-300"
+              alt=""
+            />
+
+            <!-- Content Section -->
+            <div
+              class="absolute bottom-0 h-[47%] flex flex-col gap-0.5 px-3 py-1.5 md:py-2 lg:py-2 xl:py-2 bg-lightmain rounded-tl-xl group-hover:rounded-tl-sm rounded-tr-4xl group-hover:rounded-tr-lg rounded-bl-xl group-hover:rounded-bl-none rounded-br-4xl group-hover:rounded-br-none transition-all duration-300 w-full"
             >
+              <!-- Headline -->
+              <div class="flex flex-col gap-0 sm:gap-0.5 lg:gap-1">
+                <p
+                  class="text-white font-medium sm:text-lg leading-4 lg:leading-5"
+                >
+                  Gladson Almedia
+                </p>
+                <span
+                  class="text-gray-200 text-sm lg:text-base leading-3 lg:leading-4"
+                  >Elected New President</span
+                >
+              </div>
+              <!-- Read More -->
+              <a
+                href="#"
+                class="text-sm text-gray-200 md:text-base leading-3 mt-auto flex gap-1 group/arrow items-center"
+                >Read More
+                <img
+                  src="./src/assets/arrow.svg"
+                  alt=""
+                  class="w-3 sm:w-4 transition-transform duration-500 ease-in-out transform group-hover/arrow:ml-0.5 rotate-270"
+              /></a>
+            </div>
           </div>
 
-        </div>
-
-          <!-- card -->
+          <!-- card  -->
           <div
-          class="flex flex-col w-60 aspect-[7/5] sm:w-[31%] sm:aspect-[5/4] lg:w-[23.8%] lg:aspect-[5/4] border border-transparent hover:border-light rounded-2xl overflow-hidden hover:shadow-sm hover:shadow-black/20 group shrink-0"
-        >
-          <!-- Image Section -->
-          <img
-            src="./src/assets/gathering1.jpg"
-            class="h-[57%] w-full object-cover rounded-br-4xl group-hover:rounded-br-sm transition-all duration-300 rounded-bl-sm group-hover:rounded-bl-none"
-            alt=""
-          />
-
-          <!-- Content Section -->
-          <div
-            class="h-[43%] flex flex-col gap-0.5 px-3 py-1.5 md:py-2 lg:py-2 xl:py-2 bg-lightmain rounded-tl-sm group-hover:rounded-tl-none rounded-tr-4xl group-hover:rounded-tr-sm transition-all duration-300"
+            class="flex flex-col w-60 aspect-[7/6] sm:aspect-[7/7] md:w-[31%] lg:w-[23.8%] lg:aspect-[5/4] rounded-2xl overflow-hidden group shrink-0 relative min-h-[100%]"
           >
-            <!-- Headline -->
-            <div class="flex flex-col gap-0 sm:gap-0.5 lg:gap-1">
-              <p class="text-white font-medium sm:text-lg leading-4 lg:leading-5">Gladson Almedia</p>
-              <span class="text-gray-300 text-xs lg:text-sm leading-3 lg:leading-4"
-                >Lorem ipsum dolor sit amet consectetur, adipisicing
-                elit.</span
-              >
-            </div>
-            <!-- Read More -->
-            <a href="#" class="text-sm text-gray-200 md:text-base leading-3 mt-auto flex gap-1 group/arrow items-center"
-              >Read More <img src="./src/assets/arrow.svg" alt="" class="w-3 sm:w-4  transition-transform duration-500 ease-in-out transform  group-hover/arrow:ml-0.5 rotate-270"></a
+            <!-- Image Section -->
+            <img
+              src="./src/assets/IMG-20220703-WA0011.jpg"
+              class="h-[58%] w-full object-cover rounded-br-4xl group-hover:rounded-br-sm transition-all duration-300"
+              alt=""
+            />
+
+            <!-- Content Section -->
+            <div
+              class="absolute bottom-0 h-[47%] flex flex-col gap-0.5 px-3 py-1.5 md:py-2 lg:py-2 xl:py-2 bg-lightmain rounded-tl-xl group-hover:rounded-tl-sm rounded-tr-4xl group-hover:rounded-tr-lg rounded-bl-xl group-hover:rounded-bl-none rounded-br-4xl group-hover:rounded-br-none transition-all duration-300 w-full"
             >
+              <!-- Headline -->
+              <div class="flex flex-col gap-0 sm:gap-0.5 lg:gap-1">
+                <p
+                  class="text-white font-medium sm:text-lg leading-4 lg:leading-5"
+                >
+                  Gladson Almedia
+                </p>
+                <span
+                  class="text-gray-200 text-sm lg:text-base leading-3 lg:leading-4"
+                  >Elected New President</span
+                >
+              </div>
+              <!-- Read More -->
+              <a
+                href="#"
+                class="text-sm text-gray-200 md:text-base leading-3 mt-auto flex gap-1 group/arrow items-center"
+                >Read More
+                <img
+                  src="./src/assets/arrow.svg"
+                  alt=""
+                  class="w-3 sm:w-4 transition-transform duration-500 ease-in-out transform group-hover/arrow:ml-0.5 rotate-270"
+              /></a>
+            </div>
           </div>
 
-        </div>
-          
-
-          
         </div>
 
       </div>
 
-      
       <!-- Events  -->
       <div class="flex flex-col gap-3">
         <!-- head  -->
@@ -668,143 +806,260 @@
           <h4
             class="text-xl font-semibold lg:text-2xl xl:text-3xl text-darkmain"
           >
-          Events
+            Events
           </h4>
 
-          
-          <a href="./src/pages/events.html" class="text-darkmain hover:text-darkmain/90 pr-2 text-sm sm:text-base font-medium flex items-center">Show all <span class="pl-1 sm:pl-2"><img src="./src/assets/blue-arrow.svg" alt="" class="w-2 sm:w-2.5"></span></a>
-
+          <a
+            href="./src/pages/events.html"
+            class="text-darkmain hover:text-darkmain/90 pr-2 text-sm sm:text-base font-medium flex items-center"
+            >Show all
+            <span class="pl-1 sm:pl-2"
+              ><img
+                src="./src/assets/blue-arrow.svg"
+                alt=""
+                class="w-2 sm:w-2.5" /></span
+          ></a>
         </div>
 
+        
         <!-- cards  -->
-        <div class="flex gap-4 lg::gap-6 sm:flex-wrap sm:grid sm:grid-cols-3 lg:grid-cols-4 justify-content-between button-slider overflow-hidden">
-            
+        <div
+          class="flex gap-4 lg::gap-6 sm:flex-wrap md:grid md:grid-cols-3 lg:grid-cols-4 justify-content-between button-slider overflow-hidden"
+        >
+        
           <!-- card  -->
           <div
-          class="flex flex-col w-60 aspect-[7/5] sm:w-[31%] sm:aspect-[5/4] lg:w-[23.8%] lg:aspect-[5/4] border border-transparent hover:border-light rounded-2xl overflow-hidden hover:shadow-sm hover:shadow-black/20 group shrink-0"
-        >
-          <!-- Image Section -->
-          <img
-            src="./src/assets/IMG-20220703-WA0011.jpg"
-            class="h-[57%] w-full object-cover rounded-br-4xl group-hover:rounded-br-sm transition-all duration-300 rounded-bl-sm group-hover:rounded-bl-none"
-            alt=""
-          />
-
-          <!-- Content Section -->
-          <div
-            class="h-[43%] flex flex-col gap-0.5 px-3 py-1.5 md:py-2 lg:py-2 xl:py-2 bg-lightmain rounded-tl-sm group-hover:rounded-tl-none rounded-tr-4xl group-hover:rounded-tr-sm transition-all duration-300"
-          >
-            <!-- Headline -->
-            <div class="flex flex-col gap-0 sm:gap-0.5 lg:gap-1">
-              <p class="text-white font-medium sm:text-lg leading-4 lg:leading-5">Gladson Almedia</p>
-              <span class="text-gray-300 text-xs lg:text-sm leading-3 lg:leading-4"
-                >Lorem ipsum dolor sit amet consectetur, adipisicing
-                elit.</span
-              >
-            </div>
-            <!-- Read More -->
-            <a href="#" class="text-sm text-gray-200 md:text-base leading-3 mt-auto flex gap-1 group/arrow items-center"
-              >Read More <img src="./src/assets/arrow.svg" alt="" class="w-3 sm:w-4  transition-transform duration-500 ease-in-out transform  group-hover/arrow:ml-0.5 rotate-270"></a
-            >
-          </div>
-
-        </div>
-
-          <!-- card -->
-          <div
-            class="flex flex-col w-60 aspect-[7/5] sm:w-[31%] sm:aspect-[5/4] lg:w-[23.8%] lg:aspect-[5/4] border border-transparent hover:border-light rounded-2xl overflow-hidden hover:shadow-sm hover:shadow-black/20 group shrink-0"
+            class="flex flex-col w-60 aspect-[7/6] sm:aspect-[7/7] md:w-[31%] lg:w-[23.8%] lg:aspect-[5/4] rounded-2xl overflow-hidden group shrink-0 relative min-h-[100%]"
           >
             <!-- Image Section -->
             <img
-              src="./src/assets/DSC_0001.jpeg"
-              class="h-[57%] w-full object-cover rounded-br-4xl group-hover:rounded-br-sm transition-all duration-300 rounded-bl-sm group-hover:rounded-bl-none"
+              src="./src/assets/IMG-20220703-WA0011.jpg"
+              class="h-[58%] w-full object-cover rounded-br-4xl group-hover:rounded-br-sm transition-all duration-300"
               alt=""
             />
 
             <!-- Content Section -->
             <div
-              class="h-[43%] flex flex-col gap-0.5 px-3 py-1.5 md:py-2 lg:py-2 xl:py-2 bg-lightmain rounded-tl-sm group-hover:rounded-tl-none rounded-tr-4xl group-hover:rounded-tr-sm transition-all duration-300"
+              class="absolute bottom-0 h-[47%] flex flex-col gap-0.5 px-3 py-1.5 md:py-2 lg:py-2 xl:py-2 bg-lightmain rounded-tl-xl group-hover:rounded-tl-sm rounded-tr-4xl group-hover:rounded-tr-lg rounded-bl-xl group-hover:rounded-bl-none rounded-br-4xl group-hover:rounded-br-none transition-all duration-300 w-full"
             >
               <!-- Headline -->
               <div class="flex flex-col gap-0 sm:gap-0.5 lg:gap-1">
-                <p class="text-white font-medium sm:text-lg leading-4 lg:leading-5">Gladson Almedia</p>
-                <span class="text-gray-300 text-xs lg:text-sm leading-3 lg:leading-4"
-                  >Lorem ipsum dolor sit amet consectetur, adipisicing
-                  elit.</span
+                <p
+                  class="text-white font-medium sm:text-lg leading-4 lg:leading-5"
+                >
+                  Annual Event Announcement 2025
+                </p>
+                <span
+                  class="text-gray-200 text-sm lg:text-base leading-3 lg:leading-4"
+                  ></span
                 >
               </div>
-              <!-- Read More -->
-              <a href="#" class="text-sm text-gray-200 md:text-base leading-3 mt-auto flex gap-1 group/arrow items-center"
-                >Read More <img src="./src/assets/arrow.svg" alt="" class="w-3 sm:w-4  transition-transform duration-500 ease-in-out transform  group-hover/arrow:ml-0.5 rotate-270"></a
-              >
-            </div>
+              <div class="flex justify-between items-end mt-auto">
+                <!-- additional info  -->
+               <div class="flex flex-col gap-0.5 text-xs lg:text-sm leading-4 text-gray-300">
+                
+                <div class="flex gap-0.5">
+                  <img src="./src/assets/clock-gray.svg" class="w-3" alt="">
+                  <span>4:00 PM</span>
+                </div>
 
+                <div class="flex gap-0.5">
+                  <img src="./src/assets/calendar-gray.svg" class="w-3" alt="">
+                  <span>25/02/2025</span>
+                </div>
+
+                <div class="flex gap-0.5">
+                  <img src="./src/assets/location-gray.svg" class="w-3" alt="">
+                  <span>Hamilton School</span>
+                </div>
+               </div>
+    
+              <!-- Read More -->
+              <a
+                href="#"
+                class="text-xs text-gray-200 md:text-sm leading-3 mt-auto flex gap-1 group/arrow items-center pr-2"
+                >Read More
+            </a>
+          </div>
+
+            </div>
+          </div>
+
+          
+          <!-- card  -->
+          <div
+            class="flex flex-col w-60 aspect-[7/6] sm:aspect-[7/7] md:w-[31%] lg:w-[23.8%] lg:aspect-[5/4] rounded-2xl overflow-hidden group shrink-0 relative min-h-[100%]"
+          >
+            <!-- Image Section -->
+            <img
+              src="./src/assets/IMG-20220703-WA0011.jpg"
+              class="h-[58%] w-full object-cover rounded-br-4xl group-hover:rounded-br-sm transition-all duration-300"
+              alt=""
+            />
+
+            <!-- Content Section -->
+            <div
+              class="absolute bottom-0 h-[47%] flex flex-col gap-0.5 px-3 py-1.5 md:py-2 lg:py-2 xl:py-2 bg-lightmain rounded-tl-xl group-hover:rounded-tl-sm rounded-tr-4xl group-hover:rounded-tr-lg rounded-bl-xl group-hover:rounded-bl-none rounded-br-4xl group-hover:rounded-br-none transition-all duration-300 w-full"
+            >
+              <!-- Headline -->
+              <div class="flex flex-col gap-0 sm:gap-0.5 lg:gap-1">
+                <p
+                  class="text-white font-medium sm:text-lg leading-4 lg:leading-5"
+                >
+                  Annual Event Announcement 2025
+                </p>
+                <span
+                  class="text-gray-200 text-sm lg:text-base leading-3 lg:leading-4"
+                  ></span
+                >
+              </div>
+              <div class="flex justify-between items-end mt-auto">
+                <!-- additional info  -->
+               <div class="flex flex-col gap-0.5 text-xs lg:text-sm leading-4 text-gray-300">
+                
+                <div class="flex gap-0.5">
+                  <img src="./src/assets/clock-gray.svg" class="w-3" alt="">
+                  <span>4:00 PM</span>
+                </div>
+
+                <div class="flex gap-0.5">
+                  <img src="./src/assets/calendar-gray.svg" class="w-3" alt="">
+                  <span>25/02/2025</span>
+                </div>
+
+                <div class="flex gap-0.5">
+                  <img src="./src/assets/location-gray.svg" class="w-3" alt="">
+                  <span>Hamilton School</span>
+                </div>
+               </div>
+    
+              <!-- Read More -->
+              <a
+                href="#"
+                class="text-xs text-gray-200 md:text-sm leading-3 mt-auto flex gap-1 group/arrow items-center pr-2"
+                >Read More
+            </a>
+          </div>
+
+            </div>
           </div>
 
           <!-- card  -->
           <div
-          class="flex flex-col w-60 aspect-[7/5] sm:w-[31%] sm:aspect-[5/4] lg:w-[23.8%] lg:aspect-[5/4] border border-transparent hover:border-light rounded-2xl overflow-hidden hover:shadow-sm hover:shadow-black/20 group shrink-0"
-        >
-          <!-- Image Section -->
-          <img
-            src="./src/assets/IMG-20220703-WA0011.jpg"
-            class="h-[57%] w-full object-cover rounded-br-4xl group-hover:rounded-br-sm transition-all duration-300 rounded-bl-sm group-hover:rounded-bl-none"
-            alt=""
-          />
-
-          <!-- Content Section -->
-          <div
-            class="h-[43%] flex flex-col gap-0.5 px-3 py-1.5 md:py-2 lg:py-2 xl:py-2 bg-lightmain rounded-tl-sm group-hover:rounded-tl-none rounded-tr-4xl group-hover:rounded-tr-sm transition-all duration-300"
+            class="flex flex-col w-60 aspect-[7/6] sm:aspect-[7/7] md:w-[31%] lg:w-[23.8%] lg:aspect-[5/4] rounded-2xl overflow-hidden group shrink-0 relative min-h-[100%]"
           >
-            <!-- Headline -->
-            <div class="flex flex-col gap-0 sm:gap-0.5 lg:gap-1">
-              <p class="text-white font-medium sm:text-lg leading-4 lg:leading-5">Gladson Almedia</p>
-              <span class="text-gray-300 text-xs lg:text-sm leading-3 lg:leading-4"
-                >Lorem ipsum dolor sit amet consectetur, adipisicing
-                elit.</span
-              >
-            </div>
-            <!-- Read More -->
-            <a href="#" class="text-sm text-gray-200 md:text-base leading-3 mt-auto flex gap-1 group/arrow items-center"
-              >Read More <img src="./src/assets/arrow.svg" alt="" class="w-3 sm:w-4  transition-transform duration-500 ease-in-out transform  group-hover/arrow:ml-0.5 rotate-270"></a
+            <!-- Image Section -->
+            <img
+              src="./src/assets/IMG-20220703-WA0011.jpg"
+              class="h-[58%] w-full object-cover rounded-br-4xl group-hover:rounded-br-sm transition-all duration-300"
+              alt=""
+            />
+
+            <!-- Content Section -->
+            <div
+              class="absolute bottom-0 h-[47%] flex flex-col gap-0.5 px-3 py-1.5 md:py-2 lg:py-2 xl:py-2 bg-lightmain rounded-tl-xl group-hover:rounded-tl-sm rounded-tr-4xl group-hover:rounded-tr-lg rounded-bl-xl group-hover:rounded-bl-none rounded-br-4xl group-hover:rounded-br-none transition-all duration-300 w-full"
             >
+              <!-- Headline -->
+              <div class="flex flex-col gap-0 sm:gap-0.5 lg:gap-1">
+                <p
+                  class="text-white font-medium sm:text-lg leading-4 lg:leading-5"
+                >
+                  Annual Event Announcement 2025
+                </p>
+                <span
+                  class="text-gray-200 text-sm lg:text-base leading-3 lg:leading-4"
+                  ></span
+                >
+              </div>
+              <div class="flex justify-between items-end mt-auto">
+                <!-- additional info  -->
+               <div class="flex flex-col gap-0.5 text-xs lg:text-sm leading-4 text-gray-300">
+                
+                <div class="flex gap-0.5">
+                  <img src="./src/assets/clock-gray.svg" class="w-3" alt="">
+                  <span>4:00 PM</span>
+                </div>
+
+                <div class="flex gap-0.5">
+                  <img src="./src/assets/calendar-gray.svg" class="w-3" alt="">
+                  <span>25/02/2025</span>
+                </div>
+
+                <div class="flex gap-0.5">
+                  <img src="./src/assets/location-gray.svg" class="w-3" alt="">
+                  <span>Hamilton School</span>
+                </div>
+               </div>
+    
+              <!-- Read More -->
+              <a
+                href="#"
+                class="text-xs text-gray-200 md:text-sm leading-3 mt-auto flex gap-1 group/arrow items-center pr-2"
+                >Read More
+            </a>
           </div>
 
-        </div>
-
-          <!-- card -->
-          <div
-          class="flex flex-col w-60 aspect-[7/5] sm:w-[31%] sm:aspect-[5/4] lg:w-[23.8%] lg:aspect-[5/4] border border-transparent hover:border-light rounded-2xl overflow-hidden hover:shadow-sm hover:shadow-black/20 group shrink-0"
-        >
-          <!-- Image Section -->
-          <img
-            src="./src/assets/gathering1.jpg"
-            class="h-[57%] w-full object-cover rounded-br-4xl group-hover:rounded-br-sm transition-all duration-300 rounded-bl-sm group-hover:rounded-bl-none"
-            alt=""
-          />
-
-          <!-- Content Section -->
-          <div
-            class="h-[43%] flex flex-col gap-0.5 px-3 py-1.5 md:py-2 lg:py-2 xl:py-2 bg-lightmain rounded-tl-sm group-hover:rounded-tl-none rounded-tr-4xl group-hover:rounded-tr-sm transition-all duration-300"
-          >
-            <!-- Headline -->
-            <div class="flex flex-col gap-0 sm:gap-0.5 lg:gap-1">
-              <p class="text-white font-medium sm:text-lg leading-4 lg:leading-5">Gladson Almedia</p>
-              <span class="text-gray-300 text-xs lg:text-sm leading-3 lg:leading-4"
-                >Lorem ipsum dolor sit amet consectetur, adipisicing
-                elit.</span
-              >
             </div>
-            <!-- Read More -->
-            <a href="#" class="text-sm text-gray-200 md:text-base leading-3 mt-auto flex gap-1 group/arrow items-center"
-              >Read More <img src="./src/assets/arrow.svg" alt="" class="w-3 sm:w-4  transition-transform duration-500 ease-in-out transform  group-hover/arrow:ml-0.5 rotate-270"></a
-            >
           </div>
 
-        </div>
-          
+          <!-- card  -->
+          <div
+            class="flex flex-col w-60 aspect-[7/6] sm:aspect-[7/7] md:w-[31%] lg:w-[23.8%] lg:aspect-[5/4] rounded-2xl overflow-hidden group shrink-0 relative min-h-[100%]"
+          >
+            <!-- Image Section -->
+            <img
+              src="./src/assets/IMG-20220703-WA0011.jpg"
+              class="h-[58%] w-full object-cover rounded-br-4xl group-hover:rounded-br-sm transition-all duration-300"
+              alt=""
+            />
 
-          
+            <!-- Content Section -->
+            <div
+              class="absolute bottom-0 h-[47%] flex flex-col gap-0.5 px-3 py-1.5 md:py-2 lg:py-2 xl:py-2 bg-lightmain rounded-tl-xl group-hover:rounded-tl-sm rounded-tr-4xl group-hover:rounded-tr-lg rounded-bl-xl group-hover:rounded-bl-none rounded-br-4xl group-hover:rounded-br-none transition-all duration-300 w-full"
+            >
+              <!-- Headline -->
+              <div class="flex flex-col gap-0 sm:gap-0.5 lg:gap-1">
+                <p
+                  class="text-white font-medium sm:text-lg leading-4 lg:leading-5"
+                >
+                  Annual Event Announcement 2025
+                </p>
+                <span
+                  class="text-gray-200 text-sm lg:text-base leading-3 lg:leading-4"
+                  ></span
+                >
+              </div>
+              <div class="flex justify-between items-end mt-auto">
+                <!-- additional info  -->
+               <div class="flex flex-col gap-0.5 text-xs lg:text-sm leading-4 text-gray-300">
+                
+                <div class="flex gap-0.5">
+                  <img src="./src/assets/clock-gray.svg" class="w-3" alt="">
+                  <span>4:00 PM</span>
+                </div>
+
+                <div class="flex gap-0.5">
+                  <img src="./src/assets/calendar-gray.svg" class="w-3" alt="">
+                  <span>25/02/2025</span>
+                </div>
+
+                <div class="flex gap-0.5">
+                  <img src="./src/assets/location-gray.svg" class="w-3" alt="">
+                  <span>Hamilton School</span>
+                </div>
+               </div>
+    
+              <!-- Read More -->
+              <a
+                href="#"
+                class="text-xs text-gray-200 md:text-sm leading-3 mt-auto flex gap-1 group/arrow items-center pr-2"
+                >Read More
+            </a>
+          </div>
+
+            </div>
+          </div>
+
         </div>
 
       </div>
@@ -812,20 +1067,29 @@
       <!-- Kalapraskar  -->
       <div class="flex flex-col gap-3">
         <!-- head  -->
-        <div class="flex  justify-between items-center">
+        <div class="flex justify-between items-center">
           <h4
             class="text-xl font-semibold lg:text-2xl xl:text-3xl text-darkmain"
           >
             Kalapraskar
           </h4>
 
-          <a href="./src/pages/artists.html" class="text-darkmain hover:text-darkmain/90 pr-2 text-sm sm:text-base font-medium flex items-center">Show all <span class="pl-1 sm:pl-2"><img src="./src/assets/blue-arrow.svg" alt="" class="w-2 sm:w-2.5"></span></a>
-
+          <a
+            href="./src/pages/artists.html"
+            class="text-darkmain hover:text-darkmain/90 pr-2 text-sm sm:text-base font-medium flex items-center"
+            >Show all
+            <span class="pl-1 sm:pl-2"
+              ><img
+                src="./src/assets/blue-arrow.svg"
+                alt=""
+                class="w-2 sm:w-2.5" /></span
+          ></a>
         </div>
 
         <!-- Profiles  -->
-        <div class="flex gap-2 sm:gap-4 xl:gap-4 sm:flex-wrap button-slider overflow-hidden">
-          
+        <div
+          class="flex gap-2 sm:gap-4 xl:gap-4 sm:flex-wrap button-slider overflow-hidden"
+        >
           <!-- Profile card -->
           <a
             href=""
@@ -842,7 +1106,7 @@
               Meena Rebimbus
             </h6>
           </a>
-          
+
           <!-- Profile card -->
           <a
             href=""
@@ -894,39 +1158,39 @@
             </h6>
           </a>
 
-           <!-- Profile card -->
-           <a
-           href=""
-           class="flex flex-col text-sm p-2 hover:bg-light/20 hover:rounded-2xl w-28 sm:w-36 xl:w-40 shrink-0"
-         >
-           <img
-             src="./src/assets/artist1.jpg"
-             class="rounded-full h-24 w-24 sm:h-32 sm:w-32 xl:w-36 xl:h-36 object-cover object-center"
-             alt=""
-           />
-           <h6
-             class="text-sm lg:text-base xl:text-lg xl:font-semibold pl-0.5 font-medium"
-           >
-             Eddie Netto
-           </h6>
-         </a>
+          <!-- Profile card -->
+          <a
+            href=""
+            class="flex flex-col text-sm p-2 hover:bg-light/20 hover:rounded-2xl w-28 sm:w-36 xl:w-40 shrink-0"
+          >
+            <img
+              src="./src/assets/artist1.jpg"
+              class="rounded-full h-24 w-24 sm:h-32 sm:w-32 xl:w-36 xl:h-36 object-cover object-center"
+              alt=""
+            />
+            <h6
+              class="text-sm lg:text-base xl:text-lg xl:font-semibold pl-0.5 font-medium"
+            >
+              Eddie Netto
+            </h6>
+          </a>
 
-         <!-- Profile card -->
-         <a
-           href=""
-           class="flex flex-col text-sm p-2 hover:bg-light/20 hover:rounded-2xl w-28 sm:w-36 xl:w-40 shrink-0"
-         >
-           <img
-             src="./src/assets/artist2.jpg"
-             class="rounded-full h-24 w-24 sm:h-32 sm:w-32 xl:w-36 xl:h-36 object-cover object-center"
-             alt=""
-           />
-           <h6
-             class="text-sm lg:text-base xl:text-lg xl:font-semibold pl-0.5 font-medium"
-           >
-             Alwyn Noronha
-           </h6>
-         </a>
+          <!-- Profile card -->
+          <a
+            href=""
+            class="flex flex-col text-sm p-2 hover:bg-light/20 hover:rounded-2xl w-28 sm:w-36 xl:w-40 shrink-0"
+          >
+            <img
+              src="./src/assets/artist2.jpg"
+              class="rounded-full h-24 w-24 sm:h-32 sm:w-32 xl:w-36 xl:h-36 object-cover object-center"
+              alt=""
+            />
+            <h6
+              class="text-sm lg:text-base xl:text-lg xl:font-semibold pl-0.5 font-medium"
+            >
+              Alwyn Noronha
+            </h6>
+          </a>
 
           <!-- Profile card -->
           <a
@@ -949,108 +1213,112 @@
           </a>
         </div>
       </div>
-
     </main>
 
     <!-- mobile footer  -->
     <footer
-      class="sm:hidden flex justify-around items-center m-3 bg-darkmain/90 rounded-2xl px-1 py-2  sticky bottom-2"
+      class="sm:hidden flex justify-around items-center m-3 bg-darkmain/90 rounded-2xl px-1 py-2 sticky bottom-3 h-14"
     >
       <a
-        href=""
-        class="flex flex-col gap-0.5 items-center p-1 hover:bg-light/10 rounded-md"
+        href="./src/pages/news.html"
+        class="flex flex-col gap-0.5 items-center p-1 hover:bg-light/10 rounded-md w-10"
       >
-        <img src="./src/assets/house.svg" class="w-5" alt="" />
-        <p class="text-xs font-medium text-white">Home</p>
-      </a>
-
-      <a
-        href="./src/pages/committee.html"
-        class="flex flex-col gap-0.5 items-center p-1 hover:bg-light/10 rounded-md"
-      >
-        <img src="./src/assets/list.svg" class="w-5" alt="" />
-        <p class="text-xs font-medium text-white">Committee</p>
+        <img src="./src/assets/inbox.svg" class="w-5" alt="" />
+        <p class="text-[10px] font-medium text-white">News</p>
       </a>
 
       <a
         href="./src/pages/events.html"
-        class="flex flex-col gap-0.5 items-center p-1 hover:bg-light/10 rounded-md"
+        class="flex flex-col gap-0.5 items-center p-1 hover:bg-light/10 rounded-md w-10"
       >
         <img src="./src/assets/compass.svg" class="w-5" alt="" />
-        <p class="text-xs font-medium text-white">Events</p>
-      </a>
-
-      <a
-        href="./src/pages/news.html"
-        class="flex flex-col gap-0.5 items-center p-1 hover:bg-light/10 rounded-md"
-      >
-        <img src="./src/assets/inbox.svg" class="w-5" alt="" />
-        <p class="text-xs font-medium text-white">News</p>
+        <p class="text-[10px] font-medium text-white">Events</p>
       </a>
 
       <a
         href=""
         class="flex flex-col gap-0.5 items-center p-1 hover:bg-light/10 rounded-md"
       >
+        <img src="./src/assets/MCAlogo.png" class="h-20" alt="" />
+      </a>
+
+      <a
+        href="./src/pages/committee.html"
+        class="flex flex-col gap-0.5 items-center p-1 hover:bg-light/10 rounded-md w-10"
+      >
+        <img src="./src/assets/list.svg" class="w-5" alt="" />
+        <p class="text-[10px] font-medium text-white uppercase">Community</p>
+      </a>
+
+      <a
+        href=""
+        class="flex flex-col gap-0.5 items-center p-1 hover:bg-light/10 rounded-md w-10"
+      >
         <img src="./src/assets/user.svg" class="w-5" alt="" />
-        <p class="text-xs font-medium text-white">Profile</p>
+        <p class="text-[10px] font-medium text-white">Profile</p>
       </a>
     </footer>
 
     <!-- desktop footer  -->
     <footer
-      class="hidden sm:flex justify-around items-center bg-darkmain rounded-t-2xl px-1 py-4 mt-auto w-full  xl:max-w-[1280px] "
+      class="hidden sm:flex justify-around items-center bg-darkmain rounded-t-2xl px-1 py-4 mt-auto w-full xl:max-w-[1280px]"
     >
-      
-    <div id="copyright" class="text-gray-300 text-base font-normal">© 2025 All Rights Reserved.  <span class="">Developed by </span> <a target="_blank" href="https://bizzds.com/" class="text-white hover:text-gray-100">BizzDs</a> </div>
+      <div id="copyright" class="text-gray-300 text-base font-normal">
+        © 2025 All Rights Reserved. <span class="">Developed by </span>
+        <a
+          target="_blank"
+          href="https://bizzds.com/"
+          class="text-white hover:text-gray-100"
+          >BizzDs</a
+        >
+      </div>
     </footer>
 
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+ 
 
-    <!-- Initialize Swiper -->
     <script>
-      var swiper = new Swiper(".mySwiper", {
-        // loop: true,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
+      const dropdowns = document.querySelectorAll(".menu-container");
+
+      dropdowns.forEach((dropdown) => {
+        const btn = dropdown.querySelector(".menu-btn"),
+          menu = dropdown.querySelector(".menu-dropdown"),
+          arrow = dropdown.querySelector(".menu-arrow");
+
+        // **Hover for Desktop (≥1024px)**
+        if (window.innerWidth >= 1024) {
+          dropdown.onmouseenter = () => (
+            menu.classList.remove("hidden"), arrow.classList.add("rotate-270")
+          );
+          dropdown.onmouseleave = () => (
+            menu.classList.add("hidden"), arrow.classList.remove("rotate-270")
+          );
+        }
+
+        // **Click for Mobile/Tablet (<1024px)**
+        btn.onclick = (event) => {
+          if (window.innerWidth < 1024) {
+            event.stopPropagation();
+            dropdowns.forEach(
+              (d) =>
+                d !== dropdown &&
+                d.querySelector(".menu-dropdown").classList.add("hidden") &&
+                d.querySelector(".menu-arrow").classList.remove("rotate-270")
+            );
+            menu.classList.toggle("hidden");
+            arrow.classList.toggle("rotate-270");
+          }
+        };
       });
-    </script>
 
-    <script>
-const dropdowns = document.querySelectorAll(".menu-container");
-
-dropdowns.forEach((dropdown) => {
-  const btn = dropdown.querySelector(".menu-btn"),
-        menu = dropdown.querySelector(".menu-dropdown"),
-        arrow = dropdown.querySelector(".menu-arrow");
-
-  // **Hover for Desktop (≥1024px)**
-  if (window.innerWidth >= 1024) {
-    dropdown.onmouseenter = () => (menu.classList.remove("hidden"), arrow.classList.add("rotate-270"));
-    dropdown.onmouseleave = () => (menu.classList.add("hidden"), arrow.classList.remove("rotate-270"));
-  }
-
-  // **Click for Mobile/Tablet (<1024px)**
-  btn.onclick = (event) => {
-    if (window.innerWidth < 1024) {
-      event.stopPropagation();
-      dropdowns.forEach((d) => d !== dropdown && d.querySelector(".menu-dropdown").classList.add("hidden") && d.querySelector(".menu-arrow").classList.remove("rotate-270"));
-      menu.classList.toggle("hidden");
-      arrow.classList.toggle("rotate-270");
-    }
-  };
-});
-
-// **Close dropdowns when clicking outside**
-document.onclick = (event) => {
-  dropdowns.forEach((d) => !d.contains(event.target) && d.querySelector(".menu-dropdown").classList.add("hidden") && d.querySelector(".menu-arrow").classList.remove("rotate-270"));
-};
-
-
-
+      // **Close dropdowns when clicking outside**
+      document.onclick = (event) => {
+        dropdowns.forEach(
+          (d) =>
+            !d.contains(event.target) &&
+            d.querySelector(".menu-dropdown").classList.add("hidden") &&
+            d.querySelector(".menu-arrow").classList.remove("rotate-270")
+        );
+      };
 
       // Select elements
       const menuBtn = document.getElementById("menu-btn");

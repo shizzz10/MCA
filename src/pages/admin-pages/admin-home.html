@@ -10,98 +10,147 @@
     <title>News</title>
   </head>
   <body class="xl:flex xl:flex-col xl:items-center">
-    <header
-      class="flex justify-between items-center gap-2 px-3 py-0.5 xl:max-w-[1280px] w-full"
-    >
-      <!-- logo  -->
-      <a href="../../../index.html" class="flex items-center">
-        <img src="../../assets/MCAlogo.png" class="w-16 sm:w-20" alt="" />
-
-        <h2
-          class="text-base sm:text-lg lg:text-xl text-darkmain font-extrabold w-fit"
-        >
-          Mangalore Cultural <br />
-          Association
-        </h2>
-      </a>
-
-      <button
-        class="text-sm sm:text-base lg:text-lg text-white font-extrabold py-2 px-4 lg:px-6 rounded-lg sm:rounded-xl bg-darkmain hover:bg-darkmain/90"
-      >
-        Log Out
-      </button>
-    </header>
 
     <main
-      class="px-3 flex flex-col gap-8 mb-6 sm:mb-2 xl:max-w-[1280px] w-full"
+      class="pr-3 flex flex-col gap-8  xl:max-w-[1280px] w-full"
     >
-      <!-- heading  -->
-      <div class="flex justify-center items-center">
-        <h2
-          class="text-2xl sm:text-3xl lg:text-4xl text-darkmain font-extrabold"
-        >
-          Admin Dashboard<br />
-        </h2>
-      </div>
 
       <!-- sidebar and content -->
       <div class="flex gap-4">
         <!-- sidebar -->
         <div
-          class="flex flex-col gap-2 w-40 border-r border-gray-300 bg-gray-100"
+          class="flex flex-col gap-2 w-80 border-r border-gray-300 bg-gray-100 sticky top-0 h-[100vh] py-2"
         >
-          <a href="" class="bg-light p-2"> Dashboard </a>
+          <a href="" class="flex items-center p-2 w-full"> <img src="../../assets/MCAlogo.png" class="w-16 flex items-center text-center" alt=""> </a>
 
-          <a href="" class="p-2"> committee members </a>
 
-          <a href="" class="p-2"> categories </a>
 
-          <a href="" class="p-2"> new user </a>
+          <a href="" class="bg-light p-2 font-semibold text-lg text-darkmain border-b border-gray-300 flex gap-2"> <img src="../../assets/grip-vertical-solid.svg" class="h-6" alt=""> <span>Dashboard</span>  </a>
 
-          <a href="" class="p-2"> users list </a>
+          <a href="" class=" p-2 font-semibold text-lg text-darkmain border-b border-gray-300 flex gap-2"> <img src="../../assets/users-solid.svg" class="h-6" alt=""> <span> Committee members</span>  </a>
 
-          <a href="" class="p-2"> Edit Pages </a>
+          <a href="" class=" p-2 font-semibold text-lg text-darkmain border-b border-gray-300 flex gap-2"> <img src="../../assets/layer-group-solid.svg" class="h-6" alt=""> <span> Categories</span>  </a>
 
-          <a href="" class="p-2"> contact developers </a>
+          <a href="" class=" p-2 font-semibold text-lg text-darkmain border-b border-gray-300 flex gap-2"> <img src="../../assets/user-plus-solid.svg" class="h-6" alt=""> <span>  New user </span>  </a>
+
+          <a href="" class=" p-2 font-semibold text-lg text-darkmain border-b border-gray-300 flex gap-2"> <img src="../../assets/file-pen-solid.svg" class="h-6" alt=""> <span> Users list</span>  </a>
+
+          <a href="" class=" p-2 font-semibold text-lg text-darkmain border-b border-gray-300 flex gap-2"> <img src="../../assets/file-pen-solid.svg" class="h-6" alt=""> <span> Edit Pages</span>  </a>
+
+          <a href="" class=" p-2 font-semibold text-lg text-darkmain border-b border-gray-300 flex gap-2"> <img src="../../assets/comment-dots-solid.svg" class="h-6" alt=""> <span> Contact developers </span>  </a>
+
+        
+
+          <a href="" class="p-2 mt-auto flex justify-center gap-2 text-xl font-semibold items-center text-darkmain">Log Out <img src="../../assets/right-from-bracket-solid.svg" class="h-5" alt=""></a>
         </div>
 
         <!-- Content  -->
-        <div class="flex flex-col gap-3">
+        <div class="flex flex-col gap-3 mt-6 mb-6 sm:mb-2">
+            
+      <!-- heading  -->
+      <div class="flex items-start">
+        <h2
+          class="text-xl sm:text-2xl lg:text-3xl text-darkmain font-extrabold"
+        >
+          Admin Dashboard<br />
+        </h2>
+      </div>
+
+
           <!-- tab-button -->
           <div
             class="flex items-center gap-3 sm:gap-5 lg:gap-6 button-slider overflow-hidden sm:flex-wrap"
           >
             <button
-              class="tab-btn bg-darkmain/60 hover:bg-darkmain/70 rounded-2xl w-44 sm:w-52 lg:w-60 aspect-[6/4] flex flex-col items-center justify-center gap-3 text-white"
+              class="tab-btn  bg-darkmain/60 hover:bg-darkmain/70 rounded-2xl w-40 sm:w-46 lg:w-52 aspect-[6/4] flex flex-col gap-3 text-white overflow-hidden"
               data-tab="blog"
             >
-              <img src="../../assets/file (2).svg" class="w-12" alt="" />
-              <h5 class="font-semibold text-xl">Add Blog</h5>
+            <div class="flex justify-around items-center w-full px-3 py-2 lg:pt-4 sm:px-4">
+              <img src="../../assets/file (2).svg" class="w-6 lg:w-10 flex" alt="" />
+              <div class="flex flex-col  gap-0.5 lg:gap-3 items-start">
+              <h5 class="flex font-bold text-lg lg:text-3xl leading-5">8</h5>
+              <h5 class="flex font-semibold lg:text-2xl leading-5">Blogs</h5>
+            </div>
+            </div>
+
+            <div class="flex bg-light hover:bg-light/90 w-full p-1.5 justify-center mt-auto">
+            <a href="" class="text-sm lg:text-base flex gap-4 font-medium">
+               Add blog
+
+               <img src="../../assets/plus-solid.svg" class="w-3 lg:w-4" alt="">
+            </a>
+        </div>
+
             </button>
 
             <button
-              class="tab-btn bg-darkmain/60 hover:bg-darkmain/70 rounded-2xl w-44 sm:w-52 lg:w-60 aspect-[6/4] flex flex-col items-center justify-center gap-3 text-white"
-              data-tab="event"
-            >
-              <img src="../../assets/calendar.svg" class="w-12" alt="" />
-              <h5 class="font-semibold text-xl">Add Event</h5>
-            </button>
+            class="tab-btn  bg-darkmain/60 hover:bg-darkmain/70 rounded-2xl w-40 sm:w-46 lg:w-52 aspect-[6/4] flex flex-col gap-3 text-white overflow-hidden"
+            data-tab="event"
+          >
+          <div class="flex justify-around items-center w-full px-3 py-2 lg:pt-4 sm:px-4">
+            <img src="../../assets/calendar.svg" class="w-6 lg:w-10 flex" alt="" />
+            <div class="flex flex-col  gap-0.5 lg:gap-3 items-start">
+            <h5 class="flex font-bold text-lg lg:text-3xl leading-5">8</h5>
+            <h5 class="flex font-semibold lg:text-2xl leading-5">Event</h5>
+          </div>
+          </div>
 
-            <button
-              class="tab-btn bg-darkmain/60 hover:bg-darkmain/70 rounded-2xl w-44 sm:w-52 lg:w-60 aspect-[6/4] flex flex-col items-center justify-center gap-3 text-white"
-              data-tab="news"
-            >
-              <img src="../../assets/bullhorn.svg" class="w-12" alt="" />
-              <h5 class="font-semibold text-xl">Add News</h5>
-            </button>
+          <div class="flex bg-light hover:bg-light/90 w-full p-1.5 justify-center mt-auto">
+          <a href="" class="text-sm lg:text-base flex gap-4 font-medium">
+             Add Event
 
-            <button
-              class="tab-btn bg-darkmain/60 hover:bg-darkmain/70 rounded-2xl w-44 sm:w-52 lg:w-60 aspect-[6/4] flex flex-col items-center justify-center gap-3 text-white"
-              data-tab="artists"
-            >
-              <img src="../../assets/dove.svg" class="w-12" alt="" />
-              <h5 class="font-semibold text-xl">Add Artists</h5>
-            </button>
+             <img src="../../assets/plus-solid.svg" class="w-3 lg:w-4" alt="">
+          </a>
+      </div>
+
+          </button>
+
+          
+          <button
+          class="tab-btn  bg-darkmain/60 hover:bg-darkmain/70 rounded-2xl w-40 sm:w-46 lg:w-52 aspect-[6/4] flex flex-col gap-3 text-white overflow-hidden"
+          data-tab="news"
+        >
+        <div class="flex justify-around items-center w-full px-3 py-2 lg:pt-4 sm:px-4">
+          <img src="../../assets/bullhorn.svg" class="w-6 lg:w-10 flex" alt="" />
+          <div class="flex flex-col  gap-0.5 lg:gap-3 items-start">
+          <h5 class="flex font-bold text-lg lg:text-3xl leading-5">8</h5>
+          <h5 class="flex font-semibold lg:text-2xl leading-5">News</h5>
+        </div>
+        </div>
+
+        <div class="flex bg-light hover:bg-light/90 w-full p-1.5 justify-center mt-auto">
+        <a href="" class="text-sm lg:text-base flex gap-4 font-medium">
+           Add News
+
+           <img src="../../assets/plus-solid.svg" class="w-3 lg:w-4" alt="">
+        </a>
+    </div>
+
+        </button>
+
+          
+        <button
+        class="tab-btn  bg-darkmain/60 hover:bg-darkmain/70 rounded-2xl w-40 sm:w-46 lg:w-52 aspect-[6/4] flex flex-col gap-3 text-white overflow-hidden"
+        data-tab="artists"
+      >
+      <div class="flex justify-around items-center w-full px-3 py-2 lg:pt-4 sm:px-4">
+        <img src="../../assets/microphone-lines-solid.svg" class="w-6 lg:w-10 flex" alt="" />
+        <div class="flex flex-col  gap-0.5 lg:gap-3 items-start">
+        <h5 class="flex font-bold text-lg lg:text-3xl leading-5">8</h5>
+        <h5 class="flex font-semibold lg:text-2xl leading-5">Artists</h5>
+      </div>
+      </div>
+
+      <div class="flex bg-light hover:bg-light/90 w-full p-1.5 justify-center mt-auto">
+      <a href="" class="text-sm lg:text-base flex gap-4 font-medium">
+         Add Artists
+
+         <img src="../../assets/plus-solid.svg" class="w-3 lg:w-4" alt="">
+      </a>
+  </div>
+
+      </button>
+
           </div>
 
           <!-- tab-content for blog  -->
@@ -121,17 +170,15 @@
               </tr>
             </thead>
             <tbody class="text-gray-600 text-sm font-light">
+                
               <tr class="border-b border-gray-200 hover:bg-gray-100">
-                <td class="py-3 px-6 text-left flex items-center">
+                <td class="py-3 px-6 text-left flex items-center w-40">
                   <span
-                    >Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Blogs</span
+                    >Lorem ipsum dolor sit Blog</span
                   >
                 </td>
-                <td class="py-3 px-6 text-left">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-                  facere cumque eius ratione eaque earum, accusamus dolor
-                  quaerat! Voluptas, eaque.
+                <td class="py-3 px-6 text-left w-40">
+                  Lorem ipsum dolor sit amet.
                 </td>
                 <td class="py-3 px-6 text-center">
                   <span
@@ -140,23 +187,20 @@
                   >
                 </td>
                 <td class="py-3 px-6 text-center">Owner</td>
-                <td class="py-3 px-6 text-left">
+                <td class="flex flex-col gap-2 py-3 px-6 text-center">
                   <a href="#" class="text-red-500 hover:underline">Delete</a>
                   <a href="#" class="text-blue-500 hover:underline">Edit</a>
                 </td>
               </tr>
 
               <tr class="border-b border-gray-200 hover:bg-gray-100">
-                <td class="py-3 px-6 text-left flex items-center">
+                <td class="py-3 px-6 text-left flex items-center w-40">
                   <span
-                    >Lorem ipsum dolor sit amet consectetur adipisicing
-                    elit.</span
+                    >Lorem ipsum dolor sit Blog</span
                   >
                 </td>
-                <td class="py-3 px-6 text-left">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-                  facere cumque eius ratione eaque earum, accusamus dolor
-                  quaerat! Voluptas, eaque.
+                <td class="py-3 px-6 text-left w-40">
+                  Lorem ipsum dolor sit amet.
                 </td>
                 <td class="py-3 px-6 text-center">
                   <span
@@ -165,23 +209,20 @@
                   >
                 </td>
                 <td class="py-3 px-6 text-center">Owner</td>
-                <td class="py-3 px-6 text-left">
+                <td class="flex flex-col gap-2 py-3 px-6 text-center">
                   <a href="#" class="text-red-500 hover:underline">Delete</a>
                   <a href="#" class="text-blue-500 hover:underline">Edit</a>
                 </td>
               </tr>
 
               <tr class="border-b border-gray-200 hover:bg-gray-100">
-                <td class="py-3 px-6 text-left flex items-center">
+                <td class="py-3 px-6 text-left flex items-center w-40">
                   <span
-                    >Lorem ipsum dolor sit amet consectetur adipisicing
-                    elit.</span
+                    >Lorem ipsum dolor sit Blog</span
                   >
                 </td>
-                <td class="py-3 px-6 text-left">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-                  facere cumque eius ratione eaque earum, accusamus dolor
-                  quaerat! Voluptas, eaque.
+                <td class="py-3 px-6 text-left w-40">
+                  Lorem ipsum dolor sit amet.
                 </td>
                 <td class="py-3 px-6 text-center">
                   <span
@@ -190,11 +231,79 @@
                   >
                 </td>
                 <td class="py-3 px-6 text-center">Owner</td>
-                <td class="py-3 px-6 text-left">
+                <td class="flex flex-col gap-2 py-3 px-6 text-center">
                   <a href="#" class="text-red-500 hover:underline">Delete</a>
                   <a href="#" class="text-blue-500 hover:underline">Edit</a>
                 </td>
               </tr>
+                
+              <tr class="border-b border-gray-200 hover:bg-gray-100">
+                <td class="py-3 px-6 text-left flex items-center w-40">
+                  <span
+                    >Lorem ipsum dolor sit Blog</span
+                  >
+                </td>
+                <td class="py-3 px-6 text-left w-40">
+                  Lorem ipsum dolor sit amet.
+                </td>
+                <td class="py-3 px-6 text-center">
+                  <span
+                    class="bg-green-200 text-green-600 py-1 px-3 rounded-full text-xs"
+                    >Active</span
+                  >
+                </td>
+                <td class="py-3 px-6 text-center">Owner</td>
+                <td class="flex flex-col gap-2 py-3 px-6 text-center">
+                  <a href="#" class="text-red-500 hover:underline">Delete</a>
+                  <a href="#" class="text-blue-500 hover:underline">Edit</a>
+                </td>
+              </tr>
+
+              <tr class="border-b border-gray-200 hover:bg-gray-100">
+                <td class="py-3 px-6 text-left flex items-center w-40">
+                  <span
+                    >Lorem ipsum dolor sit Blog</span
+                  >
+                </td>
+                <td class="py-3 px-6 text-left w-40">
+                  Lorem ipsum dolor sit amet.
+                </td>
+                <td class="py-3 px-6 text-center">
+                  <span
+                    class="bg-green-200 text-green-600 py-1 px-3 rounded-full text-xs"
+                    >Active</span
+                  >
+                </td>
+                <td class="py-3 px-6 text-center">Owner</td>
+                <td class="flex flex-col gap-2 py-3 px-6 text-center">
+                  <a href="#" class="text-red-500 hover:underline">Delete</a>
+                  <a href="#" class="text-blue-500 hover:underline">Edit</a>
+                </td>
+              </tr>
+
+              <tr class="border-b border-gray-200 hover:bg-gray-100">
+                <td class="py-3 px-6 text-left flex items-center w-40">
+                  <span
+                    >Lorem ipsum dolor sit Blog</span
+                  >
+                </td>
+                <td class="py-3 px-6 text-left w-40">
+                  Lorem ipsum dolor sit amet.
+                </td>
+                <td class="py-3 px-6 text-center">
+                  <span
+                    class="bg-green-200 text-green-600 py-1 px-3 rounded-full text-xs"
+                    >Active</span
+                  >
+                </td>
+                <td class="py-3 px-6 text-center">Owner</td>
+                <td class="flex flex-col gap-2 py-3 px-6 text-center">
+                  <a href="#" class="text-red-500 hover:underline">Delete</a>
+                  <a href="#" class="text-blue-500 hover:underline">Edit</a>
+                </td>
+              </tr>
+
+           
             </tbody>
           </table>
 
@@ -215,80 +324,75 @@
               </tr>
             </thead>
             <tbody class="text-gray-600 text-sm font-light">
-              <tr class="border-b border-gray-200 hover:bg-gray-100">
-                <td class="py-3 px-6 text-left flex items-center">
-                  <span
-                    >Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    event</span
-                  >
-                </td>
-                <td class="py-3 px-6 text-left">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-                  facere cumque eius ratione eaque earum, accusamus dolor
-                  quaerat! Voluptas, eaque.
-                </td>
-                <td class="py-3 px-6 text-center">
-                  <span
-                    class="bg-green-200 text-green-600 py-1 px-3 rounded-full text-xs"
-                    >Active</span
-                  >
-                </td>
-                <td class="py-3 px-6 text-center">Owner</td>
-                <td class="py-3 px-6 text-left">
-                  <a href="#" class="text-red-500 hover:underline">Delete</a>
-                  <a href="#" class="text-blue-500 hover:underline">Edit</a>
-                </td>
-              </tr>
+            
+                <tr class="border-b border-gray-200 hover:bg-gray-100">
+                    <td class="py-3 px-6 text-left flex items-center w-40">
+                      <span
+                        >Lorem ipsum dolor sit Event</span
+                      >
+                    </td>
+                    <td class="py-3 px-6 text-left w-40">
+                      Lorem ipsum dolor sit amet.
+                    </td>
+                    <td class="py-3 px-6 text-center">
+                      <span
+                        class="bg-green-200 text-green-600 py-1 px-3 rounded-full text-xs"
+                        >Active</span
+                      >
+                    </td>
+                    <td class="py-3 px-6 text-center">Owner</td>
+                    <td class="flex flex-col gap-2 py-3 px-6 text-center">
+                      <a href="#" class="text-red-500 hover:underline">Delete</a>
+                      <a href="#" class="text-blue-500 hover:underline">Edit</a>
+                    </td>
+                  </tr>
+    
 
-              <tr class="border-b border-gray-200 hover:bg-gray-100">
-                <td class="py-3 px-6 text-left flex items-center">
-                  <span
-                    >Lorem ipsum dolor sit amet consectetur adipisicing
-                    elit.</span
-                  >
-                </td>
-                <td class="py-3 px-6 text-left">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-                  facere cumque eius ratione eaque earum, accusamus dolor
-                  quaerat! Voluptas, eaque.
-                </td>
-                <td class="py-3 px-6 text-center">
-                  <span
-                    class="bg-green-200 text-green-600 py-1 px-3 rounded-full text-xs"
-                    >Active</span
-                  >
-                </td>
-                <td class="py-3 px-6 text-center">Owner</td>
-                <td class="py-3 px-6 text-left">
-                  <a href="#" class="text-red-500 hover:underline">Delete</a>
-                  <a href="#" class="text-blue-500 hover:underline">Edit</a>
-                </td>
-              </tr>
+                  <tr class="border-b border-gray-200 hover:bg-gray-100">
+                    <td class="py-3 px-6 text-left flex items-center w-40">
+                      <span
+                        >Lorem ipsum dolor sit Event</span
+                      >
+                    </td>
+                    <td class="py-3 px-6 text-left w-40">
+                      Lorem ipsum dolor sit amet.
+                    </td>
+                    <td class="py-3 px-6 text-center">
+                      <span
+                        class="bg-green-200 text-green-600 py-1 px-3 rounded-full text-xs"
+                        >Active</span
+                      >
+                    </td>
+                    <td class="py-3 px-6 text-center">Owner</td>
+                    <td class="flex flex-col gap-2 py-3 px-6 text-center">
+                      <a href="#" class="text-red-500 hover:underline">Delete</a>
+                      <a href="#" class="text-blue-500 hover:underline">Edit</a>
+                    </td>
+                  </tr>
+    
 
-              <tr class="border-b border-gray-200 hover:bg-gray-100">
-                <td class="py-3 px-6 text-left flex items-center">
-                  <span
-                    >Lorem ipsum dolor sit amet consectetur adipisicing
-                    elit.</span
-                  >
-                </td>
-                <td class="py-3 px-6 text-left">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-                  facere cumque eius ratione eaque earum, accusamus dolor
-                  quaerat! Voluptas, eaque.
-                </td>
-                <td class="py-3 px-6 text-center">
-                  <span
-                    class="bg-green-200 text-green-600 py-1 px-3 rounded-full text-xs"
-                    >Active</span
-                  >
-                </td>
-                <td class="py-3 px-6 text-center">Owner</td>
-                <td class="py-3 px-6 text-left">
-                  <a href="#" class="text-red-500 hover:underline">Delete</a>
-                  <a href="#" class="text-blue-500 hover:underline">Edit</a>
-                </td>
-              </tr>
+                  <tr class="border-b border-gray-200 hover:bg-gray-100">
+                    <td class="py-3 px-6 text-left flex items-center w-40">
+                      <span
+                        >Lorem ipsum dolor sit Event</span
+                      >
+                    </td>
+                    <td class="py-3 px-6 text-left w-40">
+                      Lorem ipsum dolor sit amet.
+                    </td>
+                    <td class="py-3 px-6 text-center">
+                      <span
+                        class="bg-green-200 text-green-600 py-1 px-3 rounded-full text-xs"
+                        >Active</span
+                      >
+                    </td>
+                    <td class="py-3 px-6 text-center">Owner</td>
+                    <td class="flex flex-col gap-2 py-3 px-6 text-center">
+                      <a href="#" class="text-red-500 hover:underline">Delete</a>
+                      <a href="#" class="text-blue-500 hover:underline">Edit</a>
+                    </td>
+                  </tr>
+    
             </tbody>
           </table>
 
@@ -309,80 +413,52 @@
               </tr>
             </thead>
             <tbody class="text-gray-600 text-sm font-light">
-              <tr class="border-b border-gray-200 hover:bg-gray-100">
-                <td class="py-3 px-6 text-left flex items-center">
-                  <span
-                    >Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    News</span
-                  >
-                </td>
-                <td class="py-3 px-6 text-left">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-                  facere cumque eius ratione eaque earum, accusamus dolor
-                  quaerat! Voluptas, eaque.
-                </td>
-                <td class="py-3 px-6 text-center">
-                  <span
-                    class="bg-green-200 text-green-600 py-1 px-3 rounded-full text-xs"
-                    >Active</span
-                  >
-                </td>
-                <td class="py-3 px-6 text-center">Owner</td>
-                <td class="py-3 px-6 text-left">
-                  <a href="#" class="text-red-500 hover:underline">Delete</a>
-                  <a href="#" class="text-blue-500 hover:underline">Edit</a>
-                </td>
-              </tr>
+             
+                <tr class="border-b border-gray-200 hover:bg-gray-100">
+                    <td class="py-3 px-6 text-left flex items-center w-40">
+                      <span
+                        >Lorem ipsum dolor sit News</span
+                      >
+                    </td>
+                    <td class="py-3 px-6 text-left w-40">
+                      Lorem ipsum dolor sit amet.
+                    </td>
+                    <td class="py-3 px-6 text-center">
+                      <span
+                        class="bg-green-200 text-green-600 py-1 px-3 rounded-full text-xs"
+                        >Active</span
+                      >
+                    </td>
+                    <td class="py-3 px-6 text-center">Owner</td>
+                    <td class="flex flex-col gap-2 py-3 px-6 text-center">
+                      <a href="#" class="text-red-500 hover:underline">Delete</a>
+                      <a href="#" class="text-blue-500 hover:underline">Edit</a>
+                    </td>
+                  </tr>
+    
 
-              <tr class="border-b border-gray-200 hover:bg-gray-100">
-                <td class="py-3 px-6 text-left flex items-center">
-                  <span
-                    >Lorem ipsum dolor sit amet consectetur adipisicing
-                    elit.</span
-                  >
-                </td>
-                <td class="py-3 px-6 text-left">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-                  facere cumque eius ratione eaque earum, accusamus dolor
-                  quaerat! Voluptas, eaque.
-                </td>
-                <td class="py-3 px-6 text-center">
-                  <span
-                    class="bg-green-200 text-green-600 py-1 px-3 rounded-full text-xs"
-                    >Active</span
-                  >
-                </td>
-                <td class="py-3 px-6 text-center">Owner</td>
-                <td class="py-3 px-6 text-left">
-                  <a href="#" class="text-red-500 hover:underline">Delete</a>
-                  <a href="#" class="text-blue-500 hover:underline">Edit</a>
-                </td>
-              </tr>
+                  <tr class="border-b border-gray-200 hover:bg-gray-100">
+                    <td class="py-3 px-6 text-left flex items-center w-40">
+                      <span
+                        >Lorem ipsum dolor sit News</span
+                      >
+                    </td>
+                    <td class="py-3 px-6 text-left w-40">
+                      Lorem ipsum dolor sit amet.
+                    </td>
+                    <td class="py-3 px-6 text-center">
+                      <span
+                        class="bg-green-200 text-green-600 py-1 px-3 rounded-full text-xs"
+                        >Active</span
+                      >
+                    </td>
+                    <td class="py-3 px-6 text-center">Owner</td>
+                    <td class="flex flex-col gap-2 py-3 px-6 text-center">
+                      <a href="#" class="text-red-500 hover:underline">Delete</a>
+                      <a href="#" class="text-blue-500 hover:underline">Edit</a>
+                    </td>
+                  </tr>
 
-              <tr class="border-b border-gray-200 hover:bg-gray-100">
-                <td class="py-3 px-6 text-left flex items-center">
-                  <span
-                    >Lorem ipsum dolor sit amet consectetur adipisicing
-                    elit.</span
-                  >
-                </td>
-                <td class="py-3 px-6 text-left">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-                  facere cumque eius ratione eaque earum, accusamus dolor
-                  quaerat! Voluptas, eaque.
-                </td>
-                <td class="py-3 px-6 text-center">
-                  <span
-                    class="bg-green-200 text-green-600 py-1 px-3 rounded-full text-xs"
-                    >Active</span
-                  >
-                </td>
-                <td class="py-3 px-6 text-center">Owner</td>
-                <td class="py-3 px-6 text-left">
-                  <a href="#" class="text-red-500 hover:underline">Delete</a>
-                  <a href="#" class="text-blue-500 hover:underline">Edit</a>
-                </td>
-              </tr>
             </tbody>
           </table>
 
@@ -396,87 +472,60 @@
                 class="bg-gray-200 text-gray-600 uppercase text-sm leading-normal"
               >
                 <th class="py-3 px-6 text-left">Name</th>
-                <th class="py-3 px-6 text-left">Description</th>
+                <th class="py-3 px-6 text-left">Title</th>
                 <th class="py-3 px-6 text-center">Status</th>
                 <th class="py-3 px-6 text-center">Role</th>
                 <th class="py-3 px-6 text-center">Action</th>
               </tr>
             </thead>
             <tbody class="text-gray-600 text-sm font-light">
-              <tr class="border-b border-gray-200 hover:bg-gray-100">
-                <td class="py-3 px-6 text-left flex items-center">
-                  <span
-                    >Lorem ipsum dolor sit amet consectetur adipisicing
-                    elit.</span
-                  >
-                </td>
-                <td class="py-3 px-6 text-left">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-                  facere cumque eius ratione eaque earum, accusamus dolor
-                  quaerat! Voluptas, eaque. Artists
-                </td>
-                <td class="py-3 px-6 text-center">
-                  <span
-                    class="bg-green-200 text-green-600 py-1 px-3 rounded-full text-xs"
-                    >Active</span
-                  >
-                </td>
-                <td class="py-3 px-6 text-center">Owner</td>
-                <td class="py-3 px-6 text-left">
-                  <a href="#" class="text-red-500 hover:underline">Delete</a>
-                  <a href="#" class="text-blue-500 hover:underline">Edit</a>
-                </td>
-              </tr>
+                <tr class="border-b border-gray-200 hover:bg-gray-100">
+                    <td class="py-3 px-6 text-left flex items-center">
+                        <img class="w-12 h-12 rounded-full mr-2" src="../../assets/artist1.jpg" alt="User">
+                        <span>Eddie Netto</span>
+                    </td>
+                    <td class="py-3 px-6 text-left">Singer <br><span class="text-gray-400 text-xs">abc@gmail.com</span></td>
+                    <td class="py-3 px-6 text-center">
+                        <span class="bg-green-200 text-green-600 py-1 px-3 rounded-full text-xs">Active</span>
+                    </td>
+                    <td class="py-3 px-6 text-center">Owner</td>
+                    <td class="flex flex-col gap-2 py-3 px-6 text-center">
+                      <a href="#" class="text-red-500 hover:underline">Delete</a>
+                      <a href="#" class="text-blue-500 hover:underline">Edit</a>
+                    </td>
+                </tr>
 
-              <tr class="border-b border-gray-200 hover:bg-gray-100">
-                <td class="py-3 px-6 text-left flex items-center">
-                  <span
-                    >Lorem ipsum dolor sit amet consectetur adipisicing
-                    elit.</span
-                  >
-                </td>
-                <td class="py-3 px-6 text-left">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-                  facere cumque eius ratione eaque earum, accusamus dolor
-                  quaerat! Voluptas, eaque.
-                </td>
-                <td class="py-3 px-6 text-center">
-                  <span
-                    class="bg-green-200 text-green-600 py-1 px-3 rounded-full text-xs"
-                    >Active</span
-                  >
-                </td>
-                <td class="py-3 px-6 text-center">Owner</td>
-                <td class="py-3 px-6 text-left">
-                  <a href="#" class="text-red-500 hover:underline">Delete</a>
-                  <a href="#" class="text-blue-500 hover:underline">Edit</a>
-                </td>
-              </tr>
+                <tr class="border-b border-gray-200 hover:bg-gray-100">
+                    <td class="py-3 px-6 text-left flex items-center">
+                        <img class="w-12 h-12 rounded-full mr-2" src="../../assets/artist1.jpg" alt="User">
+                        <span>Eddie Netto</span>
+                    </td>
+                    <td class="py-3 px-6 text-left">Singer <br><span class="text-gray-400 text-xs">abc@gmail.com</span></td>
+                    <td class="py-3 px-6 text-center">
+                        <span class="bg-green-200 text-green-600 py-1 px-3 rounded-full text-xs">Active</span>
+                    </td>
+                    <td class="py-3 px-6 text-center">Owner</td>
+                    <td class="flex flex-col gap-2 py-3 px-6 text-center">
+                      <a href="#" class="text-red-500 hover:underline">Delete</a>
+                      <a href="#" class="text-blue-500 hover:underline">Edit</a>
+                    </td>
+                </tr>
 
-              <tr class="border-b border-gray-200 hover:bg-gray-100">
-                <td class="py-3 px-6 text-left flex items-center">
-                  <span
-                    >Lorem ipsum dolor sit amet consectetur adipisicing
-                    elit.</span
-                  >
-                </td>
-                <td class="py-3 px-6 text-left">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-                  facere cumque eius ratione eaque earum, accusamus dolor
-                  quaerat! Voluptas, eaque.
-                </td>
-                <td class="py-3 px-6 text-center">
-                  <span
-                    class="bg-green-200 text-green-600 py-1 px-3 rounded-full text-xs"
-                    >Active</span
-                  >
-                </td>
-                <td class="py-3 px-6 text-center">Owner</td>
-                <td class="py-3 px-6 text-left">
-                  <a href="#" class="text-red-500 hover:underline">Delete</a>
-                  <a href="#" class="text-blue-500 hover:underline">Edit</a>
-                </td>
-              </tr>
+                <tr class="border-b border-gray-200 hover:bg-gray-100">
+                    <td class="py-3 px-6 text-left flex items-center">
+                        <img class="w-12 h-12 rounded-full mr-2" src="../../assets/artist1.jpg" alt="User">
+                        <span>Eddie Netto</span>
+                    </td>
+                    <td class="py-3 px-6 text-left">Singer <br><span class="text-gray-400 text-xs">abc@gmail.com</span></td>
+                    <td class="py-3 px-6 text-center">
+                        <span class="bg-green-200 text-green-600 py-1 px-3 rounded-full text-xs">Active</span>
+                    </td>
+                    <td class="py-3 px-6 text-center">Owner</td>
+                    <td class="flex flex-col gap-2 py-3 px-6 text-center">
+                      <a href="#" class="text-red-500 hover:underline">Delete</a>
+                      <a href="#" class="text-blue-500 hover:underline">Edit</a>
+                    </td>
+                </tr>
             </tbody>
           </table>
 
