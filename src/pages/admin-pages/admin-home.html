@@ -7,305 +7,472 @@
 
     <link href="../../styles/output.css" rel="stylesheet" />
 
-    <title>News</title>
+    <title>Admin Dashboard</title>
   </head>
-  <body class="xl:flex xl:flex-col xl:items-center">
+  <body class="xl:flex xl:flex-col xl:items-center bg-[#f0eeee]">
+    <header
+      class="flex justify-between items-center gap-2 px-3 py-0.5 bg-lightmain  w-full sticky lg:relative top-0 z-20 h-14 lg:h-16"
+    >
+      <div class="flex gap-2 items-center">
+        <!-- Hamburger Button -->
+        <div
+          class="flex bg-gradient-to-b from-light to-lightmain p-2 lg:p-3 rounded-full lg:hidden"
+        >
+          <button id="menu-btn" class="flex flex-col justify-between w-4 h-4">
+            <span
+              class="block w-4 h-0.5 bg-white transition-transform origin-center duration-500 ease-in-out"
+            ></span>
+            <span
+              class="block w-4 h-0.5 bg-white transition-opacity duration-500"
+            ></span>
+            <span
+              class="block w-4 h-0.5 bg-white transition-transform origin-center duration-500 ease-in-out"
+            ></span>
+          </button>
+        </div>
+
+        <!-- logo  -->
+        <a href="../../../index.html" class="flex">
+          <img src="../../assets/MCAlogo.png" class="w-12 sm:w-14" alt="" />
+        </a>
+      </div>
+
+      <!-- Menu -->
+      <div
+        id="menu"
+        class="fixed top-14 -left-14 h-[100vh] bg-opacity-90 transform -translate-x-full transition-transform duration-500 ease-in-out z-50 flex justify-center overflow-hidden scroll-smooth"
+      >
+        <div
+          class="flex flex-col gap-2 w-80 border-r border-[#D2DAFF] bg-[#DBE2EF] sticky top-0 overflow-y-auto"
+        >
+          <a
+            href=""
+            class="bg-light p-2 font-semibold text-base text-darkmain border-b border-[#D2DAFF] flex gap-1.5 items-center"
+          >
+            <img
+              src="../../assets/grip-vertical-solid.svg"
+              class="h-4"
+              alt=""
+            />
+            <span>Dashboard</span>
+          </a>
+
+          <a
+            href=""
+            class="p-2 font-semibold text-base text-darkmain border-b border-[#D2DAFF] flex gap-1.5 items-center"
+          >
+            <img src="../../assets/users-solid.svg" class="h-4" alt="" />
+            <span> Committee members</span>
+          </a>
+
+          <a
+            href=""
+            class="p-2 font-semibold text-base text-darkmain border-b border-[#D2DAFF] flex gap-1.5 items-center"
+          >
+            <img src="../../assets/layer-group-solid.svg" class="h-4" alt="" />
+            <span> Categories</span>
+          </a>
+
+          <a
+            href=""
+            class="p-2 font-semibold text-base text-darkmain border-b border-[#D2DAFF] flex gap-1.5 items-center"
+          >
+            <img src="../../assets/user-plus-solid.svg" class="h-4" alt="" />
+            <span> New user </span>
+          </a>
+
+          <a
+            href=""
+            class="p-2 font-semibold text-base text-darkmain border-b border-[#D2DAFF] flex gap-1.5 items-center"
+          >
+            <img src="../../assets/file-pen-solid.svg" class="h-4" alt="" />
+            <span> Users list</span>
+          </a>
+
+          <a
+            href=""
+            class="p-2 font-semibold text-base text-darkmain border-b border-[#D2DAFF] flex gap-1.5 items-center"
+          >
+            <img src="../../assets/file-pen-solid.svg" class="h-4" alt="" />
+            <span> Edit Pages</span>
+          </a>
+
+          <a
+            href=""
+            class="p-2 font-semibold text-base text-darkmain border-b border-[#D2DAFF] flex gap-1.5 items-center"
+          >
+            <img src="../../assets/comment-dots-solid.svg" class="h-4" alt="" />
+            <span> Contact developers </span>
+          </a>
+        </div>
+      </div>
+
+      <div class="flex">
+        <a
+          href=""
+          class="py-1 sm:py-1 lg:py-1.5 px-2.5 sm:px-3 lg:px-4 mt-auto flex justify-center items-center gap-2 text-base lg:text-lg font-semibold text-darkmain bg-gray-300 hover:bg-gray-300/50 rounded-xl"
+          >Log Out
+          <img
+            src="../../assets/right-from-bracket-solid.svg"
+            class="h-5"
+            alt=""
+        /></a>
+      </div>
+    </header>
 
     <main
-      class="pr-3 flex flex-col gap-8  xl:max-w-[1280px] w-full"
+      class="px-2 lg:px-0 lg:pr-3 flex flex-col gap-8  w-full"
     >
-
       <!-- sidebar and content -->
       <div class="flex gap-4">
         <!-- sidebar -->
         <div
-          class="flex flex-col gap-2 w-80 border-r border-gray-300 bg-gray-100 sticky top-0 h-[100vh] py-2"
+          class="hidden lg:flex flex-col gap-2 w-80 border-r border-[#D2DAFF] bg-[#DBE2EF] sticky top-0 h-[100vh] shrink-0"
         >
-          <a href="" class="flex items-center p-2 w-full"> <img src="../../assets/MCAlogo.png" class="w-16 flex items-center text-center" alt=""> </a>
+          <a
+            href=""
+            class="bg-light p-3 font-semibold text-lg text-darkmain border-b border-[#D2DAFF] flex gap-2"
+          >
+            <img
+              src="../../assets/grip-vertical-solid.svg"
+              class="h-6"
+              alt=""
+            />
+            <span>Dashboard</span>
+          </a>
 
+          <a
+            href=""
+            class="p-3 font-semibold text-lg text-darkmain border-b border-[#D2DAFF] flex gap-2"
+          >
+            <img src="../../assets/users-solid.svg" class="h-6" alt="" />
+            <span> Committee members</span>
+          </a>
 
+          <a
+            href=""
+            class="p-3 font-semibold text-lg text-darkmain border-b border-[#D2DAFF] flex gap-2"
+          >
+            <img src="../../assets/layer-group-solid.svg" class="h-6" alt="" />
+            <span> Categories</span>
+          </a>
 
-          <a href="" class="bg-light p-2 font-semibold text-lg text-darkmain border-b border-gray-300 flex gap-2"> <img src="../../assets/grip-vertical-solid.svg" class="h-6" alt=""> <span>Dashboard</span>  </a>
+          <a
+            href=""
+            class="p-3 font-semibold text-lg text-darkmain border-b border-[#D2DAFF] flex gap-2"
+          >
+            <img src="../../assets/microphone-lines-solid blue.svg" class="h-6" alt="" />
+            <span> Artists </span>
+          </a>
 
-          <a href="" class=" p-2 font-semibold text-lg text-darkmain border-b border-gray-300 flex gap-2"> <img src="../../assets/users-solid.svg" class="h-6" alt=""> <span> Committee members</span>  </a>
+          <a
+            href=""
+            class="p-3 font-semibold text-lg text-darkmain border-b border-[#D2DAFF] flex gap-2"
+          >
+            <img src="../../assets/file-pen-solid.svg" class="h-6" alt="" />
+            <span> Edit Pages</span>
+          </a>
 
-          <a href="" class=" p-2 font-semibold text-lg text-darkmain border-b border-gray-300 flex gap-2"> <img src="../../assets/layer-group-solid.svg" class="h-6" alt=""> <span> Categories</span>  </a>
+          <a
+            href=""
+            class="p-3 font-semibold text-lg text-darkmain border-b border-[#D2DAFF] flex gap-2"
+          >
+            <img src="../../assets/comment-dots-solid.svg" class="h-6" alt="" />
+            <span> Contact developers </span>
+          </a>
 
-          <a href="" class=" p-2 font-semibold text-lg text-darkmain border-b border-gray-300 flex gap-2"> <img src="../../assets/user-plus-solid.svg" class="h-6" alt=""> <span>  New user </span>  </a>
-
-          <a href="" class=" p-2 font-semibold text-lg text-darkmain border-b border-gray-300 flex gap-2"> <img src="../../assets/file-pen-solid.svg" class="h-6" alt=""> <span> Users list</span>  </a>
-
-          <a href="" class=" p-2 font-semibold text-lg text-darkmain border-b border-gray-300 flex gap-2"> <img src="../../assets/file-pen-solid.svg" class="h-6" alt=""> <span> Edit Pages</span>  </a>
-
-          <a href="" class=" p-2 font-semibold text-lg text-darkmain border-b border-gray-300 flex gap-2"> <img src="../../assets/comment-dots-solid.svg" class="h-6" alt=""> <span> Contact developers </span>  </a>
-
-        
-
-          <a href="" class="p-2 mt-auto flex justify-center gap-2 text-xl font-semibold items-center text-darkmain">Log Out <img src="../../assets/right-from-bracket-solid.svg" class="h-5" alt=""></a>
+          <a
+            href=""
+            class="p-2 mt-auto mb-14 flex justify-center gap-2 text-xl font-semibold items-center text-darkmain"
+            >Log Out
+            <img
+              src="../../assets/right-from-bracket-solid.svg"
+              class="h-5"
+              alt=""
+          /></a>
         </div>
 
         <!-- Content  -->
-        <div class="flex flex-col gap-3 mt-6 mb-6 sm:mb-2">
-            
-      <!-- heading  -->
-      <div class="flex items-start">
-        <h2
-          class="text-xl sm:text-2xl lg:text-3xl text-darkmain font-extrabold"
-        >
-          Admin Dashboard<br />
-        </h2>
-      </div>
-
+        <div class="flex flex-col gap-8 mt-6 mb-6 sm:mb-2 w-full xl:max-w-[1200px] overflow-hidden">
+          <!-- heading  -->
+          <div class="flex items-start">
+            <h2
+              class="text-2xl sm:text-3xl lg:text-3xl text-darkmain font-bold"
+            >
+              Admin Dashboard<br />
+            </h2>
+          </div>
 
           <!-- tab-button -->
           <div
-            class="flex items-center gap-3 sm:gap-5 lg:gap-6 button-slider overflow-hidden sm:flex-wrap"
+            class="flex items-center gap-3 sm:gap-5 lg:gap-6 button-slider overflow-hidden sm:flex-wrap lg:justify-between"
           >
-            <button
-              class="tab-btn  bg-darkmain/60 hover:bg-darkmain/70 rounded-2xl w-40 sm:w-46 lg:w-52 aspect-[6/4] flex flex-col gap-3 text-white overflow-hidden"
-              data-tab="blog"
+            <div
+              class="bg-darkmain/60 hover:bg-darkmain/70 rounded-2xl w-40 sm:w-44 lg:w-52 aspect-[6/4] flex flex-col gap-0 text-white overflow-hidden shrink-0"
             >
-            <div class="flex justify-around items-center w-full px-3 py-2 lg:pt-4 sm:px-4">
-              <img src="../../assets/file (2).svg" class="w-6 lg:w-10 flex" alt="" />
-              <div class="flex flex-col  gap-0.5 lg:gap-3 items-start">
-              <h5 class="flex font-bold text-lg lg:text-3xl leading-5">8</h5>
-              <h5 class="flex font-semibold lg:text-2xl leading-5">Blogs</h5>
+              <button
+                class="tab-btn flex justify-around items-center w-full px-3 py-2 lg:pt-4 sm:px-4 h-full"
+                data-tab="blog"
+              >
+                <img
+                  src="../../assets/file (2).svg"
+                  class="w-7 sm:w-9 lg:w-10 flex"
+                  alt=""
+                />
+                <div class="flex flex-col gap-0.5 lg:gap-3 items-start">
+                  <h5 class="flex font-bold text-xl sm:text-2xl lg:text-3xl leading-5">
+                    8
+                  </h5>
+                  <h5 class="flex font-semibold text-lg sm:text-xl lg:text-2xl leading-5">
+                    Blogs
+                  </h5>
+                </div>
+              </button>
+
+              <div
+                class="flex bg-light hover:bg-light/90 w-full p-1.5 justify-center mt-auto"
+              >
+                <a href="./add-new-blog.html" class="text-sm lg:text-base flex gap-4 font-medium">
+                  Add Blog
+
+                  <img
+                    src="../../assets/plus-solid.svg"
+                    class="w-3 lg:w-4"
+                    alt=""
+                  />
+                </a>
+              </div>
             </div>
+
+            <div
+              class="bg-darkmain/60 hover:bg-darkmain/70 rounded-2xl w-40 sm:w-46 lg:w-52 aspect-[6/4] flex flex-col gap-0 text-white overflow-hidden shrink-0"
+            >
+              <button
+                class="tab-btn flex justify-around items-center w-full px-3 py-2 lg:pt-4 sm:px-4 h-full"
+                data-tab="event"
+              >
+                <img
+                  src="../../assets/calendar.svg"
+                  class="w-7 sm:w-9 lg:w-10 flex"
+                  alt=""
+                />
+                <div class="flex flex-col gap-0.5 lg:gap-3 items-start">
+                  <h5 class="flex font-bold text-xl sm:text-2xl lg:text-3xl leading-5">
+                    8
+                  </h5>
+                  <h5 class="flex font-semibold text-lg sm:text-xl lg:text-2xl leading-5">
+                    Event
+                  </h5>
+                </div>
+              </button>
+
+              <div
+                class="flex bg-light hover:bg-light/90 w-full p-1.5 justify-center mt-auto"
+              >
+                <a href="./add-new-blog.html" class="text-sm lg:text-base flex gap-4 font-medium">
+                  Add Event
+
+                  <img
+                    src="../../assets/plus-solid.svg"
+                    class="w-3 lg:w-4"
+                    alt=""
+                  />
+                </a>
+              </div>
             </div>
 
-            <div class="flex bg-light hover:bg-light/90 w-full p-1.5 justify-center mt-auto">
-            <a href="" class="text-sm lg:text-base flex gap-4 font-medium">
-               Add blog
+            <div
+              class="bg-darkmain/60 hover:bg-darkmain/70 rounded-2xl w-40 sm:w-46 lg:w-52 aspect-[6/4] flex flex-col gap-0 text-white overflow-hidden shrink-0"
+            >
+              <button
+                class="tab-btn flex justify-around items-center w-full px-3 py-2 lg:pt-4 sm:px-4 h-full"
+                data-tab="news"
+              >
+                <img
+                  src="../../assets/bullhorn.svg"
+                  class="w-7 sm:w-9 lg:w-10 flex"
+                  alt=""
+                />
+                <div class="flex flex-col gap-0.5 lg:gap-3 items-start">
+                  <h5 class="flex font-bold text-xl sm:text-2xl lg:text-3xl leading-5">
+                    8
+                  </h5>
+                  <h5 class="flex font-semibold text-lg sm:text-xl lg:text-2xl leading-5">
+                    News
+                  </h5>
+                </div>
+              </button>
 
-               <img src="../../assets/plus-solid.svg" class="w-3 lg:w-4" alt="">
-            </a>
-        </div>
+              <div
+                class="flex bg-light hover:bg-light/90 w-full p-1.5 justify-center mt-auto"
+              >
+                <a href="./add-new-blog.html" class="text-sm lg:text-base flex gap-4 font-medium">
+                  Add News
 
-            </button>
+                  <img
+                    src="../../assets/plus-solid.svg"
+                    class="w-3 lg:w-4"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
 
-            <button
-            class="tab-btn  bg-darkmain/60 hover:bg-darkmain/70 rounded-2xl w-40 sm:w-46 lg:w-52 aspect-[6/4] flex flex-col gap-3 text-white overflow-hidden"
-            data-tab="event"
-          >
-          <div class="flex justify-around items-center w-full px-3 py-2 lg:pt-4 sm:px-4">
-            <img src="../../assets/calendar.svg" class="w-6 lg:w-10 flex" alt="" />
-            <div class="flex flex-col  gap-0.5 lg:gap-3 items-start">
-            <h5 class="flex font-bold text-lg lg:text-3xl leading-5">8</h5>
-            <h5 class="flex font-semibold lg:text-2xl leading-5">Event</h5>
-          </div>
-          </div>
+            <div
+              class="bg-darkmain/60 hover:bg-darkmain/70 rounded-2xl w-40 sm:w-46 lg:w-52 aspect-[6/4] flex flex-col gap-0 text-white overflow-hidden shrink-0"
+            >
+              <button
+                class="tab-btn flex justify-around items-center w-full px-3 py-2 lg:pt-4 sm:px-4 h-full"
+                data-tab="users"
+              >
+                <img
+                  src="../../assets/users-line-solid.svg"
+                  class="w-7 sm:w-9 lg:w-10 flex"
+                  alt=""
+                />
+                <div class="flex flex-col gap-0.5 lg:gap-3 items-start">
+                  <h5 class="flex font-bold text-xl sm:text-2xl lg:text-3xl leading-5">
+                    8
+                  </h5>
+                  <h5 class="flex font-semibold text-lg sm:text-xl lg:text-2xl leading-5">
+                    Users
+                  </h5>
+                </div>
+              </button>
 
-          <div class="flex bg-light hover:bg-light/90 w-full p-1.5 justify-center mt-auto">
-          <a href="" class="text-sm lg:text-base flex gap-4 font-medium">
-             Add Event
+              <div
+                class="flex bg-light hover:bg-light/90 w-full p-1.5 justify-center mt-auto"
+              >
+                <a href="./add-new-blog.html" class="text-sm lg:text-base flex gap-4 font-medium">
+                  Add User
 
-             <img src="../../assets/plus-solid.svg" class="w-3 lg:w-4" alt="">
-          </a>
-      </div>
-
-          </button>
-
-          
-          <button
-          class="tab-btn  bg-darkmain/60 hover:bg-darkmain/70 rounded-2xl w-40 sm:w-46 lg:w-52 aspect-[6/4] flex flex-col gap-3 text-white overflow-hidden"
-          data-tab="news"
-        >
-        <div class="flex justify-around items-center w-full px-3 py-2 lg:pt-4 sm:px-4">
-          <img src="../../assets/bullhorn.svg" class="w-6 lg:w-10 flex" alt="" />
-          <div class="flex flex-col  gap-0.5 lg:gap-3 items-start">
-          <h5 class="flex font-bold text-lg lg:text-3xl leading-5">8</h5>
-          <h5 class="flex font-semibold lg:text-2xl leading-5">News</h5>
-        </div>
-        </div>
-
-        <div class="flex bg-light hover:bg-light/90 w-full p-1.5 justify-center mt-auto">
-        <a href="" class="text-sm lg:text-base flex gap-4 font-medium">
-           Add News
-
-           <img src="../../assets/plus-solid.svg" class="w-3 lg:w-4" alt="">
-        </a>
-    </div>
-
-        </button>
-
-          
-        <button
-        class="tab-btn  bg-darkmain/60 hover:bg-darkmain/70 rounded-2xl w-40 sm:w-46 lg:w-52 aspect-[6/4] flex flex-col gap-3 text-white overflow-hidden"
-        data-tab="artists"
-      >
-      <div class="flex justify-around items-center w-full px-3 py-2 lg:pt-4 sm:px-4">
-        <img src="../../assets/microphone-lines-solid.svg" class="w-6 lg:w-10 flex" alt="" />
-        <div class="flex flex-col  gap-0.5 lg:gap-3 items-start">
-        <h5 class="flex font-bold text-lg lg:text-3xl leading-5">8</h5>
-        <h5 class="flex font-semibold lg:text-2xl leading-5">Artists</h5>
-      </div>
-      </div>
-
-      <div class="flex bg-light hover:bg-light/90 w-full p-1.5 justify-center mt-auto">
-      <a href="" class="text-sm lg:text-base flex gap-4 font-medium">
-         Add Artists
-
-         <img src="../../assets/plus-solid.svg" class="w-3 lg:w-4" alt="">
-      </a>
-  </div>
-
-      </button>
+                  <img
+                    src="../../assets/plus-solid.svg"
+                    class="w-3 lg:w-4"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
 
           </div>
 
           <!-- tab-content for blog  -->
+           <div class="flex tab-content hidden  flex-col gap-6 w-full" 
+           id="content-blog">
+          
+      <!-- search bar -->
+      <div class="flex items-center justify-center relative w-[90%]">
+        <input
+          type="text"
+          placeholder="Search blogs by title"
+          class="w-full border border-light rounded-4xl pl-8 p-2 text-black focus-visible:outline-darkmain"
+        />
+        <img
+          src="../../assets/search.svg"
+          class="w-5 absolute top-1/2 transform -translate-y-1/2 left-2"
+          alt=""
+        />
+      </div>
+
           <table
-            id="content-blog"
-            class="tab-content hidden bg-white shadow-sm shadow-black/20 rounded-lg overflow-hidden"
+            class="bg-white shadow-sm shadow-black/20 rounded-lg overflow-hidden"
           >
             <thead>
               <tr
-                class="bg-gray-200 text-gray-600 uppercase text-sm leading-normal"
+                class="bg-gray-200 text-gray-600 uppercase text-sm leading-normal grid grid-cols-3 sm:grid-cols-5 gap-4 sm:gap-6 lg:gap-8 justify-items-start py-1.5 px-3 sm:py-2 sm:px-4 lg:py-3 lg:px-6 font-medium lg:text-base"
               >
-                <th class="py-3 px-6 text-left">Name</th>
-                <th class="py-3 px-6 text-left">Description</th>
-                <th class="py-3 px-6 text-center">Status</th>
-                <th class="py-3 px-6 text-center">Role</th>
-                <th class="py-3 px-6 text-center">Action</th>
+                <th class="">Name</th>
+                <th class="hidden sm:grid">Description</th>
+                <th class="">Status</th>
+                <th class="hidden sm:grid">Role</th>
+                <th class="">Actions</th>
               </tr>
             </thead>
             <tbody class="text-gray-600 text-sm font-light">
-                
-              <tr class="border-b border-gray-200 hover:bg-gray-100">
-                <td class="py-3 px-6 text-left flex items-center w-40">
-                  <span
-                    >Lorem ipsum dolor sit Blog</span
-                  >
+              <tr
+                class="border-b border-gray-200 hover:bg-gray-100 text-sm leading-normal grid grid-cols-3 sm:grid-cols-5 gap-4 sm:gap-6 lg:gap-8 justify-items-start py-1.5 px-3 sm:py-2 sm:px-4 lg:py-3 lg:px-6 lg:text-base"
+              >
+                <td class="">
+                  <span>Lorem ipsum dolor sit Blog</span>
                 </td>
-                <td class="py-3 px-6 text-left w-40">
-                  Lorem ipsum dolor sit amet.
-                </td>
-                <td class="py-3 px-6 text-center">
+                <td class="hidden sm:grid">Lorem ipsum dolor sit ametl.</td>
+                <td class="">
                   <span
                     class="bg-green-200 text-green-600 py-1 px-3 rounded-full text-xs"
                     >Active</span
                   >
                 </td>
-                <td class="py-3 px-6 text-center">Owner</td>
-                <td class="flex flex-col gap-2 py-3 px-6 text-center">
+                <td class="hidden sm:grid">Owner</td>
+                <td class="flex flex-col gap-2">
                   <a href="#" class="text-red-500 hover:underline">Delete</a>
                   <a href="#" class="text-blue-500 hover:underline">Edit</a>
                 </td>
               </tr>
 
-              <tr class="border-b border-gray-200 hover:bg-gray-100">
-                <td class="py-3 px-6 text-left flex items-center w-40">
-                  <span
-                    >Lorem ipsum dolor sit Blog</span
-                  >
+              <tr
+                class="border-b border-gray-200 hover:bg-gray-100 text-sm leading-normal grid grid-cols-3 sm:grid-cols-5 gap-4 sm:gap-6 lg:gap-8 justify-items-start py-1.5 px-3 sm:py-2 sm:px-4 lg:py-3 lg:px-6 lg:text-base"
+              >
+                <td class="">
+                  <span>Lorem ipsum dolor sit Blog</span>
                 </td>
-                <td class="py-3 px-6 text-left w-40">
-                  Lorem ipsum dolor sit amet.
-                </td>
-                <td class="py-3 px-6 text-center">
+                <td class="hidden sm:grid">Lorem ipsum dolor sit ametl.</td>
+                <td class="">
                   <span
                     class="bg-green-200 text-green-600 py-1 px-3 rounded-full text-xs"
                     >Active</span
                   >
                 </td>
-                <td class="py-3 px-6 text-center">Owner</td>
-                <td class="flex flex-col gap-2 py-3 px-6 text-center">
+                <td class="hidden sm:grid">Owner</td>
+                <td class="flex flex-col gap-2">
                   <a href="#" class="text-red-500 hover:underline">Delete</a>
                   <a href="#" class="text-blue-500 hover:underline">Edit</a>
                 </td>
               </tr>
 
-              <tr class="border-b border-gray-200 hover:bg-gray-100">
-                <td class="py-3 px-6 text-left flex items-center w-40">
-                  <span
-                    >Lorem ipsum dolor sit Blog</span
-                  >
+              <tr
+                class="border-b border-gray-200 hover:bg-gray-100 text-sm leading-normal grid grid-cols-3 sm:grid-cols-5 gap-4 sm:gap-6 lg:gap-8 justify-items-start py-1.5 px-3 sm:py-2 sm:px-4 lg:py-3 lg:px-6 lg:text-base"
+              >
+                <td class="">
+                  <span>Lorem ipsum dolor sit Blog</span>
                 </td>
-                <td class="py-3 px-6 text-left w-40">
-                  Lorem ipsum dolor sit amet.
-                </td>
-                <td class="py-3 px-6 text-center">
+                <td class="hidden sm:grid">Lorem ipsum dolor sit ametl.</td>
+                <td class="">
                   <span
                     class="bg-green-200 text-green-600 py-1 px-3 rounded-full text-xs"
                     >Active</span
                   >
                 </td>
-                <td class="py-3 px-6 text-center">Owner</td>
-                <td class="flex flex-col gap-2 py-3 px-6 text-center">
-                  <a href="#" class="text-red-500 hover:underline">Delete</a>
-                  <a href="#" class="text-blue-500 hover:underline">Edit</a>
-                </td>
-              </tr>
-                
-              <tr class="border-b border-gray-200 hover:bg-gray-100">
-                <td class="py-3 px-6 text-left flex items-center w-40">
-                  <span
-                    >Lorem ipsum dolor sit Blog</span
-                  >
-                </td>
-                <td class="py-3 px-6 text-left w-40">
-                  Lorem ipsum dolor sit amet.
-                </td>
-                <td class="py-3 px-6 text-center">
-                  <span
-                    class="bg-green-200 text-green-600 py-1 px-3 rounded-full text-xs"
-                    >Active</span
-                  >
-                </td>
-                <td class="py-3 px-6 text-center">Owner</td>
-                <td class="flex flex-col gap-2 py-3 px-6 text-center">
+                <td class="hidden sm:grid">Owner</td>
+                <td class="flex flex-col gap-2">
                   <a href="#" class="text-red-500 hover:underline">Delete</a>
                   <a href="#" class="text-blue-500 hover:underline">Edit</a>
                 </td>
               </tr>
 
-              <tr class="border-b border-gray-200 hover:bg-gray-100">
-                <td class="py-3 px-6 text-left flex items-center w-40">
-                  <span
-                    >Lorem ipsum dolor sit Blog</span
-                  >
+              <tr
+                class="border-b border-gray-200 hover:bg-gray-100 text-sm leading-normal grid grid-cols-3 sm:grid-cols-5 gap-4 sm:gap-6 lg:gap-8 justify-items-start py-1.5 px-3 sm:py-2 sm:px-4 lg:py-3 lg:px-6 lg:text-base"
+              >
+                <td class="">
+                  <span>Lorem ipsum dolor sit Blog</span>
                 </td>
-                <td class="py-3 px-6 text-left w-40">
-                  Lorem ipsum dolor sit amet.
-                </td>
-                <td class="py-3 px-6 text-center">
+                <td class="hidden sm:grid">Lorem ipsum dolor sit ametl.</td>
+                <td class="">
                   <span
                     class="bg-green-200 text-green-600 py-1 px-3 rounded-full text-xs"
                     >Active</span
                   >
                 </td>
-                <td class="py-3 px-6 text-center">Owner</td>
-                <td class="flex flex-col gap-2 py-3 px-6 text-center">
+                <td class="hidden sm:grid">Owner</td>
+                <td class="flex flex-col gap-2">
                   <a href="#" class="text-red-500 hover:underline">Delete</a>
                   <a href="#" class="text-blue-500 hover:underline">Edit</a>
                 </td>
               </tr>
-
-              <tr class="border-b border-gray-200 hover:bg-gray-100">
-                <td class="py-3 px-6 text-left flex items-center w-40">
-                  <span
-                    >Lorem ipsum dolor sit Blog</span
-                  >
-                </td>
-                <td class="py-3 px-6 text-left w-40">
-                  Lorem ipsum dolor sit amet.
-                </td>
-                <td class="py-3 px-6 text-center">
-                  <span
-                    class="bg-green-200 text-green-600 py-1 px-3 rounded-full text-xs"
-                    >Active</span
-                  >
-                </td>
-                <td class="py-3 px-6 text-center">Owner</td>
-                <td class="flex flex-col gap-2 py-3 px-6 text-center">
-                  <a href="#" class="text-red-500 hover:underline">Delete</a>
-                  <a href="#" class="text-blue-500 hover:underline">Edit</a>
-                </td>
-              </tr>
-
-           
             </tbody>
           </table>
+
+        </div>
 
           <!-- tab-content for event  -->
           <table
@@ -314,85 +481,95 @@
           >
             <thead>
               <tr
-                class="bg-gray-200 text-gray-600 uppercase text-sm leading-normal"
+                class="bg-gray-200 text-gray-600 uppercase text-sm leading-normal grid grid-cols-3 sm:grid-cols-5 gap-4 sm:gap-6 lg:gap-8 justify-items-start py-1.5 px-3 sm:py-2 sm:px-4 lg:py-3 lg:px-6 font-medium lg:text-base"
               >
-                <th class="py-3 px-6 text-left">Name</th>
-                <th class="py-3 px-6 text-left">Description</th>
-                <th class="py-3 px-6 text-center">Status</th>
-                <th class="py-3 px-6 text-center">Role</th>
-                <th class="py-3 px-6 text-center">Action</th>
+                <th class="">Name</th>
+                <th class="hidden sm:grid">Description</th>
+                <th class="">Status</th>
+                <th class="hidden sm:grid">Role</th>
+                <th class="">Actions</th>
               </tr>
             </thead>
             <tbody class="text-gray-600 text-sm font-light">
-            
-                <tr class="border-b border-gray-200 hover:bg-gray-100">
-                    <td class="py-3 px-6 text-left flex items-center w-40">
-                      <span
-                        >Lorem ipsum dolor sit Event</span
-                      >
-                    </td>
-                    <td class="py-3 px-6 text-left w-40">
-                      Lorem ipsum dolor sit amet.
-                    </td>
-                    <td class="py-3 px-6 text-center">
-                      <span
-                        class="bg-green-200 text-green-600 py-1 px-3 rounded-full text-xs"
-                        >Active</span
-                      >
-                    </td>
-                    <td class="py-3 px-6 text-center">Owner</td>
-                    <td class="flex flex-col gap-2 py-3 px-6 text-center">
-                      <a href="#" class="text-red-500 hover:underline">Delete</a>
-                      <a href="#" class="text-blue-500 hover:underline">Edit</a>
-                    </td>
-                  </tr>
-    
+              <tr
+                class="border-b border-gray-200 hover:bg-gray-100 text-sm leading-normal grid grid-cols-3 sm:grid-cols-5 gap-4 sm:gap-6 lg:gap-8 justify-items-start py-1.5 px-3 sm:py-2 sm:px-4 lg:py-3 lg:px-6 lg:text-base"
+              >
+                <td class="">
+                  <span>Lorem ipsum dolor sit Event</span>
+                </td>
+                <td class="hidden sm:grid">Lorem ipsum dolor sit ametl.</td>
+                <td class="">
+                  <span
+                    class="bg-green-200 text-green-600 py-1 px-3 rounded-full text-xs"
+                    >Active</span
+                  >
+                </td>
+                <td class="hidden sm:grid">Owner</td>
+                <td class="flex flex-col gap-2">
+                  <a href="#" class="text-red-500 hover:underline">Delete</a>
+                  <a href="#" class="text-blue-500 hover:underline">Edit</a>
+                </td>
+              </tr>
 
-                  <tr class="border-b border-gray-200 hover:bg-gray-100">
-                    <td class="py-3 px-6 text-left flex items-center w-40">
-                      <span
-                        >Lorem ipsum dolor sit Event</span
-                      >
-                    </td>
-                    <td class="py-3 px-6 text-left w-40">
-                      Lorem ipsum dolor sit amet.
-                    </td>
-                    <td class="py-3 px-6 text-center">
-                      <span
-                        class="bg-green-200 text-green-600 py-1 px-3 rounded-full text-xs"
-                        >Active</span
-                      >
-                    </td>
-                    <td class="py-3 px-6 text-center">Owner</td>
-                    <td class="flex flex-col gap-2 py-3 px-6 text-center">
-                      <a href="#" class="text-red-500 hover:underline">Delete</a>
-                      <a href="#" class="text-blue-500 hover:underline">Edit</a>
-                    </td>
-                  </tr>
-    
+              <tr
+                class="border-b border-gray-200 hover:bg-gray-100 text-sm leading-normal grid grid-cols-3 sm:grid-cols-5 gap-4 sm:gap-6 lg:gap-8 justify-items-start py-1.5 px-3 sm:py-2 sm:px-4 lg:py-3 lg:px-6 lg:text-base"
+              >
+                <td class="">
+                  <span>Lorem ipsum dolor sit Event</span>
+                </td>
+                <td class="hidden sm:grid">Lorem ipsum dolor sit ametl.</td>
+                <td class="">
+                  <span
+                    class="bg-green-200 text-green-600 py-1 px-3 rounded-full text-xs"
+                    >Active</span
+                  >
+                </td>
+                <td class="hidden sm:grid">Owner</td>
+                <td class="flex flex-col gap-2">
+                  <a href="#" class="text-red-500 hover:underline">Delete</a>
+                  <a href="#" class="text-blue-500 hover:underline">Edit</a>
+                </td>
+              </tr>
 
-                  <tr class="border-b border-gray-200 hover:bg-gray-100">
-                    <td class="py-3 px-6 text-left flex items-center w-40">
-                      <span
-                        >Lorem ipsum dolor sit Event</span
-                      >
-                    </td>
-                    <td class="py-3 px-6 text-left w-40">
-                      Lorem ipsum dolor sit amet.
-                    </td>
-                    <td class="py-3 px-6 text-center">
-                      <span
-                        class="bg-green-200 text-green-600 py-1 px-3 rounded-full text-xs"
-                        >Active</span
-                      >
-                    </td>
-                    <td class="py-3 px-6 text-center">Owner</td>
-                    <td class="flex flex-col gap-2 py-3 px-6 text-center">
-                      <a href="#" class="text-red-500 hover:underline">Delete</a>
-                      <a href="#" class="text-blue-500 hover:underline">Edit</a>
-                    </td>
-                  </tr>
-    
+              <tr
+                class="border-b border-gray-200 hover:bg-gray-100 text-sm leading-normal grid grid-cols-3 sm:grid-cols-5 gap-4 sm:gap-6 lg:gap-8 justify-items-start py-1.5 px-3 sm:py-2 sm:px-4 lg:py-3 lg:px-6 lg:text-base"
+              >
+                <td class="">
+                  <span>Lorem ipsum dolor sit Event</span>
+                </td>
+                <td class="hidden sm:grid">Lorem ipsum dolor sit ametl.</td>
+                <td class="">
+                  <span
+                    class="bg-green-200 text-green-600 py-1 px-3 rounded-full text-xs"
+                    >Active</span
+                  >
+                </td>
+                <td class="hidden sm:grid">Owner</td>
+                <td class="flex flex-col gap-2">
+                  <a href="#" class="text-red-500 hover:underline">Delete</a>
+                  <a href="#" class="text-blue-500 hover:underline">Edit</a>
+                </td>
+              </tr>
+
+              <tr
+                class="border-b border-gray-200 hover:bg-gray-100 text-sm leading-normal grid grid-cols-3 sm:grid-cols-5 gap-4 sm:gap-6 lg:gap-8 justify-items-start py-1.5 px-3 sm:py-2 sm:px-4 lg:py-3 lg:px-6 lg:text-base"
+              >
+                <td class="">
+                  <span>Lorem ipsum dolor sit Event</span>
+                </td>
+                <td class="hidden sm:grid">Lorem ipsum dolor sit ametl.</td>
+                <td class="">
+                  <span
+                    class="bg-green-200 text-green-600 py-1 px-3 rounded-full text-xs"
+                    >Active</span
+                  >
+                </td>
+                <td class="hidden sm:grid">Owner</td>
+                <td class="flex flex-col gap-2">
+                  <a href="#" class="text-red-500 hover:underline">Delete</a>
+                  <a href="#" class="text-blue-500 hover:underline">Edit</a>
+                </td>
+              </tr>
             </tbody>
           </table>
 
@@ -403,176 +580,425 @@
           >
             <thead>
               <tr
-                class="bg-gray-200 text-gray-600 uppercase text-sm leading-normal"
+                class="bg-gray-200 text-gray-600 uppercase text-sm leading-normal grid grid-cols-3 sm:grid-cols-5 gap-4 sm:gap-6 lg:gap-8 justify-items-start py-1.5 px-3 sm:py-2 sm:px-4 lg:py-3 lg:px-6 font-medium lg:text-base"
               >
-                <th class="py-3 px-6 text-left">Name</th>
-                <th class="py-3 px-6 text-left">Description</th>
-                <th class="py-3 px-6 text-center">Status</th>
-                <th class="py-3 px-6 text-center">Role</th>
-                <th class="py-3 px-6 text-center">Action</th>
+                <th class="">Name</th>
+                <th class="hidden sm:grid">Description</th>
+                <th class="">Status</th>
+                <th class="hidden sm:grid">Role</th>
+                <th class="">Actions</th>
               </tr>
             </thead>
             <tbody class="text-gray-600 text-sm font-light">
-             
-                <tr class="border-b border-gray-200 hover:bg-gray-100">
-                    <td class="py-3 px-6 text-left flex items-center w-40">
-                      <span
-                        >Lorem ipsum dolor sit News</span
-                      >
-                    </td>
-                    <td class="py-3 px-6 text-left w-40">
-                      Lorem ipsum dolor sit amet.
-                    </td>
-                    <td class="py-3 px-6 text-center">
-                      <span
-                        class="bg-green-200 text-green-600 py-1 px-3 rounded-full text-xs"
-                        >Active</span
-                      >
-                    </td>
-                    <td class="py-3 px-6 text-center">Owner</td>
-                    <td class="flex flex-col gap-2 py-3 px-6 text-center">
-                      <a href="#" class="text-red-500 hover:underline">Delete</a>
-                      <a href="#" class="text-blue-500 hover:underline">Edit</a>
-                    </td>
-                  </tr>
-    
+              <tr
+                class="border-b border-gray-200 hover:bg-gray-100 text-sm leading-normal grid grid-cols-3 sm:grid-cols-5 gap-4 sm:gap-6 lg:gap-8 justify-items-start py-1.5 px-3 sm:py-2 sm:px-4 lg:py-3 lg:px-6 lg:text-base"
+              >
+                <td class="">
+                  <span>Lorem ipsum dolor sit News</span>
+                </td>
+                <td class="hidden sm:grid">Lorem ipsum dolor sit ametl.</td>
+                <td class="">
+                  <span
+                    class="bg-green-200 text-green-600 py-1 px-3 rounded-full text-xs"
+                    >Active</span
+                  >
+                </td>
+                <td class="hidden sm:grid">Owner</td>
+                <td class="flex flex-col gap-2">
+                  <a href="#" class="text-red-500 hover:underline">Delete</a>
+                  <a href="#" class="text-blue-500 hover:underline">Edit</a>
+                </td>
+              </tr>
 
-                  <tr class="border-b border-gray-200 hover:bg-gray-100">
-                    <td class="py-3 px-6 text-left flex items-center w-40">
-                      <span
-                        >Lorem ipsum dolor sit News</span
-                      >
-                    </td>
-                    <td class="py-3 px-6 text-left w-40">
-                      Lorem ipsum dolor sit amet.
-                    </td>
-                    <td class="py-3 px-6 text-center">
-                      <span
-                        class="bg-green-200 text-green-600 py-1 px-3 rounded-full text-xs"
-                        >Active</span
-                      >
-                    </td>
-                    <td class="py-3 px-6 text-center">Owner</td>
-                    <td class="flex flex-col gap-2 py-3 px-6 text-center">
-                      <a href="#" class="text-red-500 hover:underline">Delete</a>
-                      <a href="#" class="text-blue-500 hover:underline">Edit</a>
-                    </td>
-                  </tr>
+              <tr
+                class="border-b border-gray-200 hover:bg-gray-100 text-sm leading-normal grid grid-cols-3 sm:grid-cols-5 gap-4 sm:gap-6 lg:gap-8 justify-items-start py-1.5 px-3 sm:py-2 sm:px-4 lg:py-3 lg:px-6 lg:text-base"
+              >
+                <td class="">
+                  <span>Lorem ipsum dolor sit Event</span>
+                </td>
+                <td class="hidden sm:grid">Lorem ipsum dolor sit ametl.</td>
+                <td class="">
+                  <span
+                    class="bg-green-200 text-green-600 py-1 px-3 rounded-full text-xs"
+                    >Active</span
+                  >
+                </td>
+                <td class="hidden sm:grid">Owner</td>
+                <td class="flex flex-col gap-2">
+                  <a href="#" class="text-red-500 hover:underline">Delete</a>
+                  <a href="#" class="text-blue-500 hover:underline">Edit</a>
+                </td>
+              </tr>
 
+              <tr
+                class="border-b border-gray-200 hover:bg-gray-100 text-sm leading-normal grid grid-cols-3 sm:grid-cols-5 gap-4 sm:gap-6 lg:gap-8 justify-items-start py-1.5 px-3 sm:py-2 sm:px-4 lg:py-3 lg:px-6 lg:text-base"
+              >
+                <td class="">
+                  <span>Lorem ipsum dolor sit News</span>
+                </td>
+                <td class="hidden sm:grid">Lorem ipsum dolor sit ametl.</td>
+                <td class="">
+                  <span
+                    class="bg-green-200 text-green-600 py-1 px-3 rounded-full text-xs"
+                    >Active</span
+                  >
+                </td>
+                <td class="hidden sm:grid">Owner</td>
+                <td class="flex flex-col gap-2">
+                  <a href="#" class="text-red-500 hover:underline">Delete</a>
+                  <a href="#" class="text-blue-500 hover:underline">Edit</a>
+                </td>
+              </tr>
+
+              <tr
+                class="border-b border-gray-200 hover:bg-gray-100 text-sm leading-normal grid grid-cols-3 sm:grid-cols-5 gap-4 sm:gap-6 lg:gap-8 justify-items-start py-1.5 px-3 sm:py-2 sm:px-4 lg:py-3 lg:px-6 lg:text-base"
+              >
+                <td class="">
+                  <span>Lorem ipsum dolor sit News</span>
+                </td>
+                <td class="hidden sm:grid">Lorem ipsum dolor sit ametl.</td>
+                <td class="">
+                  <span
+                    class="bg-green-200 text-green-600 py-1 px-3 rounded-full text-xs"
+                    >Active</span
+                  >
+                </td>
+                <td class="hidden sm:grid">Owner</td>
+                <td class="flex flex-col gap-2">
+                  <a href="#" class="text-red-500 hover:underline">Delete</a>
+                  <a href="#" class="text-blue-500 hover:underline">Edit</a>
+                </td>
+              </tr>
             </tbody>
           </table>
 
-          <!-- tab-content for artists  -->
+          <!-- tab-content for users  -->
+           <div 
+           id="content-users" class="tab-content hidden flex flex-col gap-6 w-full">
+
+          
+      <!-- search bar -->
+      <div class="flex items-center justify-center relative w-[90%]">
+        <input
+          type="text"
+          placeholder="Search user by name"
+          class="w-full border border-light rounded-4xl pl-8 p-2 text-black focus-visible:outline-darkmain"
+        />
+        <img
+          src="../../assets/search.svg"
+          class="w-5 absolute top-1/2 transform -translate-y-1/2 left-2"
+          alt=""
+        />
+      </div>
+
           <table
-            id="content-artists"
-            class="tab-content hidden bg-white shadow-sm shadow-black/20 rounded-lg overflow-hidden"
+            class="bg-white shadow-sm shadow-black/20 rounded-lg overflow-hidden w-full"
           >
             <thead>
               <tr
-                class="bg-gray-200 text-gray-600 uppercase text-sm leading-normal"
+                class="bg-gray-200 text-gray-600 uppercase text-sm leading-normal grid grid-cols-3 sm:grid-cols-5 gap-4 sm:gap-6 lg:gap-8 justify-items-start py-1.5 px-3 sm:py-2 sm:px-4 lg:py-3 lg:px-6 font-medium lg:text-base"
               >
-                <th class="py-3 px-6 text-left">Name</th>
-                <th class="py-3 px-6 text-left">Title</th>
-                <th class="py-3 px-6 text-center">Status</th>
-                <th class="py-3 px-6 text-center">Role</th>
-                <th class="py-3 px-6 text-center">Action</th>
+                <th class="">Name</th>
+                <th class="hidden sm:grid">Title</th>
+                <th class="">Status</th>
+                <th class="hidden sm:grid">Role</th>
+                <th class="">Actions</th>
               </tr>
             </thead>
             <tbody class="text-gray-600 text-sm font-light">
-                <tr class="border-b border-gray-200 hover:bg-gray-100">
-                    <td class="py-3 px-6 text-left flex items-center">
-                        <img class="w-12 h-12 rounded-full mr-2" src="../../assets/artist1.jpg" alt="User">
-                        <span>Eddie Netto</span>
-                    </td>
-                    <td class="py-3 px-6 text-left">Singer <br><span class="text-gray-400 text-xs">abc@gmail.com</span></td>
-                    <td class="py-3 px-6 text-center">
-                        <span class="bg-green-200 text-green-600 py-1 px-3 rounded-full text-xs">Active</span>
-                    </td>
-                    <td class="py-3 px-6 text-center">Owner</td>
-                    <td class="flex flex-col gap-2 py-3 px-6 text-center">
-                      <a href="#" class="text-red-500 hover:underline">Delete</a>
-                      <a href="#" class="text-blue-500 hover:underline">Edit</a>
-                    </td>
-                </tr>
+              <tr
+                class="border-b border-gray-200 hover:bg-gray-100 text-sm leading-normal grid grid-cols-3 sm:grid-cols-5 gap-4 sm:gap-6 lg:gap-8 justify-items-start py-1.5 px-3 sm:py-2 sm:px-4 lg:py-3 lg:px-6 lg:text-base"
+              >
+                <td class="flex flex-col items-center">
+                  <img
+                    class="w-12 h-12 rounded-full mr-2"
+                    src="../../assets/artist1.jpg"
+                    alt="User"
+                  />
+                  <span>Eddie Netto</span>
+                </td>
+                <td class="hidden sm:grid">
+                  Singer <br /><span class="text-gray-400 text-xs"
+                    >abc@gmail.com</span
+                  >
+                </td>
+                <td class="">
+                  <span
+                    class="bg-green-200 text-green-600 py-1 px-3 rounded-full text-xs"
+                    >Active</span
+                  >
+                </td>
+                <td class="hidden sm:grid">Owner</td>
+                <td class="flex flex-col gap-2">
+                  <a href="#" class="text-red-500 hover:underline">Delete</a>
+                  <a href="#" class="text-blue-500 hover:underline">Edit</a>
+                </td>
+              </tr>
 
-                <tr class="border-b border-gray-200 hover:bg-gray-100">
-                    <td class="py-3 px-6 text-left flex items-center">
-                        <img class="w-12 h-12 rounded-full mr-2" src="../../assets/artist1.jpg" alt="User">
-                        <span>Eddie Netto</span>
-                    </td>
-                    <td class="py-3 px-6 text-left">Singer <br><span class="text-gray-400 text-xs">abc@gmail.com</span></td>
-                    <td class="py-3 px-6 text-center">
-                        <span class="bg-green-200 text-green-600 py-1 px-3 rounded-full text-xs">Active</span>
-                    </td>
-                    <td class="py-3 px-6 text-center">Owner</td>
-                    <td class="flex flex-col gap-2 py-3 px-6 text-center">
-                      <a href="#" class="text-red-500 hover:underline">Delete</a>
-                      <a href="#" class="text-blue-500 hover:underline">Edit</a>
-                    </td>
-                </tr>
+              <tr
+                class="border-b border-gray-200 hover:bg-gray-100 text-sm leading-normal grid grid-cols-3 sm:grid-cols-5 gap-4 sm:gap-6 lg:gap-8 justify-items-start py-1.5 px-3 sm:py-2 sm:px-4 lg:py-3 lg:px-6 lg:text-base"
+              >
+                <td class="flex flex-col items-center">
+                  <img
+                    class="w-12 h-12 rounded-full mr-2"
+                    src="../../assets/artist1.jpg"
+                    alt="User"
+                  />
+                  <span>Eddie Netto</span>
+                </td>
+                <td class="hidden sm:grid">
+                  Singer <br /><span class="text-gray-400 text-xs"
+                    >abc@gmail.com</span
+                  >
+                </td>
+                <td class="">
+                  <span
+                    class="bg-green-200 text-green-600 py-1 px-3 rounded-full text-xs"
+                    >Active</span
+                  >
+                </td>
+                <td class="hidden sm:grid">Owner</td>
+                <td class="flex flex-col gap-2">
+                  <a href="#" class="text-red-500 hover:underline">Delete</a>
+                  <a href="#" class="text-blue-500 hover:underline">Edit</a>
+                </td>
+              </tr>
 
-                <tr class="border-b border-gray-200 hover:bg-gray-100">
-                    <td class="py-3 px-6 text-left flex items-center">
-                        <img class="w-12 h-12 rounded-full mr-2" src="../../assets/artist1.jpg" alt="User">
-                        <span>Eddie Netto</span>
-                    </td>
-                    <td class="py-3 px-6 text-left">Singer <br><span class="text-gray-400 text-xs">abc@gmail.com</span></td>
-                    <td class="py-3 px-6 text-center">
-                        <span class="bg-green-200 text-green-600 py-1 px-3 rounded-full text-xs">Active</span>
-                    </td>
-                    <td class="py-3 px-6 text-center">Owner</td>
-                    <td class="flex flex-col gap-2 py-3 px-6 text-center">
-                      <a href="#" class="text-red-500 hover:underline">Delete</a>
-                      <a href="#" class="text-blue-500 hover:underline">Edit</a>
-                    </td>
-                </tr>
+              <tr
+                class="border-b border-gray-200 hover:bg-gray-100 text-sm leading-normal grid grid-cols-3 sm:grid-cols-5 gap-4 sm:gap-6 lg:gap-8 justify-items-start py-1.5 px-3 sm:py-2 sm:px-4 lg:py-3 lg:px-6 lg:text-base"
+              >
+                <td class="flex flex-col items-center">
+                  <img
+                    class="w-12 h-12 rounded-full mr-2"
+                    src="../../assets/artist1.jpg"
+                    alt="User"
+                  />
+                  <span>Eddie Netto</span>
+                </td>
+                <td class="hidden sm:grid">
+                  Singer <br /><span class="text-gray-400 text-xs"
+                    >abc@gmail.com</span
+                  >
+                </td>
+                <td class="">
+                  <span
+                    class="bg-green-200 text-green-600 py-1 px-3 rounded-full text-xs"
+                    >Active</span
+                  >
+                </td>
+                <td class="hidden sm:grid">Owner</td>
+                <td class="flex flex-col gap-2">
+                  <a href="#" class="text-red-500 hover:underline">Delete</a>
+                  <a href="#" class="text-blue-500 hover:underline">Edit</a>
+                </td>
+              </tr>
+
+              <tr
+                class="border-b border-gray-200 hover:bg-gray-100 text-sm leading-normal grid grid-cols-3 sm:grid-cols-5 gap-4 sm:gap-6 lg:gap-8 justify-items-start py-1.5 px-3 sm:py-2 sm:px-4 lg:py-3 lg:px-6 lg:text-base"
+              >
+                <td class="flex flex-col items-center">
+                  <img
+                    class="w-12 h-12 rounded-full mr-2"
+                    src="../../assets/artist1.jpg"
+                    alt="User"
+                  />
+                  <span>Eddie Netto</span>
+                </td>
+                <td class="hidden sm:grid">
+                  Singer <br /><span class="text-gray-400 text-xs"
+                    >abc@gmail.com</span
+                  >
+                </td>
+                <td class="">
+                  <span
+                    class="bg-green-200 text-green-600 py-1 px-3 rounded-full text-xs"
+                    >Active</span
+                  >
+                </td>
+                <td class="hidden sm:grid">Owner</td>
+                <td class="flex flex-col gap-2">
+                  <a href="#" class="text-red-500 hover:underline">Delete</a>
+                  <a href="#" class="text-blue-500 hover:underline">Edit</a>
+                </td>
+              </tr>
+
+              <tr
+              class="border-b border-gray-200 hover:bg-gray-100 text-sm leading-normal grid grid-cols-3 sm:grid-cols-5 gap-4 sm:gap-6 lg:gap-8 justify-items-start py-1.5 px-3 sm:py-2 sm:px-4 lg:py-3 lg:px-6 lg:text-base"
+            >
+              <td class="flex flex-col items-center">
+                <img
+                  class="w-12 h-12 rounded-full mr-2"
+                  src="../../assets/artist1.jpg"
+                  alt="User"
+                />
+                <span>Eddie Netto</span>
+              </td>
+              <td class="hidden sm:grid">
+                Singer <br /><span class="text-gray-400 text-xs"
+                  >abc@gmail.com</span
+                >
+              </td>
+              <td class="">
+                <span
+                  class="bg-green-200 text-green-600 py-1 px-3 rounded-full text-xs"
+                  >Active</span
+                >
+              </td>
+              <td class="hidden sm:grid">Owner</td>
+              <td class="flex flex-col gap-2">
+                <a href="#" class="text-red-500 hover:underline">Delete</a>
+                <a href="#" class="text-blue-500 hover:underline">Edit</a>
+              </td>
+            </tr>
+
+            <tr
+              class="border-b border-gray-200 hover:bg-gray-100 text-sm leading-normal grid grid-cols-3 sm:grid-cols-5 gap-4 sm:gap-6 lg:gap-8 justify-items-start py-1.5 px-3 sm:py-2 sm:px-4 lg:py-3 lg:px-6 lg:text-base"
+            >
+              <td class="flex flex-col items-center">
+                <img
+                  class="w-12 h-12 rounded-full mr-2"
+                  src="../../assets/artist1.jpg"
+                  alt="User"
+                />
+                <span>Eddie Netto</span>
+              </td>
+              <td class="hidden sm:grid">
+                Singer <br /><span class="text-gray-400 text-xs"
+                  >abc@gmail.com</span
+                >
+              </td>
+              <td class="">
+                <span
+                  class="bg-green-200 text-green-600 py-1 px-3 rounded-full text-xs"
+                  >Active</span
+                >
+              </td>
+              <td class="hidden sm:grid">Owner</td>
+              <td class="flex flex-col gap-2">
+                <a href="#" class="text-red-500 hover:underline">Delete</a>
+                <a href="#" class="text-blue-500 hover:underline">Edit</a>
+              </td>
+            </tr>
+
+            <tr
+              class="border-b border-gray-200 hover:bg-gray-100 text-sm leading-normal grid grid-cols-3 sm:grid-cols-5 gap-4 sm:gap-6 lg:gap-8 justify-items-start py-1.5 px-3 sm:py-2 sm:px-4 lg:py-3 lg:px-6 lg:text-base"
+            >
+              <td class="flex flex-col items-center">
+                <img
+                  class="w-12 h-12 rounded-full mr-2"
+                  src="../../assets/artist1.jpg"
+                  alt="User"
+                />
+                <span>Eddie Netto</span>
+              </td>
+              <td class="hidden sm:grid">
+                Singer <br /><span class="text-gray-400 text-xs"
+                  >abc@gmail.com</span
+                >
+              </td>
+              <td class="">
+                <span
+                  class="bg-green-200 text-green-600 py-1 px-3 rounded-full text-xs"
+                  >Active</span
+                >
+              </td>
+              <td class="hidden sm:grid">Owner</td>
+              <td class="flex flex-col gap-2">
+                <a href="#" class="text-red-500 hover:underline">Delete</a>
+                <a href="#" class="text-blue-500 hover:underline">Edit</a>
+              </td>
+            </tr>
+
+            <tr
+              class="border-b border-gray-200 hover:bg-gray-100 text-sm leading-normal grid grid-cols-3 sm:grid-cols-5 gap-4 sm:gap-6 lg:gap-8 justify-items-start py-1.5 px-3 sm:py-2 sm:px-4 lg:py-3 lg:px-6 lg:text-base"
+            >
+              <td class="flex flex-col items-center">
+                <img
+                  class="w-12 h-12 rounded-full mr-2"
+                  src="../../assets/artist1.jpg"
+                  alt="User"
+                />
+                <span>Eddie Netto</span>
+              </td>
+              <td class="hidden sm:grid">
+                Singer <br /><span class="text-gray-400 text-xs"
+                  >abc@gmail.com</span
+                >
+              </td>
+              <td class="">
+                <span
+                  class="bg-green-200 text-green-600 py-1 px-3 rounded-full text-xs"
+                  >Active</span
+                >
+              </td>
+              <td class="hidden sm:grid">Owner</td>
+              <td class="flex flex-col gap-2">
+                <a href="#" class="text-red-500 hover:underline">Delete</a>
+                <a href="#" class="text-blue-500 hover:underline">Edit</a>
+              </td>
+            </tr>
+
+
             </tbody>
           </table>
 
-          <div class="flex flex-col">
-            <!-- Cards  -->
-            <div class="flex"></div>
-          </div>
+        </div>
+
+
         </div>
       </div>
     </main>
 
     <script>
-      const buttons = document.querySelectorAll(".tab-btn");
-      const contents = document.querySelectorAll(".tab-content");
+    const buttons = document.querySelectorAll(".tab-btn");
+const contents = document.querySelectorAll(".tab-content");
+const container = document.querySelector(".button-slider"); // Parent container
 
-      // Function to activate a tab
-      function activateTab(button) {
-        const target = button.getAttribute("data-tab");
+// Function to activate a tab
+function activateTab(button) {
+  const target = button.getAttribute("data-tab");
 
-        // Remove active state from all buttons
-        buttons.forEach((btn) => {
-          btn.classList.remove("bg-darkmain/100", "hover:bg-darkmain/100");
-          btn.classList.add("bg-darkmain/60");
-        });
+  // Remove active state from all buttons
+  buttons.forEach((btn) => {
+    btn.classList.remove("bg-darkmain/100", "hover:bg-darkmain/100");
+    btn.classList.add("bg-darkmain/60");
+  });
 
-        // Hide all content
-        contents.forEach((content) => content.classList.add("hidden"));
+  // Hide all content
+  contents.forEach((content) => content.classList.add("hidden"));
 
-        // Activate the clicked tab
-        button.classList.remove("bg-darkmain/60");
-        button.classList.add("bg-darkmain/100", "hover:bg-darkmain/100");
+  // Activate the clicked tab
+  button.classList.remove("bg-darkmain/60");
+  button.classList.add("bg-darkmain/100", "hover:bg-darkmain/100");
 
-        // Show corresponding content
-        document.getElementById("content-" + target).classList.remove("hidden");
-      }
+  // Show corresponding content
+  document.getElementById("content-" + target).classList.remove("hidden");
 
-      // Add click event listeners
-      buttons.forEach((button) => {
-        button.addEventListener("click", function () {
-          activateTab(this);
-        });
-      });
+  // 🔹 Scroll the active button into the center
+  button.scrollIntoView({
+    behavior: "smooth",
+    block: "nearest",
+    inline: "center", // Ensures horizontal centering
+  });
+}
 
-      // Activate the first tab on page load
-      if (buttons.length > 0) {
-        activateTab(buttons[0]);
-      }
+// Add click event listeners
+buttons.forEach((button) => {
+  button.addEventListener("click", function () {
+    activateTab(this);
+  });
+});
+
+// Activate the first tab on page load
+if (buttons.length > 0) {
+  activateTab(buttons[0]);
+}
+
+
+
+
+
+
 
       // Select elements
       const menuBtn = document.getElementById("menu-btn");
@@ -580,18 +1006,18 @@
 
       // Toggle menu visibility
       menuBtn.addEventListener("click", () => {
-        menu.classList.toggle("translate-x-full"); // Slide menu in/out
+        menu.classList.toggle("-translate-x-full"); // Slide menu in/out
         menuBtn.classList.toggle("active"); // Toggle active state for hamburger button
-        menu.classList.toggle("right-2");
+        menu.classList.toggle("left-0");
       });
 
       // Close the menu when clicking outside of it
       document.addEventListener("click", (e) => {
         if (!menu.contains(e.target) && !menuBtn.contains(e.target)) {
           // If the click is outside the menu and hamburger button
-          menu.classList.add("translate-x-full"); // Hide the menu
+          menu.classList.add("-translate-x-full"); // Hide the menu
           menuBtn.classList.remove("active"); // Reset the hamburger button state
-          menu.classList.remove("right-2");
+          menu.classList.remove("left-0");
         }
       });
 
@@ -604,41 +1030,6 @@
       const accordionHeaders = document.querySelectorAll(
         ".accordion-item > div"
       );
-
-      accordionHeaders.forEach((headerContainer) => {
-        headerContainer.addEventListener("click", () => {
-          // Find the accordion content (immediately after the header container)
-          const content = headerContainer.nextElementSibling;
-
-          // Find the arrow icon within the same header container
-          const arrow = headerContainer.querySelector(".arrow");
-
-          if (content.classList.contains("hidden")) {
-            // Expand the accordion content
-            content.classList.remove("hidden");
-            requestAnimationFrame(() => {
-              content.classList.add("opacity-100", "scale-y-100");
-              content.classList.remove("opacity-0", "scale-y-0");
-            });
-          } else {
-            // Collapse the accordion content
-            content.classList.add("opacity-0", "scale-y-0");
-            content.classList.remove("opacity-100", "scale-y-100");
-
-            // Wait for the animation to complete before hiding the content
-            content.addEventListener(
-              "transitionend",
-              () => {
-                content.classList.add("hidden");
-              },
-              { once: true }
-            );
-          }
-
-          // Rotate the arrow icon
-          arrow.classList.toggle("rotate-180");
-        });
-      });
     </script>
   </body>
 </html>
