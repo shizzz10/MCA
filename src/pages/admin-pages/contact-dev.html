@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="../../assets/MCAlogo.png" />
+
+    <link href="../../styles/output.css" rel="stylesheet" />
+
+    <title>Contact Developer</title>
+  </head>
+  <body class="xl:flex xl:flex-col xl:items-center bg-[#f0eeee]">
+    <header
+      class="flex justify-between items-center gap-2 px-3 py-0.5 bg-lightmain w-full sticky lg:relative top-0 z-20 h-14 lg:h-16"
+    >
+      <div class="flex gap-2 items-center">
+        <!-- Hamburger Button -->
+        <div
+          class="flex bg-gradient-to-b from-light to-lightmain p-2 lg:p-3 rounded-full lg:hidden"
+        >
+          <button id="menu-btn" class="flex flex-col justify-between w-4 h-4">
+            <span
+              class="block w-4 h-0.5 bg-white transition-transform origin-center duration-500 ease-in-out"
+            ></span>
+            <span
+              class="block w-4 h-0.5 bg-white transition-opacity duration-500"
+            ></span>
+            <span
+              class="block w-4 h-0.5 bg-white transition-transform origin-center duration-500 ease-in-out"
+            ></span>
+          </button>
+        </div>
+
+        <!-- logo  -->
+        <a href="./admin-home.html" class="flex">
+          <img src="../../assets/MCAlogo.png" class="w-12 sm:w-14" alt="" />
+        </a>
+      </div>
+
+      <!-- Menu -->
+      <div
+        id="menu"
+        class="fixed top-14 -left-14 h-[100vh] bg-opacity-90 transform -translate-x-full transition-transform duration-500 ease-in-out z-50 flex justify-center overflow-hidden scroll-smooth"
+      >
+        <div
+          class="flex flex-col gap-2 w-80 border-r border-[#D2DAFF] bg-[#DBE2EF] sticky top-0 overflow-y-auto"
+        >
+          <a
+            href=""
+            class="bg-light p-2 font-semibold text-base text-darkmain border-b border-[#D2DAFF] flex gap-1.5 items-center"
+          >
+            <img
+              src="../../assets/grip-vertical-solid.svg"
+              class="h-4"
+              alt=""
+            />
+            <span>Dashboard</span>
+          </a>
+
+          <a
+            href=""
+            class="p-2 font-semibold text-base text-darkmain border-b border-[#D2DAFF] flex gap-1.5 items-center"
+          >
+            <img src="../../assets/users-solid.svg" class="h-4" alt="" />
+            <span> Committee members</span>
+          </a>
+
+          <a
+            href=""
+            class="p-2 font-semibold text-base text-darkmain border-b border-[#D2DAFF] flex gap-1.5 items-center"
+          >
+            <img src="../../assets/layer-group-solid.svg" class="h-4" alt="" />
+            <span> Categories</span>
+          </a>
+
+          <a
+            href=""
+            class="p-2 font-semibold text-base text-darkmain border-b border-[#D2DAFF] flex gap-1.5 items-center"
+          >
+            <img src="../../assets/user-plus-solid.svg" class="h-4" alt="" />
+            <span> New user </span>
+          </a>
+
+          <a
+            href=""
+            class="p-2 font-semibold text-base text-darkmain border-b border-[#D2DAFF] flex gap-1.5 items-center"
+          >
+            <img src="../../assets/file-pen-solid.svg" class="h-4" alt="" />
+            <span> Users list</span>
+          </a>
+
+          <a
+            href=""
+            class="p-2 font-semibold text-base text-darkmain border-b border-[#D2DAFF] flex gap-1.5 items-center"
+          >
+            <img src="../../assets/file-pen-solid.svg" class="h-4" alt="" />
+            <span> Edit Pages</span>
+          </a>
+
+          <a
+            href=""
+            class="p-2 font-semibold text-base text-darkmain border-b border-[#D2DAFF] flex gap-1.5 items-center"
+          >
+            <img src="../../assets/comment-dots-solid.svg" class="h-4" alt="" />
+            <span> Contact developers </span>
+          </a>
+        </div>
+      </div>
+
+      <div class="flex">
+        <a
+          href=""
+          class="py-1 sm:py-1 lg:py-1.5 px-2.5 sm:px-3 lg:px-4 mt-auto flex justify-center items-center gap-2 text-base lg:text-lg font-semibold text-darkmain bg-gray-300 hover:bg-gray-300/50 rounded-xl"
+          >Log Out
+          <img
+            src="../../assets/right-from-bracket-solid.svg"
+            class="h-5"
+            alt=""
+        /></a>
+      </div>
+    </header>
+
+    <main class="px-2 lg:px-0 lg:pr-3 flex flex-col gap-8 w-full">
+      <!-- sidebar and content -->
+      <div class="flex gap-4">
+        <!-- sidebar -->
+        <div
+        class="hidden lg:flex flex-col w-80 border-r border-[#D2DAFF] bg-[#DBE2EF] sticky top-0 h-[100vh] shrink-0"
+      >
+        <a
+          href="./admin-home.html"
+          class="hover:bg-light/20 p-5 font-semibold text-lg text-darkmain  border-b border-[#D2DAFF] flex gap-2 border-l-4 hover:border-l-darkmain/20 transition-all duration-100 ease-in-out"
+        >
+          <img
+            src="../../assets/grip-vertical-solid.svg"
+            class="h-6"
+            alt=""
+          />
+          <span>Dashboard</span>
+        </a>
+
+        <a
+          href=""
+          class="hover:bg-light/20 p-5 font-semibold text-lg text-darkmain  border-b border-[#D2DAFF] flex gap-2 border-l-4 hover:border-l-darkmain/20 transition-all duration-100 ease-in-out"
+        >
+          <img src="../../assets/users-solid.svg" class="h-6" alt="" />
+          <span> Committee members</span>
+        </a>
+
+        <a
+          href=""
+          class="hover:bg-light/20 p-5 font-semibold text-lg text-darkmain border-b border-[#D2DAFF] flex gap-2 border-l-4 hover:border-l-darkmain/20 transition-all duration-100 ease-in-out"
+        >
+          <img src="../../assets/layer-group-solid.svg" class="h-6" alt="" />
+          <span> Categories</span>
+        </a>
+
+        <a
+          href="./artists.html"
+          class="hover:bg-light/20 p-5 font-semibold text-lg text-darkmain  border-b border-[#D2DAFF] flex gap-2 border-l-4 hover:border-l-darkmain/20 transition-all duration-100 ease-in-out"
+        >
+          <img
+            src="../../assets/microphone-lines-solid blue.svg"
+            class="h-6"
+            alt=""
+          />
+          <span> Artists </span>
+        </a>
+
+        <a
+          href="./pages.html"
+          class="hover:bg-light/20 p-5 font-semibold text-lg text-darkmain  border-b border-[#D2DAFF] flex gap-2 border-l-4 hover:border-l-darkmain/20 transition-all duration-100 ease-in-out"
+        >
+          <img src="../../assets/file-pen-solid.svg" class="h-6" alt="" />
+          <span> Edit Pages</span>
+        </a>
+
+        <a
+          href="./contact-dev.html"
+          class="bg-light p-5 font-semibold text-lg text-darkmain border-b border-[#D2DAFF] flex gap-2 border-l-4 border-l-darkmain transition-all duration-100 ease-in-out"
+        >
+          <img src="../../assets/comment-dots-solid.svg" class="h-6" alt="" />
+          <span> Contact developers </span>
+        </a>
+
+        <a
+          href=""
+          class="p-2 mt-auto mb-14 flex justify-center gap-2 text-xl font-semibold items-center text-darkmain"
+          >Log Out
+          <img
+            src="../../assets/right-from-bracket-solid.svg"
+            class="h-5"
+            alt=""
+        /></a>
+      </div>
+
+
+        <!-- Content  -->
+        <div
+          class="flex flex-col gap-8 mt-6 mb-6 sm:mb-2 w-full xl:max-w-[1200px] overflow-hidden"
+        >
+          <!-- heading  -->
+          <div class="flex items-center gap-6">
+            <h2
+              class="text-2xl sm:text-3xl lg:text-3xl text-darkmain font-bold"
+            >
+            Contact Developer
+            </h2>
+          </div>
+
+          <!-- Pages  -->
+          <div class="flex flex-col gap-6 w-full">
+            <div class="flex flex-col button-slider overflow-hidden">
+              <table
+                class="bg-white shadow-sm shadow-black/20 rounded-lg overflow-hidden shrink-0 w-[400px] sm:w-full"
+              >
+                <thead>
+                  <tr
+                    class="bg-gray-200 text-gray-600 uppercase text-sm leading-normal grid grid-cols-[40%_30%_30%] gap-1 sm:gap-4 lg:gap-6 justify-items-start py-1.5 px-3 sm:py-2 sm:px-4 lg:py-3 lg:px-6 font-medium lg:text-base"
+                  >
+                    <th class="">Name</th>
+                    <th class="">Mail</th>
+                    <th class="">Whatsapp</th>
+                  </tr>
+                </thead>
+                <tbody class="text-gray-600 text-sm font-light">
+                    
+                  <tr
+                    class="border-b border-gray-200 hover:bg-gray-100 text-sm leading-normal grid grid-cols-[40%_30%_30%] gap-1 sm:gap-4 lg:gap-6 justify-items-start py-1.5 px-3 sm:py-2 sm:px-4 lg:py-3 lg:px-6 lg:text-base"
+                  >
+                    <td class="">
+                      <span class="font-medium lg:text-lg lg:font-semibold">Huzaifa Mukhtiar</span>
+                    </td>
+                    <td class="">
+                     
+            <a href="" class=""><img src="../../assets/email.svg" class="w-6 sm:w-7 lg:w-8 ease-in-out transform scale-100 hover:scale-[1.03] duration-300" alt=""></a>
+                    </td>
+                    <td class="">
+                     
+                        <a href="" class=""><img src="../../assets/whatsapp-brands.svg" class="w-6 sm:w-7 lg:w-8 ease-in-out transform scale-100 hover:scale-[1.03] duration-300" alt=""></a>
+                                </td>
+                  </tr>
+                    
+                  <tr
+                    class="border-b border-gray-200 hover:bg-gray-100 text-sm leading-normal grid grid-cols-[40%_30%_30%] gap-1 sm:gap-4 lg:gap-6 justify-items-start py-1.5 px-3 sm:py-2 sm:px-4 lg:py-3 lg:px-6 lg:text-base"
+                  >
+                    <td class="">
+                      <span class="font-medium lg:text-lg lg:font-semibold">Amir Khan</span>
+                    </td>
+                    <td class="">
+                     
+            <a href="" class=""><img src="../../assets/email.svg" class="w-6 sm:w-7 lg:w-8 ease-in-out transform scale-100 hover:scale-[1.03] duration-300" alt=""></a>
+                    </td>
+                    <td class="">
+                     
+                        <a href="" class=""><img src="../../assets/whatsapp-brands.svg" class="w-6 sm:w-7 lg:w-8 ease-in-out transform scale-100 hover:scale-[1.03] duration-300" alt=""></a>
+                                </td>
+                  </tr>
+
+                  
+                </tbody>
+              </table>
+            </div>
+          
+        </div>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      
+
+      // Select elements
+      const menuBtn = document.getElementById("menu-btn");
+      const menu = document.getElementById("menu");
+
+      // Toggle menu visibility
+      menuBtn.addEventListener("click", () => {
+        menu.classList.toggle("-translate-x-full"); // Slide menu in/out
+        menuBtn.classList.toggle("active"); // Toggle active state for hamburger button
+        menu.classList.toggle("left-0");
+      });
+
+      // Close the menu when clicking outside of it
+      document.addEventListener("click", (e) => {
+        if (!menu.contains(e.target) && !menuBtn.contains(e.target)) {
+          // If the click is outside the menu and hamburger button
+          menu.classList.add("-translate-x-full"); // Hide the menu
+          menuBtn.classList.remove("active"); // Reset the hamburger button state
+          menu.classList.remove("left-0");
+        }
+      });
+
+      // Prevent clicks inside the menu from closing it
+      menu.addEventListener("click", (e) => {
+        e.stopPropagation(); // Stop the click event from propagating to the document
+      });
+
+      // Select all accordion header containers
+      const accordionHeaders = document.querySelectorAll(
+        ".accordion-item > div"
+      );
+    </script>
+  </body>
+</html>
