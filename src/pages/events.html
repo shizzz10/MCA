@@ -14,70 +14,163 @@
       class="flex justify-between items-center gap-2 px-3 py-0.5 xl:max-w-[1280px] w-full"
     >
       <!-- logo  -->
-      <a href="../../index.html" class="flex">
+      <div class="flex items-center w-96 lg:w-auto">
+        <a href="../../index.html">
         <img src="../assets/MCAlogo.png" class="w-16 sm:w-20" alt="" />
       </a>
-
-      <!-- search bar -->
-      <div class="flex items-center justify-center relative w-[90%] hidden">
-        <input
-          type="text"
-          class="w-full border border-light rounded-4xl py-1.5 pl-8 bg-gradient-to-r from-light to-lightmain p-2 text-white"
-        />
-        <img
-          src="../assets/search.svg"
-          class="w-5 absolute top-1/2 transform -translate-y-1/2 left-2"
-          alt=""
-        />
+        <div class="flex flex-col">
+          <h2
+            class="text-base sm:text-lg lg:text-xl text-darkmain font-extrabold w-fit leading-4 sm:leading-6"
+          >
+          
+          <span class="hidden lg:flex">
+            Mangalore Cultural Association
+          </span>
+          <span class="flex lg:hidden">
+            Mangalore Cultural <br />
+            Association
+          </span>
+          </h2>
+          <span class="text-xs text-gray-700">Doha-Qatar Since 2008</span>
+        </div>
       </div>
 
+      <!-- menu bar active -->
       <div
-        class="hidden sm:flex justify-around items-center m-3 bg-darkmain rounded-2xl px-1 py-1 w-full"
+        class="hidden md:flex items-center m-3 bg-transparent rounded-2xl px-1 py-1 gap-5 lg:gap-8"
       >
-        <a
-          href="../../index.html"
-          class="flex flex-col gap-0.5 items-center p-1 hover:bg-light/10 rounded-md"
-        >
-          <img src="../assets/house.svg" class="w-5" alt="" />
-          <p class="text-xs font-medium text-white lg:text-sm">Home</p>
+        <a href="" class="flex flex-col gap-0.5 items-center">
+          <p
+            class="text-xs font-semibold text-darkmain lg:text-lg uppercase underline-offset-6 underline c-underline decoration-3"
+          >
+            Home
+          </p>
         </a>
 
-        <a
-          href="../pages/committee.html"
-          class="flex flex-col gap-0.5 items-center p-1 hover:bg-light/10 rounded-md"
+        <div
+          class="group flex flex-col gap-2 items-center relative z-50 cursor-pointer menu-container"
         >
-          <img src="../assets/list.svg" class="w-5" alt="" />
-          <p class="text-xs font-medium text-white lg:text-sm">Committee</p>
-        </a>
+          <div class="flex gap-2 items-center menu-btn">
+            <p
+              class="text-xs font-medium text-lightmain group-hover:text-lightmain/90 lg:text-lg uppercase whitespace-nowrap"
+            >
+              About MCA
+            </p>
+            <img
+              src="../assets/blue-arrow.svg"
+              class="w-3 rotate-90 group-hover:rotate-270 transform transition-transform duration-300 menu-arrow"
+              alt=""
+            />
+          </div>
+
+          <!-- Dropdown Menu -->
+          <div
+            class="menu-dropdown absolute top-full hidden group-hover:block bg-white shadow-lg rounded-md w-40 z-50"
+          >
+            <ul class="flex flex-col text-gray-700">
+              <li>
+                <a
+                  href="../pages/committee.html"
+                  class="block px-4 py-2 hover:bg-light text-xs font-medium text-lightmain group-hover:text-lightmain/90 lg:text-base"
+                  >Committee</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../pages/membership.html"
+                  class="block px-4 py-2 hover:bg-light text-xs font-medium text-lightmain group-hover:text-lightmain/90 lg:text-base"
+                  >Membership</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../pages/contact-us.html"
+                  class="block px-4 py-2 hover:bg-light text-xs font-medium text-lightmain group-hover:text-lightmain/90 lg:text-base"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
 
         <a
           href="../pages/events.html"
-          class="flex flex-col gap-0.5 items-center p-1 hover:bg-light/10 rounded-md"
+          class="flex flex-col gap-0.5 items-center"
         >
-          <img src="../assets/compass.svg" class="w-5" alt="" />
-          <p class="text-xs font-medium text-white lg:text-sm">Events</p>
+          <p class="text-xs font-medium text-lightmain lg:text-lg uppercase">
+            Events
+          </p>
         </a>
 
         <a
           href="../pages/news.html"
-          class="flex flex-col gap-0.5 items-center p-1 hover:bg-light/10 rounded-md"
+          class="flex flex-col gap-0.5 items-center"
         >
-          <img src="../assets/inbox.svg" class="w-5" alt="" />
-          <p class="text-xs font-medium text-white lg:text-sm">News</p>
+          <p
+            class="text-xs font-medium text-lightmain hover:text-lightmain/90 lg:text-lg uppercase"
+          >
+            News
+          </p>
         </a>
 
-        <a
-          href=""
-          class="flex flex-col gap-0.5 items-center p-1 hover:bg-light/10 rounded-md"
+        <div
+          class="group flex flex-col gap-2 items-center relative z-50 cursor-pointer menu-container"
         >
-          <img src="../assets/user.svg" class="w-5" alt="" />
-          <p class="text-xs font-medium text-white lg:text-sm">Profile</p>
-        </a>
+          <div class="menu-btn flex gap-2 items-center">
+            <p
+              class="text-xs font-medium text-lightmain group-hover:text-lightmain/90 lg:text-lg uppercase"
+            >
+              More
+            </p>
+            <img
+              src="../assets/blue-arrow.svg"
+              class="w-3 rotate-90 group-hover:rotate-270 transform transition-transform duration-300 menu-arrow"
+              alt=""
+            />
+          </div>
+
+          <!-- Dropdown Menu -->
+          <div
+            class="menu-dropdown absolute top-full hidden group-hover:block bg-white shadow-lg rounded-md w-40 z-50"
+          >
+            <ul class="flex flex-col text-gray-700">
+              <li>
+                <a
+                  href="../pages/about.html"
+                  class="block px-4 py-2 hover:bg-light text-xs font-medium text-lightmain group-hover:text-lightmain/90 lg:text-base"
+                  >Community</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block px-4 py-2 hover:bg-light text-xs font-medium text-lightmain group-hover:text-lightmain/90 lg:text-base"
+                  >Gallery</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../pages/admin-pages/admin-login.html"
+                  class="block px-4 py-2 hover:bg-light text-xs font-medium text-lightmain group-hover:text-lightmain/90 lg:text-base"
+                  >Login</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="block px-4 py-2 hover:bg-light text-xs font-medium text-lightmain group-hover:text-lightmain/90 lg:text-base"
+                  >Profile</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
       </div>
 
       <!-- Hamburger Button -->
       <div
-        class="flex bg-gradient-to-b from-light to-lightmain p-2 lg:p-3 rounded-full"
+        class="flex bg-gradient-to-b from-light to-lightmain p-2 lg:p-3 rounded-full md:hidden"
       >
         <button id="menu-btn" class="flex flex-col justify-between w-4 h-4">
           <span
@@ -92,16 +185,16 @@
         </button>
       </div>
 
-      <!-- Menu -->
+      <!-- hamburger Menu -->
       <div
         id="menu"
-        class="fixed top-14 sm:top-20 -right-4 h-[80vh] w-[50vw] sm:w-[320px] lg:w-[400px] bg-darkmain bg-opacity-90 transform translate-x-full transition-transform duration-500 ease-in-out z-50 rounded-3xl flex justify-center overflow-hidden overflow-y-auto scroll-smooth"
+        class="fixed top-14 sm:top-20 -right-4 h-[80vh] w-[280px] sm:w-[320px] lg:w-[400px] bg-darkmain bg-opacity-90 transform translate-x-full transition-transform duration-500 ease-in-out z-50 rounded-3xl flex justify-center overflow-hidden overflow-y-auto scroll-smooth"
       >
         <ul class="p-4 text-white flex flex-col gap-4">
-          <li> <a href="../../index.html"><img src="../assets/MCAlogo.png" class="w-20" alt="" /></a></li>
+          <li><img src="../assets/MCAlogo.png" class="w-20" alt="" /></li>
           <li>
             <a
-              href="../../index.html"
+              href="#"
               class="px-3 py-1 bg-light/40 hover:bg-light/60 rounded-lg"
               >Home</a
             >
@@ -118,13 +211,6 @@
               href="../pages/events.html"
               class="px-3 py-1 bg-light/40 hover:bg-light/60 rounded-lg"
               >Events</a
-            >
-          </li>
-          <li>
-            <a
-              href="../pages/artists.html"
-              class="px-3 py-1 bg-light/40 hover:bg-light/60 rounded-lg"
-              >Kalapuraskar</a
             >
           </li>
 
@@ -156,7 +242,7 @@
                 </li>
                 <li>
                   <a
-                    href="./membership.html"
+                    href="../pages/membership.html"
                     class="px-2 py-1 bg-light/30 hover:bg-light/50 rounded-lg"
                     >Membership</a
                   >
@@ -165,13 +251,21 @@
             </div>
           </li>
 
-          <!-- more  -->
+          <li>
+            <a
+              href="../pages/artists.html"
+              class="px-3 py-1 bg-light/40 hover:bg-light/60 rounded-lg"
+              >Kalapuraskar</a
+            >
+          </li>
+
+          <!-- Community  -->
           <li class="accordion-item flex w-full flex-col">
             <!-- Accordion Header -->
             <div
               class="flex items-center justify-between px-3 py-1.5 cursor-pointer"
             >
-              <span class="accordion-header">More</span>
+              <span class="accordion-header">Community</span>
               <img
                 src="../assets/arrow.svg"
                 class="ml-3 w-4 arrow transition-transform duration-300"
@@ -186,16 +280,48 @@
               <ul class="text-sm font-medium flex flex-col gap-3">
                 <li>
                   <a
-                    href="./about.html"
+                    href="../pages/about.html"
                     class="px-2 py-1 bg-light/30 hover:bg-light/50 rounded-lg"
                     >Community</a
                   >
                 </li>
+
+                <li>
+                  <a
+                    href="#"
+                    class="px-2 py-1 bg-light/30 hover:bg-light/50 rounded-lg"
+                    >Sports</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    class="px-2 py-1 bg-light/30 hover:bg-light/50 rounded-lg"
+                    >Wishes</a
+                  >
+                </li>
+
                 <li>
                   <a
                     href="#"
                     class="px-2 py-1 bg-light/30 hover:bg-light/50 rounded-lg"
                     >Gallery</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    class="px-2 py-1 bg-light/30 hover:bg-light/50 rounded-lg"
+                    >Obituary</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="../pages/admin-pages/admin-login.html"
+                    class="px-2 py-1 bg-light/30 hover:bg-light/50 rounded-lg"
+                    >Login</a
                   >
                 </li>
               </ul>
@@ -204,7 +330,7 @@
 
           <li class="pb-4">
             <a
-              href="./contact-us.html"
+              href="../pages/contact-us.html"
               class="px-3 py-1 bg-light/40 hover:bg-light/60 rounded-lg"
               >Contact</a
             >
@@ -224,189 +350,241 @@
           Events <br />
         </h2>
 
-        <img src="../assets/MCAlogo.png" alt="" class="w-28 sm:w-36 lg:w-40" />
       </div>
 
-      <!-- Upcomming  -->
+     
+      <!-- Events  -->
       <div class="flex flex-col gap-3">
         <!-- head  -->
         <div class="flex">
           <h4
             class="text-xl font-semibold lg:text-2xl xl:text-3xl text-darkmain"
           >
-            Upcomming
+            Recently
           </h4>
         </div>
 
-        <!--  cards  -->
-
+        
+        <!-- cards  -->
         <div
-          class="flex gap-4 lg::gap-6 sm:flex-wrap sm:grid sm:grid-cols-3 lg:grid-cols-4 justify-content-between button-slider overflow-hidden"
+          class="flex gap-4 lg::gap-6 sm:flex-wrap md:grid md:grid-cols-3 lg:grid-cols-4 justify-content-between button-slider overflow-hidden"
         >
+        
           <!-- card  -->
           <div
-            class="flex flex-col w-60 aspect-[7/5] sm:w-[31%] sm:aspect-[5/4] lg:w-[23.8%] lg:aspect-[5/4] border border-transparent hover:border-light rounded-2xl overflow-hidden hover:shadow-sm hover:shadow-black/20 group shrink-0"
+            class="flex flex-col w-60 aspect-[7/6] sm:aspect-[7/7] md:w-[31%] lg:w-[23.8%] lg:aspect-[5/4] rounded-2xl overflow-hidden group shrink-0 relative min-h-[100%]"
           >
             <!-- Image Section -->
             <img
-              src="../assets/gathering6.jpg"
-              class="h-[57%] w-full object-cover rounded-br-4xl group-hover:rounded-br-sm transition-all duration-300 rounded-bl-sm group-hover:rounded-bl-none"
+              src="../assets/IMG-20220703-WA0011.jpg"
+              class="h-[58%] w-full object-cover rounded-br-4xl group-hover:rounded-br-sm transition-all duration-300"
               alt=""
             />
 
             <!-- Content Section -->
             <div
-              class="h-[43%] flex flex-col gap-0.5 px-3 py-1.5 md:py-2 lg:py-2 xl:py-2 bg-lightmain rounded-tl-sm group-hover:rounded-tl-none rounded-tr-4xl group-hover:rounded-tr-sm transition-all duration-300"
+              class="absolute bottom-0 h-[47%] flex flex-col gap-0.5 px-3 py-1.5 md:py-2 lg:py-2 xl:py-2 bg-darkmain rounded-tl-xl group-hover:rounded-tl-sm rounded-tr-4xl group-hover:rounded-tr-lg rounded-bl-xl group-hover:rounded-bl-none rounded-br-4xl group-hover:rounded-br-none transition-all duration-300 w-full"
             >
               <!-- Headline -->
               <div class="flex flex-col gap-0 sm:gap-0.5 lg:gap-1">
                 <p
                   class="text-white font-medium sm:text-lg leading-4 lg:leading-5"
                 >
-                  Annual Event
+                  Annual Event Announcement 2025
                 </p>
                 <span
-                  class="text-gray-300 text-xs lg:text-sm leading-3 lg:leading-4"
-                  >Lorem ipsum dolor sit amet consectetur, adipisicing
-                  elit.</span
+                  class="text-gray-200 text-sm lg:text-base leading-3 lg:leading-4"
+                  ></span
                 >
               </div>
-              <!-- Read More -->
-              <a
-                href="#"
-                class="text-sm text-gray-200 md:text-base leading-3 mt-auto flex gap-1 group/arrow items-center"
-                >Read More
-                <img
-                  src="../assets/arrow.svg"
-                  alt=""
-                  class="w-3 sm:w-4 transition-transform duration-500 ease-in-out transform group-hover/arrow:ml-0.5 rotate-270"
-              /></a>
+              <div class="flex justify-between items-end mt-auto">
+                <!-- additional info  -->
+               <div class="flex flex-col gap-0.5 text-xs lg:text-sm leading-4 text-gray-300">
+                
+                <div class="flex gap-2">
+                  <img src="../assets/clock-gray.svg" class="w-3" alt="">
+                  <span>4:00 PM</span>
+                </div>
+
+                <div class="flex gap-2">
+                  <img src="../assets/calendar-gray.svg" class="w-3" alt="">
+                  <span>25/02/2025</span>
+                </div>
+
+                <div class="flex gap-2">
+                  <img src="../assets/location-gray.svg" class="w-3" alt="">
+                  <span>Hamilton School</span>
+                </div>
+               </div>
+    
+              
+          </div>
+
             </div>
           </div>
 
-          <!-- card -->
+          
+          <!-- card  -->
           <div
-            class="flex flex-col w-60 aspect-[7/5] sm:w-[31%] sm:aspect-[5/4] lg:w-[23.8%] lg:aspect-[5/4] border border-transparent hover:border-light rounded-2xl overflow-hidden hover:shadow-sm hover:shadow-black/20 group shrink-0"
+            class="flex flex-col w-60 aspect-[7/6] sm:aspect-[7/7] md:w-[31%] lg:w-[23.8%] lg:aspect-[5/4] rounded-2xl overflow-hidden group shrink-0 relative min-h-[100%]"
           >
             <!-- Image Section -->
             <img
-              src="../assets/gathering5.jpg"
-              class="h-[57%] w-full object-cover rounded-br-4xl group-hover:rounded-br-sm transition-all duration-300 rounded-bl-sm group-hover:rounded-bl-none"
+              src="../assets/IMG-20220703-WA0011.jpg"
+              class="h-[58%] w-full object-cover rounded-br-4xl group-hover:rounded-br-sm transition-all duration-300"
               alt=""
             />
 
             <!-- Content Section -->
             <div
-              class="h-[43%] flex flex-col gap-0.5 px-3 py-1.5 md:py-2 lg:py-2 xl:py-2 bg-lightmain rounded-tl-sm group-hover:rounded-tl-none rounded-tr-4xl group-hover:rounded-tr-sm transition-all duration-300"
+              class="absolute bottom-0 h-[47%] flex flex-col gap-0.5 px-3 py-1.5 md:py-2 lg:py-2 xl:py-2 bg-darkmain rounded-tl-xl group-hover:rounded-tl-sm rounded-tr-4xl group-hover:rounded-tr-lg rounded-bl-xl group-hover:rounded-bl-none rounded-br-4xl group-hover:rounded-br-none transition-all duration-300 w-full"
             >
               <!-- Headline -->
               <div class="flex flex-col gap-0 sm:gap-0.5 lg:gap-1">
                 <p
                   class="text-white font-medium sm:text-lg leading-4 lg:leading-5"
                 >
-                  Quiz
+                  Annual Event Announcement 2025
                 </p>
                 <span
-                  class="text-gray-300 text-xs lg:text-sm leading-3 lg:leading-4"
-                  >Lorem ipsum dolor sit amet consectetur, adipisicing
-                  elit.</span
+                  class="text-gray-200 text-sm lg:text-base leading-3 lg:leading-4"
+                  ></span
                 >
               </div>
-              <!-- Read More -->
-              <a
-                href="#"
-                class="text-sm text-gray-200 md:text-base leading-3 mt-auto flex gap-1 group/arrow items-center"
-                >Read More
-                <img
-                  src="../assets/arrow.svg"
-                  alt=""
-                  class="w-3 sm:w-4 transition-transform duration-500 ease-in-out transform group-hover/arrow:ml-0.5 rotate-270"
-              /></a>
+              <div class="flex justify-between items-end mt-auto">
+                <!-- additional info  -->
+               <div class="flex flex-col gap-0.5 text-xs lg:text-sm leading-4 text-gray-300">
+                
+                <div class="flex gap-2">
+                  <img src="../assets/clock-gray.svg" class="w-3" alt="">
+                  <span>4:00 PM</span>
+                </div>
+
+                <div class="flex gap-2">
+                  <img src="../assets/calendar-gray.svg" class="w-3" alt="">
+                  <span>25/02/2025</span>
+                </div>
+
+                <div class="flex gap-2">
+                  <img src="../assets/location-gray.svg" class="w-3" alt="">
+                  <span>Hamilton School</span>
+                </div>
+               </div>
+    
+              
+          </div>
+
             </div>
           </div>
 
           <!-- card  -->
           <div
-            class="flex flex-col w-60 aspect-[7/5] sm:w-[31%] sm:aspect-[5/4] lg:w-[23.8%] lg:aspect-[5/4] border border-transparent hover:border-light rounded-2xl overflow-hidden hover:shadow-sm hover:shadow-black/20 group shrink-0"
+            class="flex flex-col w-60 aspect-[7/6] sm:aspect-[7/7] md:w-[31%] lg:w-[23.8%] lg:aspect-[5/4] rounded-2xl overflow-hidden group shrink-0 relative min-h-[100%]"
           >
             <!-- Image Section -->
             <img
-              src="../assets/gathering2.jpg"
-              class="h-[57%] w-full object-cover rounded-br-4xl group-hover:rounded-br-sm transition-all duration-300 rounded-bl-sm group-hover:rounded-bl-none"
+              src="../assets/IMG-20220703-WA0011.jpg"
+              class="h-[58%] w-full object-cover rounded-br-4xl group-hover:rounded-br-sm transition-all duration-300"
               alt=""
             />
 
             <!-- Content Section -->
             <div
-              class="h-[43%] flex flex-col gap-0.5 px-3 py-1.5 md:py-2 lg:py-2 xl:py-2 bg-lightmain rounded-tl-sm group-hover:rounded-tl-none rounded-tr-4xl group-hover:rounded-tr-sm transition-all duration-300"
+              class="absolute bottom-0 h-[47%] flex flex-col gap-0.5 px-3 py-1.5 md:py-2 lg:py-2 xl:py-2 bg-darkmain rounded-tl-xl group-hover:rounded-tl-sm rounded-tr-4xl group-hover:rounded-tr-lg rounded-bl-xl group-hover:rounded-bl-none rounded-br-4xl group-hover:rounded-br-none transition-all duration-300 w-full"
             >
               <!-- Headline -->
               <div class="flex flex-col gap-0 sm:gap-0.5 lg:gap-1">
                 <p
                   class="text-white font-medium sm:text-lg leading-4 lg:leading-5"
                 >
-                  Family Picnic 2025
+                  Annual Event Announcement 2025
                 </p>
                 <span
-                  class="text-gray-300 text-xs lg:text-sm leading-3 lg:leading-4"
-                  >Lorem ipsum dolor sit amet consectetur, adipisicing
-                  elit.</span
+                  class="text-gray-200 text-sm lg:text-base leading-3 lg:leading-4"
+                  ></span
                 >
               </div>
-              <!-- Read More -->
-              <a
-                href="#"
-                class="text-sm text-gray-200 md:text-base leading-3 mt-auto flex gap-1 group/arrow items-center"
-                >Read More
-                <img
-                  src="../assets/arrow.svg"
-                  alt=""
-                  class="w-3 sm:w-4 transition-transform duration-500 ease-in-out transform group-hover/arrow:ml-0.5 rotate-270"
-              /></a>
+              <div class="flex justify-between items-end mt-auto">
+                <!-- additional info  -->
+               <div class="flex flex-col gap-0.5 text-xs lg:text-sm leading-4 text-gray-300">
+                
+                <div class="flex gap-2">
+                  <img src="../assets/clock-gray.svg" class="w-3" alt="">
+                  <span>4:00 PM</span>
+                </div>
+
+                <div class="flex gap-2">
+                  <img src="../assets/calendar-gray.svg" class="w-3" alt="">
+                  <span>25/02/2025</span>
+                </div>
+
+                <div class="flex gap-2">
+                  <img src="../assets/location-gray.svg" class="w-3" alt="">
+                  <span>Hamilton School</span>
+                </div>
+               </div>
+    
+              
+          </div>
+
             </div>
           </div>
 
-          <!-- card -->
+          <!-- card  -->
           <div
-            class="flex flex-col w-60 aspect-[7/5] sm:w-[31%] sm:aspect-[5/4] lg:w-[23.8%] lg:aspect-[5/4] border border-transparent hover:border-light rounded-2xl overflow-hidden hover:shadow-sm hover:shadow-black/20 group shrink-0"
+            class="flex flex-col w-60 aspect-[7/6] sm:aspect-[7/7] md:w-[31%] lg:w-[23.8%] lg:aspect-[5/4] rounded-2xl overflow-hidden group shrink-0 relative min-h-[100%]"
           >
             <!-- Image Section -->
             <img
-              src="../assets/gathering1.jpg"
-              class="h-[57%] w-full object-cover rounded-br-4xl group-hover:rounded-br-sm transition-all duration-300 rounded-bl-sm group-hover:rounded-bl-none"
+              src="../assets/IMG-20220703-WA0011.jpg"
+              class="h-[58%] w-full object-cover rounded-br-4xl group-hover:rounded-br-sm transition-all duration-300"
               alt=""
             />
 
             <!-- Content Section -->
             <div
-              class="h-[43%] flex flex-col gap-0.5 px-3 py-1.5 md:py-2 lg:py-2 xl:py-2 bg-lightmain rounded-tl-sm group-hover:rounded-tl-none rounded-tr-4xl group-hover:rounded-tr-sm transition-all duration-300"
+              class="absolute bottom-0 h-[47%] flex flex-col gap-0.5 px-3 py-1.5 md:py-2 lg:py-2 xl:py-2 bg-darkmain rounded-tl-xl group-hover:rounded-tl-sm rounded-tr-4xl group-hover:rounded-tr-lg rounded-bl-xl group-hover:rounded-bl-none rounded-br-4xl group-hover:rounded-br-none transition-all duration-300 w-full"
             >
               <!-- Headline -->
               <div class="flex flex-col gap-0 sm:gap-0.5 lg:gap-1">
                 <p
                   class="text-white font-medium sm:text-lg leading-4 lg:leading-5"
                 >
-                  Free Health Check
+                  Annual Event Announcement 2025
                 </p>
                 <span
-                  class="text-gray-300 text-xs lg:text-sm leading-3 lg:leading-4"
-                  >Lorem ipsum dolor sit amet consectetur, adipisicing
-                  elit.</span
+                  class="text-gray-200 text-sm lg:text-base leading-3 lg:leading-4"
+                  ></span
                 >
               </div>
-              <!-- Read More -->
-              <a
-                href="#"
-                class="text-sm text-gray-200 md:text-base leading-3 mt-auto flex gap-1 group/arrow items-center"
-                >Read More
-                <img
-                  src="../assets/arrow.svg"
-                  alt=""
-                  class="w-3 sm:w-4 transition-transform duration-500 ease-in-out transform group-hover/arrow:ml-0.5 rotate-270"
-              /></a>
+              <div class="flex justify-between items-end mt-auto">
+                <!-- additional info  -->
+               <div class="flex flex-col gap-0.5 text-xs lg:text-sm leading-4 text-gray-300">
+                
+                <div class="flex gap-2">
+                  <img src="../assets/clock-gray.svg" class="w-3" alt="">
+                  <span>4:00 PM</span>
+                </div>
+
+                <div class="flex gap-2">
+                  <img src="../assets/calendar-gray.svg" class="w-3" alt="">
+                  <span>25/02/2025</span>
+                </div>
+
+                <div class="flex gap-2">
+                  <img src="../assets/location-gray.svg" class="w-3" alt="">
+                  <span>Hamilton School</span>
+                </div>
+               </div>
+    
+              
+          </div>
+
             </div>
           </div>
+
         </div>
+
       </div>
 
       <!-- Previous  -->
@@ -424,132 +602,160 @@
         <div
           class="flex gap-4 lg::gap-6 sm:flex-wrap sm:grid sm:grid-cols-3 lg:grid-cols-4 justify-content-between button-slider overflow-hidden"
         >
+         
           <!-- card  -->
           <div
-            class="flex flex-col w-60 aspect-[7/5] sm:w-[31%] sm:aspect-[5/4] lg:w-[23.8%] lg:aspect-[5/4] border border-transparent hover:border-light rounded-2xl overflow-hidden hover:shadow-sm hover:shadow-black/20 group shrink-0"
+            class="flex flex-col w-60 aspect-[7/6] sm:aspect-[7/7] md:w-[31%] lg:w-[23.8%] lg:aspect-[5/4] rounded-2xl overflow-hidden group shrink-0 relative min-h-[100%]"
           >
             <!-- Image Section -->
             <img
-              src="../assets/gathering6.jpg"
-              class="h-[57%] w-full object-cover rounded-br-4xl group-hover:rounded-br-sm transition-all duration-300 rounded-bl-sm group-hover:rounded-bl-none"
+              src="../assets/IMG-20220703-WA0011.jpg"
+              class="h-[58%] w-full object-cover rounded-br-4xl group-hover:rounded-br-sm transition-all duration-300"
               alt=""
             />
 
             <!-- Content Section -->
             <div
-              class="h-[43%] flex flex-col gap-0.5 px-3 py-1.5 md:py-2 lg:py-2 xl:py-2 bg-lightmain rounded-tl-sm group-hover:rounded-tl-none rounded-tr-4xl group-hover:rounded-tr-sm transition-all duration-300"
+              class="absolute bottom-0 h-[47%] flex flex-col gap-0.5 px-3 py-1.5 md:py-2 lg:py-2 xl:py-2 bg-darkmain rounded-tl-xl group-hover:rounded-tl-sm rounded-tr-4xl group-hover:rounded-tr-lg rounded-bl-xl group-hover:rounded-bl-none rounded-br-4xl group-hover:rounded-br-none transition-all duration-300 w-full"
             >
               <!-- Headline -->
               <div class="flex flex-col gap-0 sm:gap-0.5 lg:gap-1">
                 <p
                   class="text-white font-medium sm:text-lg leading-4 lg:leading-5"
                 >
-                  Annual Event
+                  Annual Event Announcement 2025
                 </p>
                 <span
-                  class="text-gray-300 text-xs lg:text-sm leading-3 lg:leading-4"
-                  >Lorem ipsum dolor sit amet consectetur, adipisicing
-                  elit.</span
+                  class="text-gray-200 text-sm lg:text-base leading-3 lg:leading-4"
+                  ></span
                 >
               </div>
-              <!-- Read More -->
-              <a
-                href="#"
-                class="text-sm text-gray-200 md:text-base leading-3 mt-auto flex gap-1 group/arrow items-center"
-                >Read More
-                <img
-                  src="../assets/arrow.svg"
-                  alt=""
-                  class="w-3 sm:w-4 transition-transform duration-500 ease-in-out transform group-hover/arrow:ml-0.5 rotate-270"
-              /></a>
+              <div class="flex justify-between items-end mt-auto">
+                <!-- additional info  -->
+               <div class="flex flex-col gap-0.5 text-xs lg:text-sm leading-4 text-gray-300">
+                
+                <div class="flex gap-2">
+                  <img src="../assets/clock-gray.svg" class="w-3" alt="">
+                  <span>4:00 PM</span>
+                </div>
+
+                <div class="flex gap-2">
+                  <img src="../assets/calendar-gray.svg" class="w-3" alt="">
+                  <span>25/02/2025</span>
+                </div>
+
+                <div class="flex gap-2">
+                  <img src="../assets/location-gray.svg" class="w-3" alt="">
+                  <span>Hamilton School</span>
+                </div>
+               </div>
+    
+              
+          </div>
+
             </div>
           </div>
 
-          <!-- card -->
+         
+          <!-- card  -->
           <div
-            class="flex flex-col w-60 aspect-[7/5] sm:w-[31%] sm:aspect-[5/4] lg:w-[23.8%] lg:aspect-[5/4] border border-transparent hover:border-light rounded-2xl overflow-hidden hover:shadow-sm hover:shadow-black/20 group shrink-0"
+            class="flex flex-col w-60 aspect-[7/6] sm:aspect-[7/7] md:w-[31%] lg:w-[23.8%] lg:aspect-[5/4] rounded-2xl overflow-hidden group shrink-0 relative min-h-[100%]"
           >
             <!-- Image Section -->
             <img
-              src="../assets/gathering5.jpg"
-              class="h-[57%] w-full object-cover rounded-br-4xl group-hover:rounded-br-sm transition-all duration-300 rounded-bl-sm group-hover:rounded-bl-none"
+              src="../assets/IMG-20220703-WA0011.jpg"
+              class="h-[58%] w-full object-cover rounded-br-4xl group-hover:rounded-br-sm transition-all duration-300"
               alt=""
             />
 
             <!-- Content Section -->
             <div
-              class="h-[43%] flex flex-col gap-0.5 px-3 py-1.5 md:py-2 lg:py-2 xl:py-2 bg-lightmain rounded-tl-sm group-hover:rounded-tl-none rounded-tr-4xl group-hover:rounded-tr-sm transition-all duration-300"
+              class="absolute bottom-0 h-[47%] flex flex-col gap-0.5 px-3 py-1.5 md:py-2 lg:py-2 xl:py-2 bg-darkmain rounded-tl-xl group-hover:rounded-tl-sm rounded-tr-4xl group-hover:rounded-tr-lg rounded-bl-xl group-hover:rounded-bl-none rounded-br-4xl group-hover:rounded-br-none transition-all duration-300 w-full"
             >
               <!-- Headline -->
               <div class="flex flex-col gap-0 sm:gap-0.5 lg:gap-1">
                 <p
                   class="text-white font-medium sm:text-lg leading-4 lg:leading-5"
                 >
-                  Quiz
+                  Annual Event Announcement 2025
                 </p>
                 <span
-                  class="text-gray-300 text-xs lg:text-sm leading-3 lg:leading-4"
-                  >Lorem ipsum dolor sit amet consectetur, adipisicing
-                  elit.</span
+                  class="text-gray-200 text-sm lg:text-base leading-3 lg:leading-4"
+                  ></span
                 >
               </div>
-              <!-- Read More -->
-              <a
-                href="#"
-                class="text-sm text-gray-200 md:text-base leading-3 mt-auto flex gap-1 group/arrow items-center"
-                >Read More
-                <img
-                  src="../assets/arrow.svg"
-                  alt=""
-                  class="w-3 sm:w-4 transition-transform duration-500 ease-in-out transform group-hover/arrow:ml-0.5 rotate-270"
-              /></a>
+              <div class="flex justify-between items-end mt-auto">
+                <!-- additional info  -->
+               <div class="flex flex-col gap-0.5 text-xs lg:text-sm leading-4 text-gray-300">
+                
+                <div class="flex gap-2">
+                  <img src="../assets/clock-gray.svg" class="w-3" alt="">
+                  <span>4:00 PM</span>
+                </div>
+
+                <div class="flex gap-2">
+                  <img src="../assets/calendar-gray.svg" class="w-3" alt="">
+                  <span>25/02/2025</span>
+                </div>
+
+                <div class="flex gap-2">
+                  <img src="../assets/location-gray.svg" class="w-3" alt="">
+                  <span>Hamilton School</span>
+                </div>
+               </div>
+    
+              
+          </div>
+
             </div>
           </div>
         </div>
       </div>
     </main>
 
+    
+  
+    <!-- mobile footer  -->
     <footer
-      class="sm:hidden flex justify-around items-center m-3 bg-darkmain rounded-2xl px-1 py-2 mt-auto"
+      class="sm:hidden flex justify-around items-center m-3 bg-darkmain/90 rounded-2xl px-1 py-2 sticky bottom-3 h-14"
     >
       <a
-        href="../../index.html"
-        class="flex flex-col gap-0.5 items-center p-1 hover:bg-light/10 rounded-md"
+        href="../pages/news.html"
+        class="flex flex-col gap-0.5 items-center p-1 hover:bg-light/10 rounded-md w-10"
       >
-        <img src="../assets/house.svg" class="w-5" alt="" />
-        <p class="text-xs font-medium text-white">Home</p>
-      </a>
-
-      <a
-        href="../pages/committee.html"
-        class="flex flex-col gap-0.5 items-center p-1 hover:bg-light/10 rounded-md"
-      >
-        <img src="../assets/list.svg" class="w-5" alt="" />
-        <p class="text-xs font-medium text-white">Committee</p>
+        <img src="../assets/inbox.svg" class="w-5" alt="" />
+        <p class="text-[10px] font-medium text-white">News</p>
       </a>
 
       <a
         href="../pages/events.html"
-        class="flex flex-col gap-0.5 items-center p-1 hover:bg-light/10 rounded-md"
+        class="flex flex-col gap-0.5 items-center p-1 hover:bg-light/10 rounded-md w-10"
       >
         <img src="../assets/compass.svg" class="w-5" alt="" />
-        <p class="text-xs font-medium text-white">Events</p>
-      </a>
-
-      <a
-        href="../pages/news.html"
-        class="flex flex-col gap-0.5 items-center p-1 hover:bg-light/10 rounded-md"
-      >
-        <img src="../assets/inbox.svg" class="w-5" alt="" />
-        <p class="text-xs font-medium text-white">News</p>
+        <p class="text-[10px] font-medium text-white">Events</p>
       </a>
 
       <a
         href=""
         class="flex flex-col gap-0.5 items-center p-1 hover:bg-light/10 rounded-md"
       >
+        <img src="../assets/MCAlogo.png" class="h-20" alt="" />
+      </a>
+
+      <a
+        href="../pages/committee.html"
+        class="flex flex-col gap-0.5 items-center p-1 hover:bg-light/10 rounded-md w-10"
+      >
+        <img src="../assets/list.svg" class="w-5" alt="" />
+        <p class="text-[10px] font-medium text-white uppercase">Community</p>
+      </a>
+
+      <a
+        href=""
+        class="flex flex-col gap-0.5 items-center p-1 hover:bg-light/10 rounded-md w-10"
+      >
         <img src="../assets/user.svg" class="w-5" alt="" />
-        <p class="text-xs font-medium text-white">Profile</p>
+        <p class="text-[10px] font-medium text-white">Profile</p>
       </a>
     </footer>
 

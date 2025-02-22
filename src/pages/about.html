@@ -13,28 +13,166 @@
       class="flex justify-between items-center gap-2 px-3 py-0.5 xl:max-w-[1280px] w-full"
     >
       <!-- logo  -->
-      <a href="../../index.html" class="flex">
+      <div class="flex items-center w-96 lg:w-auto">
+        <a href="../../index.html">
         <img src="../assets/MCAlogo.png" class="w-16 sm:w-20" alt="" />
       </a>
-
-      <!-- search bar -->
-      <div class="flex items-center justify-center relative w-[90%] hidden">
-        <input
-          type="text"
-          class="w-full border border-light rounded-4xl py-1.5 pl-8 bg-gradient-to-r from-light to-lightmain p-2 text-white"
-        />
-        <img
-          src="../assets/search.svg"
-          class="w-5 absolute top-1/2 transform -translate-y-1/2 left-2"
-          alt=""
-        />
+        <div class="flex flex-col">
+          <h2
+            class="text-base sm:text-lg lg:text-xl text-darkmain font-extrabold w-fit leading-4 sm:leading-6"
+          >
+          
+          <span class="hidden lg:flex">
+            Mangalore Cultural Association
+          </span>
+          <span class="flex lg:hidden">
+            Mangalore Cultural <br />
+            Association
+          </span>
+          </h2>
+          <span class="text-xs text-gray-700">Doha-Qatar Since 2008</span>
+        </div>
       </div>
 
+      <!-- menu bar active -->
       <div
-        class="hidden sm:flex justify-around items-center m-3 bg-darkmain rounded-2xl px-1 py-1 w-full"
+        class="hidden md:flex items-center m-3 bg-transparent rounded-2xl px-1 py-1 gap-5 lg:gap-8"
+      >
+        <a href="" class="flex flex-col gap-0.5 items-center">
+          <p
+            class="text-xs font-semibold text-darkmain lg:text-lg uppercase underline-offset-6 underline c-underline decoration-3"
+          >
+            Home
+          </p>
+        </a>
+
+        <div
+          class="group flex flex-col gap-2 items-center relative z-50 cursor-pointer menu-container"
+        >
+          <div class="flex gap-2 items-center menu-btn">
+            <p
+              class="text-xs font-medium text-lightmain group-hover:text-lightmain/90 lg:text-lg uppercase whitespace-nowrap"
+            >
+              About MCA
+            </p>
+            <img
+              src="../assets/blue-arrow.svg"
+              class="w-3 rotate-90 group-hover:rotate-270 transform transition-transform duration-300 menu-arrow"
+              alt=""
+            />
+          </div>
+
+          <!-- Dropdown Menu -->
+          <div
+            class="menu-dropdown absolute top-full hidden group-hover:block bg-white shadow-lg rounded-md w-40 z-50"
+          >
+            <ul class="flex flex-col text-gray-700">
+              <li>
+                <a
+                  href="../pages/committee.html"
+                  class="block px-4 py-2 hover:bg-light text-xs font-medium text-lightmain group-hover:text-lightmain/90 lg:text-base"
+                  >Committee</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../pages/membership.html"
+                  class="block px-4 py-2 hover:bg-light text-xs font-medium text-lightmain group-hover:text-lightmain/90 lg:text-base"
+                  >Membership</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../pages/contact-us.html"
+                  class="block px-4 py-2 hover:bg-light text-xs font-medium text-lightmain group-hover:text-lightmain/90 lg:text-base"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <a
+          href="../pages/events.html"
+          class="flex flex-col gap-0.5 items-center"
+        >
+          <p class="text-xs font-medium text-lightmain lg:text-lg uppercase">
+            Events
+          </p>
+        </a>
+
+        <a
+          href="../pages/news.html"
+          class="flex flex-col gap-0.5 items-center"
+        >
+          <p
+            class="text-xs font-medium text-lightmain hover:text-lightmain/90 lg:text-lg uppercase"
+          >
+            News
+          </p>
+        </a>
+
+        <div
+          class="group flex flex-col gap-2 items-center relative z-50 cursor-pointer menu-container"
+        >
+          <div class="menu-btn flex gap-2 items-center">
+            <p
+              class="text-xs font-medium text-lightmain group-hover:text-lightmain/90 lg:text-lg uppercase"
+            >
+              More
+            </p>
+            <img
+              src="../assets/blue-arrow.svg"
+              class="w-3 rotate-90 group-hover:rotate-270 transform transition-transform duration-300 menu-arrow"
+              alt=""
+            />
+          </div>
+
+          <!-- Dropdown Menu -->
+          <div
+            class="menu-dropdown absolute top-full hidden group-hover:block bg-white shadow-lg rounded-md w-40 z-50"
+          >
+            <ul class="flex flex-col text-gray-700">
+              <li>
+                <a
+                  href="../pages/about.html"
+                  class="block px-4 py-2 hover:bg-light text-xs font-medium text-lightmain group-hover:text-lightmain/90 lg:text-base"
+                  >Community</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block px-4 py-2 hover:bg-light text-xs font-medium text-lightmain group-hover:text-lightmain/90 lg:text-base"
+                  >Gallery</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../pages/admin-pages/admin-login.html"
+                  class="block px-4 py-2 hover:bg-light text-xs font-medium text-lightmain group-hover:text-lightmain/90 lg:text-base"
+                  >Login</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="block px-4 py-2 hover:bg-light text-xs font-medium text-lightmain group-hover:text-lightmain/90 lg:text-base"
+                  >Profile</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- menu bar hidden(previous one) -->
+      <!-- <div
+        class="hidden sm:flex justify-around items-center m-3 bg-darkmain rounded-2xl px-1 py-1 sm:w-[75%] md:w-[90%] "
       >
         <a
-          href="../../index.html"
+          href=""
           class="flex flex-col gap-0.5 items-center p-1 hover:bg-light/10 rounded-md"
         >
           <img src="../assets/house.svg" class="w-5" alt="" />
@@ -72,11 +210,11 @@
           <img src="../assets/user.svg" class="w-5" alt="" />
           <p class="text-xs font-medium text-white lg:text-sm">Profile</p>
         </a>
-      </div>
+      </div> -->
 
       <!-- Hamburger Button -->
       <div
-        class="flex bg-gradient-to-b from-light to-lightmain p-2 lg:p-3 rounded-full"
+        class="flex bg-gradient-to-b from-light to-lightmain p-2 lg:p-3 rounded-full md:hidden"
       >
         <button id="menu-btn" class="flex flex-col justify-between w-4 h-4">
           <span
@@ -91,16 +229,16 @@
         </button>
       </div>
 
-      <!-- Menu -->
+      <!-- hamburger Menu -->
       <div
         id="menu"
-        class="fixed top-14 sm:top-20 -right-4 h-[80vh] w-[50vw] sm:w-[320px] lg:w-[400px] bg-darkmain bg-opacity-90 transform translate-x-full transition-transform duration-500 ease-in-out z-50 rounded-3xl flex justify-center overflow-hidden overflow-y-auto scroll-smooth"
+        class="fixed top-14 sm:top-20 -right-4 h-[80vh] w-[280px] sm:w-[320px] lg:w-[400px] bg-darkmain bg-opacity-90 transform translate-x-full transition-transform duration-500 ease-in-out z-50 rounded-3xl flex justify-center overflow-hidden overflow-y-auto scroll-smooth"
       >
         <ul class="p-4 text-white flex flex-col gap-4">
-          <li> <a href="../../index.html"><img src="../assets/MCAlogo.png" class="w-20" alt="" /></a></li>
+          <li><img src="../assets/MCAlogo.png" class="w-20" alt="" /></li>
           <li>
             <a
-              href="../../index.html"
+              href="#"
               class="px-3 py-1 bg-light/40 hover:bg-light/60 rounded-lg"
               >Home</a
             >
@@ -117,13 +255,6 @@
               href="../pages/events.html"
               class="px-3 py-1 bg-light/40 hover:bg-light/60 rounded-lg"
               >Events</a
-            >
-          </li>
-          <li>
-            <a
-              href="../pages/artists.html"
-              class="px-3 py-1 bg-light/40 hover:bg-light/60 rounded-lg"
-              >Kalapuraskar</a
             >
           </li>
 
@@ -155,7 +286,7 @@
                 </li>
                 <li>
                   <a
-                    href="./membership.html"
+                    href="../pages/membership.html"
                     class="px-2 py-1 bg-light/30 hover:bg-light/50 rounded-lg"
                     >Membership</a
                   >
@@ -164,13 +295,21 @@
             </div>
           </li>
 
-          <!-- more  -->
+          <li>
+            <a
+              href="../pages/artists.html"
+              class="px-3 py-1 bg-light/40 hover:bg-light/60 rounded-lg"
+              >Kalapuraskar</a
+            >
+          </li>
+
+          <!-- Community  -->
           <li class="accordion-item flex w-full flex-col">
             <!-- Accordion Header -->
             <div
               class="flex items-center justify-between px-3 py-1.5 cursor-pointer"
             >
-              <span class="accordion-header">More</span>
+              <span class="accordion-header">Community</span>
               <img
                 src="../assets/arrow.svg"
                 class="ml-3 w-4 arrow transition-transform duration-300"
@@ -185,16 +324,48 @@
               <ul class="text-sm font-medium flex flex-col gap-3">
                 <li>
                   <a
-                    href="./about.html"
+                    href="../pages/about.html"
                     class="px-2 py-1 bg-light/30 hover:bg-light/50 rounded-lg"
                     >Community</a
                   >
                 </li>
+
+                <li>
+                  <a
+                    href="#"
+                    class="px-2 py-1 bg-light/30 hover:bg-light/50 rounded-lg"
+                    >Sports</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    class="px-2 py-1 bg-light/30 hover:bg-light/50 rounded-lg"
+                    >Wishes</a
+                  >
+                </li>
+
                 <li>
                   <a
                     href="#"
                     class="px-2 py-1 bg-light/30 hover:bg-light/50 rounded-lg"
                     >Gallery</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    class="px-2 py-1 bg-light/30 hover:bg-light/50 rounded-lg"
+                    >Obituary</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="../pages/admin-pages/admin-login.html"
+                    class="px-2 py-1 bg-light/30 hover:bg-light/50 rounded-lg"
+                    >Login</a
                   >
                 </li>
               </ul>
@@ -203,7 +374,7 @@
 
           <li class="pb-4">
             <a
-              href="./contact-us.html"
+              href="../pages/contact-us.html"
               class="px-3 py-1 bg-light/40 hover:bg-light/60 rounded-lg"
               >Contact</a
             >
@@ -217,10 +388,9 @@
           <!-- heading  -->
           <div class="flex justify-center items-center ">
             <h2 class="text-4xl sm:text-5xl lg:text-6xl text-darkmain font-extrabold">
-                About <br />MCA 
+                About MCA 
             </h2>
   
-            <img src="../assets/MCAlogo.png" alt="" class="w-28 sm:w-36 lg:w-40" />
           </div>
   
         
@@ -291,49 +461,51 @@
 
     </main>
 
+  
+    <!-- mobile footer  -->
     <footer
-      class="sm:hidden flex justify-around items-center m-3 bg-darkmain rounded-2xl px-1 py-2 mt-auto"
+      class="sm:hidden flex justify-around items-center m-3 bg-darkmain/90 rounded-2xl px-1 py-2 sticky bottom-3 h-14"
     >
       <a
-        href="../../index.html"
-        class="flex flex-col gap-0.5 items-center p-1 hover:bg-light/10 rounded-md"
+        href="../pages/news.html"
+        class="flex flex-col gap-0.5 items-center p-1 hover:bg-light/10 rounded-md w-10"
       >
-        <img src="../assets/house.svg" class="w-5" alt="" />
-        <p class="text-xs font-medium text-white">Home</p>
-      </a>
-
-      <a
-        href="../pages/committee.html"
-        class="flex flex-col gap-0.5 items-center p-1 hover:bg-light/10 rounded-md"
-      >
-        <img src="../assets/list.svg" class="w-5" alt="" />
-        <p class="text-xs font-medium text-white">Committee</p>
+        <img src="../assets/inbox.svg" class="w-5" alt="" />
+        <p class="text-[10px] font-medium text-white">News</p>
       </a>
 
       <a
         href="../pages/events.html"
-        class="flex flex-col gap-0.5 items-center p-1 hover:bg-light/10 rounded-md"
+        class="flex flex-col gap-0.5 items-center p-1 hover:bg-light/10 rounded-md w-10"
       >
         <img src="../assets/compass.svg" class="w-5" alt="" />
-        <p class="text-xs font-medium text-white">Events</p>
-      </a>
-
-      <a
-        href="../pages/news.html"
-        class="flex flex-col gap-0.5 items-center p-1 hover:bg-light/10 rounded-md"
-      >
-        <img src="../assets/inbox.svg" class="w-5" alt="" />
-        <p class="text-xs font-medium text-white">News</p>
+        <p class="text-[10px] font-medium text-white">Events</p>
       </a>
 
       <a
         href=""
         class="flex flex-col gap-0.5 items-center p-1 hover:bg-light/10 rounded-md"
       >
+        <img src="../assets/MCAlogo.png" class="h-20" alt="" />
+      </a>
+
+      <a
+        href="../pages/committee.html"
+        class="flex flex-col gap-0.5 items-center p-1 hover:bg-light/10 rounded-md w-10"
+      >
+        <img src="../assets/list.svg" class="w-5" alt="" />
+        <p class="text-[10px] font-medium text-white uppercase">Community</p>
+      </a>
+
+      <a
+        href=""
+        class="flex flex-col gap-0.5 items-center p-1 hover:bg-light/10 rounded-md w-10"
+      >
         <img src="../assets/user.svg" class="w-5" alt="" />
-        <p class="text-xs font-medium text-white">Profile</p>
+        <p class="text-[10px] font-medium text-white">Profile</p>
       </a>
     </footer>
+
 
     <script>
       // Select elements

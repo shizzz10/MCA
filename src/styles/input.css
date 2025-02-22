@@ -34,22 +34,22 @@ body{
       }
 
 /* Custom scrollbar for #menu */
-#menu::-webkit-scrollbar {
+.c-scrollbar::-webkit-scrollbar {
   width: 8px; /* Thin scrollbar */
 }
 
-#menu::-webkit-scrollbar-track {
+.c-scrollbar::-webkit-scrollbar-track {
   background: #f5f6fa1a;
   border-radius: 10px;
   margin: 15px 2px;
 }
 
-#menu::-webkit-scrollbar-thumb {
+.c-scrollbar::-webkit-scrollbar-thumb {
   background: #bec4da66; 
   border-radius: 10px;
 }
 
-#menu::-webkit-scrollbar-thumb:hover {
+.c-scrollbar::-webkit-scrollbar-thumb:hover {
   background: #bec4da99; 
 }
 
