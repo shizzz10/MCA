@@ -593,6 +593,9 @@
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
+  .top-1 {
+    top: calc(var(--spacing) * 1);
+  }
   .top-1\/2 {
     top: calc(1/2 * 100%);
   }
@@ -866,6 +869,9 @@
   .aspect-square {
     aspect-ratio: 1 / 1;
   }
+  .h-0 {
+    height: calc(var(--spacing) * 0);
+  }
   .h-0\.5 {
     height: calc(var(--spacing) * 0.5);
   }
@@ -922,6 +928,9 @@
   }
   .min-h-screen {
     min-height: 100vh;
+  }
+  .w-1 {
+    width: calc(var(--spacing) * 1);
   }
   .w-1\/2 {
     width: calc(1/2 * 100%);
@@ -982,6 +991,18 @@
   }
   .w-96 {
     width: calc(var(--spacing) * 96);
+  }
+  .w-\[38\%\] {
+    width: 38%;
+  }
+  .w-\[39\%\] {
+    width: 39%;
+  }
+  .w-\[58\%\] {
+    width: 58%;
+  }
+  .w-\[59\%\] {
+    width: 59%;
   }
   .w-\[70\%\] {
     width: 70%;
@@ -1115,6 +1136,10 @@
   }
   .-translate-x-full {
     --tw-translate-x: -100%;
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .-translate-y-1 {
+    --tw-translate-y: calc(var(--spacing) * -1);
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .-translate-y-1\/2 {
@@ -1805,6 +1830,9 @@
   .bg-\[var\(--my_variable\)\] {
     background-color: var(--my_variable);
   }
+  .bg-black {
+    background-color: var(--color-black);
+  }
   .bg-black\/60 {
     background-color: color-mix(in oklab, var(--color-black) 60%, transparent);
   }
@@ -2073,6 +2101,9 @@
   .px-6 {
     padding-inline: calc(var(--spacing) * 6);
   }
+  .py-0 {
+    padding-block: calc(var(--spacing) * 0);
+  }
   .py-0\.5 {
     padding-block: calc(var(--spacing) * 0.5);
   }
@@ -2096,6 +2127,9 @@
   }
   .pb-4 {
     padding-bottom: calc(var(--spacing) * 4);
+  }
+  .pl-0 {
+    padding-left: calc(var(--spacing) * 0);
   }
   .pl-0\.5 {
     padding-left: calc(var(--spacing) * 0.5);
@@ -2335,6 +2369,9 @@
   .text-gray-700 {
     color: var(--color-gray-700);
   }
+  .text-gray-800 {
+    color: var(--color-gray-800);
+  }
   .text-green-600 {
     color: var(--color-green-600);
   }
@@ -2545,6 +2582,9 @@
   .shadow-sm {
     --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-black {
+    --tw-shadow-color: var(--color-black);
   }
   .shadow-black\/15 {
     --tw-shadow-color: color-mix(in oklab, var(--color-black) 15%, transparent);
@@ -3202,6 +3242,11 @@
       width: calc(var(--spacing) * 4);
     }
   }
+  .sm\:w-5 {
+    @media (width >= 40rem) {
+      width: calc(var(--spacing) * 5);
+    }
+  }
   .sm\:w-7 {
     @media (width >= 40rem) {
       width: calc(var(--spacing) * 7);
@@ -3295,6 +3340,11 @@
   .sm\:flex-wrap {
     @media (width >= 40rem) {
       flex-wrap: wrap;
+    }
+  }
+  .sm\:items-center {
+    @media (width >= 40rem) {
+      align-items: center;
     }
   }
   .sm\:gap-0\.5 {
@@ -3535,14 +3585,29 @@
       width: 23.8%;
     }
   }
+  .lg\:w-\[24\%\] {
+    @media (width >= 64rem) {
+      width: 24%;
+    }
+  }
+  .lg\:w-\[29\%\] {
+    @media (width >= 64rem) {
+      width: 29%;
+    }
+  }
+  .lg\:w-\[34\%\] {
+    @media (width >= 64rem) {
+      width: 34%;
+    }
+  }
   .lg\:w-\[35\%\] {
     @media (width >= 64rem) {
       width: 35%;
     }
   }
-  .lg\:w-\[400px\] {
+  .lg\:w-\[39\%\] {
     @media (width >= 64rem) {
-      width: 400px;
+      width: 39%;
     }
   }
   .lg\:w-\[48\%\] {
@@ -3555,6 +3620,21 @@
       width: 50%;
     }
   }
+  .lg\:w-\[59\%\] {
+    @media (width >= 64rem) {
+      width: 59%;
+    }
+  }
+  .lg\:w-\[64\%\] {
+    @media (width >= 64rem) {
+      width: 64%;
+    }
+  }
+  .lg\:w-\[69\%\] {
+    @media (width >= 64rem) {
+      width: 69%;
+    }
+  }
   .lg\:w-\[80\%\] {
     @media (width >= 64rem) {
       width: 80%;
@@ -3563,6 +3643,11 @@
   .lg\:w-\[100\%\] {
     @media (width >= 64rem) {
       width: 100%;
+    }
+  }
+  .lg\:w-\[400px\] {
+    @media (width >= 64rem) {
+      width: 400px;
     }
   }
   .lg\:w-\[700px\] {
@@ -3633,6 +3718,11 @@
   .lg\:gap-6 {
     @media (width >= 64rem) {
       gap: calc(var(--spacing) * 6);
+    }
+  }
+  .lg\:gap-7 {
+    @media (width >= 64rem) {
+      gap: calc(var(--spacing) * 7);
     }
   }
   .lg\:gap-8 {
